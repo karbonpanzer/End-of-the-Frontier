@@ -1,0 +1,174 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+	<FactionDef ParentName="FactionBase">
+		<defName>EOTF_Civil</defName>
+		<label>dominion colony</label>
+		<description>New arrivals to this world from the Dominion, bringing their technology from their empire. They use spacer-level technology and advanced armor and weapons in their pursuit of profit. Their sole concern seems to be finding new avenues of profit on this world.\n\nThey are concerned with their bottom line and maintaining of order. Though happy to trade, they view you as their next business venture.</description>
+		<pawnSingular>citizen</pawnSingular>
+		<pawnsPlural>citizens</pawnsPlural>
+		<listOrderPriority>13</listOrderPriority>
+		<settlementGenerationWeight>1</settlementGenerationWeight>
+		<requiredCountAtGameStart>1</requiredCountAtGameStart>
+		<maxCountAtGameStart>1</maxCountAtGameStart>
+		<canMakeRandomly>true</canMakeRandomly>
+		<canSiege>true</canSiege>
+		<canStageAttacks>true</canStageAttacks>
+		<leaderTitle>governor</leaderTitle>
+		<factionIconPath>UI/FactionIcons/OffworlderCivilOutpostIII</factionIconPath>
+		<factionNameMaker>EOTF_Faction_Civil</factionNameMaker>
+		<settlementNameMaker>EOTF_Settlement_Civil</settlementNameMaker>
+		<colorSpectrum>
+			<li>(0.80, 0.80, 0.95)</li>
+		</colorSpectrum>
+		<permanentEnemy>false</permanentEnemy>
+		<techLevel>Spacer</techLevel>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<requiredMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Individualist</li>			
+		</requiredMemes>
+		<disallowedMemes>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Raider</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Supremacist</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">Cannibal</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">TreeConnection</li>
+			<li MayRequire="Ludeon.RimWorld.Ideology">AnimalPersonhood</li>
+		</disallowedMemes>
+		<backstoryFilters>
+			<li>
+				<categories>
+					<li>Outlander</li>
+					<li>Pirate</li>
+				</categories>
+			</li>
+		</backstoryFilters>
+		<xenotypeSet>
+			<xenotypeChances>
+				<Starjack MayRequire="Ludeon.RimWorld.Odyssey">0.12</Starjack>
+				<Hussar MayRequire="Ludeon.RimWorld.Biotech">0.06</Hussar>
+				<Dirtmole MayRequire="Ludeon.RimWorld.Biotech">0.04</Dirtmole>
+				<Impid MayRequire="Ludeon.RimWorld.Biotech">0.02</Impid>
+				<Genie MayRequire="Ludeon.RimWorld.Biotech">0.02</Genie>
+				<Yttakin MayRequire="Ludeon.RimWorld.Biotech">0.02</Yttakin>
+			</xenotypeChances>
+		</xenotypeSet>
+		<allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
+		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
+		<caravanTraderKinds>
+			<li>Caravan_Dominion_BulkGoods</li>
+			<li>Caravan_Dominion_ArmsDealer</li>
+			<li>Caravan_Dominion_Exotic</li>
+		</caravanTraderKinds>
+		<visitorTraderKinds>
+			<li>Visitor_Dominion_Standard</li>
+		</visitorTraderKinds>
+		<baseTraderKinds>
+			<li>Base_Dominion_Standard</li>
+		</baseTraderKinds>
+		<maxPawnCostPerTotalPointsCurve>
+			<points>
+				<li>(0, 40)</li>
+				<li>(70, 60)</li>
+				<li>(700, 120)</li>
+				<li>(1300, 200)</li>
+				<li>(100000,10000)</li>
+			</points>
+		</maxPawnCostPerTotalPointsCurve>
+		<pawnGroupMakers>
+			<!-- Combat Group 1: Mixed forces with ranged and melee -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>45</commonality>
+				<options>
+					<EOTF_Civil_Recruit_Ranged>5</EOTF_Civil_Recruit_Ranged>
+					<EOTF_Civil_Recruit_Melee>3</EOTF_Civil_Recruit_Melee>
+					<EOTF_Civil_Infantry_Ranged>12</EOTF_Civil_Infantry_Ranged>
+					<EOTF_Civil_Infantry_Melee>6</EOTF_Civil_Infantry_Melee>
+					<EOTF_Civil_Veteran_Ranged>8</EOTF_Civil_Veteran_Ranged>
+					<EOTF_Civil_Veteran_Melee>5</EOTF_Civil_Veteran_Melee>
+					<EOTF_Civil_Sergeant>4</EOTF_Civil_Sergeant>
+					<EOTF_Civil_Ranger>7</EOTF_Civil_Ranger>
+					<EOTF_Civil_Grenadier>3</EOTF_Civil_Grenadier>
+					<EOTF_Civil_Shocktrooper>2</EOTF_Civil_Shocktrooper>
+					<EOTF_Civil_Medic>3</EOTF_Civil_Medic>
+					<EOTF_Civil_Engineer>3</EOTF_Civil_Engineer>
+					<EOTF_Civil_Warden>2</EOTF_Civil_Warden>
+					<EOTF_Civil_Officer>3</EOTF_Civil_Officer>
+				</options>
+			</li>
+
+			<!-- Combat Group 2: Standard raid composition -->
+			<li>
+				<kindDef>Combat</kindDef>
+				<commonality>35</commonality>
+				<options>
+					<EOTF_Civil_Recruit_Ranged>8</EOTF_Civil_Recruit_Ranged>
+					<EOTF_Civil_Recruit_Melee>5</EOTF_Civil_Recruit_Melee>
+					<EOTF_Civil_Infantry_Ranged>20</EOTF_Civil_Infantry_Ranged>
+					<EOTF_Civil_Infantry_Melee>10</EOTF_Civil_Infantry_Melee>
+					<EOTF_Civil_Sergeant>5</EOTF_Civil_Sergeant>
+					<EOTF_Civil_Medic>8</EOTF_Civil_Medic>
+					<EOTF_Civil_Engineer>8</EOTF_Civil_Engineer>
+					<EOTF_Civil_Officer>3</EOTF_Civil_Officer>
+				</options>
+			</li>
+
+			<!-- Peaceful Group -->
+			<li>
+				<kindDef>Peaceful</kindDef>
+				<commonality>20</commonality>
+				<options>
+					<EOTF_Civil_Settler>12</EOTF_Civil_Settler>
+					<EOTF_Civil_Laborer>8</EOTF_Civil_Laborer>
+					<EOTF_Civil_Trader>8</EOTF_Civil_Trader>
+					<EOTF_Civil_Representative>2</EOTF_Civil_Representative>
+					<EOTF_Civil_Ranger>4</EOTF_Civil_Ranger>
+					<EOTF_Civil_Infantry_Ranged>4</EOTF_Civil_Infantry_Ranged>
+					<EOTF_Civil_Infantry_Melee>2</EOTF_Civil_Infantry_Melee>
+					<EOTF_Civil_Medic>2</EOTF_Civil_Medic>
+					<EOTF_Civil_Engineer>2</EOTF_Civil_Engineer>
+					<EOTF_Civil_Officer>1</EOTF_Civil_Officer>
+				</options>
+			</li>
+
+			<!-- Trader Group -->
+			<li>
+				<kindDef>Trader</kindDef>
+				<traders>
+					<EOTF_Civil_Trader>1</EOTF_Civil_Trader>
+				</traders>
+				<carriers>
+					<Muffalo>8</Muffalo>
+				</carriers>
+				<guards>
+					<EOTF_Civil_Infantry_Ranged>4</EOTF_Civil_Infantry_Ranged>
+					<EOTF_Civil_Infantry_Melee>2</EOTF_Civil_Infantry_Melee>
+					<EOTF_Civil_Ranger>4</EOTF_Civil_Ranger>
+					<EOTF_Civil_Sergeant>2</EOTF_Civil_Sergeant>
+					<EOTF_Civil_Officer>1</EOTF_Civil_Officer>
+				</guards>
+			</li>
+
+			<!-- Settlement Group -->
+			<li>
+				<kindDef>Settlement</kindDef>
+				<options>
+					<EOTF_Civil_Settler>20</EOTF_Civil_Settler>
+					<EOTF_Civil_Laborer>12</EOTF_Civil_Laborer>
+					<EOTF_Civil_Engineer>4</EOTF_Civil_Engineer>
+					<EOTF_Civil_Medic>4</EOTF_Civil_Medic>
+					<EOTF_Civil_Infantry_Ranged>6</EOTF_Civil_Infantry_Ranged>
+					<EOTF_Civil_Infantry_Melee>2</EOTF_Civil_Infantry_Melee>
+					<EOTF_Civil_Ranger>6</EOTF_Civil_Ranger>
+					<EOTF_Civil_Representative>1</EOTF_Civil_Representative>
+					<EOTF_Civil_Officer>3</EOTF_Civil_Officer>
+				</options>
+			</li>
+		</pawnGroupMakers>
+		<settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+		<maxConfigurableAtWorldCreation>9999</maxConfigurableAtWorldCreation>
+		<configurationListOrderPriority>25</configurationListOrderPriority>
+	</FactionDef>
+
+</Defs>

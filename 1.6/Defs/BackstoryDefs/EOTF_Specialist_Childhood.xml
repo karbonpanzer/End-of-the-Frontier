@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- DOMINION MEDIC CHILDHOOD -->
+
+  <BackstoryDef>
+    <defName>EOTF_FieldMedicsApprentice01</defName>
+    <identifier>EOTF_FieldMedicsApprentice01</identifier>
+    <slot>Childhood</slot>
+    <title>field medic's apprentice</title>
+    <titleShort>medic's apprentice</titleShort>
+    <description>[PAWN_nameDef] was taken on as an apprentice by a Dominion military medic at a young age. [PAWN_pronoun] learned field medicine before [PAWN_pronoun] learned anything else and found [PAWN_pronoun] preferred it that way.</description>
+    <skillGains>
+      <Medicine>4</Medicine>
+      <Crafting>2</Crafting>
+      <Melee>-2</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CorporateMedicalTrainee02</defName>
+    <identifier>EOTF_CorporateMedicalTrainee02</identifier>
+    <slot>Childhood</slot>
+    <title>corporate medical trainee</title>
+    <titleShort>medical trainee</titleShort>
+    <description>[PAWN_nameDef] was selected for a Dominion corporate medical training program and spent [PAWN_possessive] childhood learning anatomy, treatment, and triage. [PAWN_pronoun] learned that the program produced medics first and people second.</description>
+    <skillGains>
+      <Medicine>4</Medicine>
+      <Intellectual>2</Intellectual>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_MilitaryHospitalAide03</defName>
+    <identifier>EOTF_MilitaryHospitalAide03</identifier>
+    <slot>Childhood</slot>
+    <title>military hospital aide</title>
+    <titleShort>hospital aide</titleShort>
+    <description>[PAWN_nameDef] worked in a Dominion military hospital from a young age, assisting with treatments and procedures that most children never see. [PAWN_pronoun] learned to work quickly and without flinching.</description>
+    <skillGains>
+      <Medicine>4</Medicine>
+      <Social>2</Social>
+      <Melee>-2</Melee>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CombatMedicineStudent04</defName>
+    <identifier>EOTF_CombatMedicineStudent04</identifier>
+    <slot>Childhood</slot>
+    <title>combat medicine student</title>
+    <titleShort>combat student</titleShort>
+    <description>[PAWN_nameDef] studied combat medicine in one of the Dominion's military academies, learning to treat injuries under conditions that made clinical training look comfortable. [PAWN_pronoun] graduated near the top of [PAWN_possessive] class.</description>
+    <skillGains>
+      <Medicine>3</Medicine>
+      <Shooting>2</Shooting>
+      <Intellectual>1</Intellectual>
+      <Construction>-2</Construction>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_TriageAssistant05</defName>
+    <identifier>EOTF_TriageAssistant05</identifier>
+    <slot>Childhood</slot>
+    <title>triage assistant</title>
+    <titleShort>triage assistant</titleShort>
+    <description>[PAWN_nameDef] assisted at a Dominion military triage station from an early age, learning to assess injuries quickly and make decisions that could not be unmade. [PAWN_pronoun] learned that speed and accuracy are not mutually exclusive if you practice long enough.</description>
+    <skillGains>
+      <Medicine>4</Medicine>
+      <Intellectual>2</Intellectual>
+      <Artistic>-2</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <!-- DOMINION ENGINEER CHILDHOOD -->
+
+  <BackstoryDef>
+    <defName>EOTF_MilitaryEngineeringStudent06</defName>
+    <identifier>EOTF_MilitaryEngineeringStudent06</identifier>
+    <slot>Childhood</slot>
+    <title>military engineering student</title>
+    <titleShort>engineering student</titleShort>
+    <description>[PAWN_nameDef] was enrolled in a Dominion military engineering program from a young age, learning the construction and demolition techniques that the corporate military considered essential. [PAWN_pronoun] found [PAWN_pronoun] preferred building things to destroying them, though [PAWN_pronoun] became equally proficient at both.</description>
+    <skillGains>
+      <Construction>4</Construction>
+      <Crafting>2</Crafting>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CorporateConstructionTrainee07</defName>
+    <identifier>EOTF_CorporateConstructionTrainee07</identifier>
+    <slot>Childhood</slot>
+    <title>corporate construction trainee</title>
+    <titleShort>construction trainee</titleShort>
+    <description>[PAWN_nameDef] trained in the Dominion's corporate construction division from childhood, learning to build military installations and fortifications to precise specifications. [PAWN_pronoun] learned that in the Dominion, everything built serves a purpose and the purpose is rarely what it appears.</description>
+    <skillGains>
+      <Construction>3</Construction>
+      <Crafting>2</Crafting>
+      <Intellectual>1</Intellectual>
+      <Artistic>-2</Artistic>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_DemolitionsApprentice08</defName>
+    <identifier>EOTF_DemolitionsApprentice08</identifier>
+    <slot>Childhood</slot>
+    <title>demolitions apprentice</title>
+    <titleShort>demo apprentice</titleShort>
+    <description>[PAWN_nameDef] apprenticed in a Dominion military demolitions unit from an early age, learning the precise application of destructive force. [PAWN_pronoun] developed a thorough understanding of structures by learning exactly how to bring them down.</description>
+    <skillGains>
+      <Construction>3</Construction>
+      <Crafting>3</Crafting>
+      <Social>-2</Social>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_FortificationBuildersChild09</defName>
+    <identifier>EOTF_FortificationBuildersChild09</identifier>
+    <slot>Childhood</slot>
+    <title>fortification builder's child</title>
+    <titleShort>fortification kid</titleShort>
+    <description>[PAWN_nameDef] grew up around the military fortification projects of a Dominion installation, learning construction techniques from the engineers who built them. [PAWN_pronoun] was building independently before [PAWN_pronoun] was old enough to be officially employed.</description>
+    <skillGains>
+      <Construction>4</Construction>
+      <Mining>2</Mining>
+      <Intellectual>-2</Intellectual>
+    </skillGains>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_TechnicalAcademyCadet10</defName>
+    <identifier>EOTF_TechnicalAcademyCadet10</identifier>
+    <slot>Childhood</slot>
+    <title>technical academy cadet</title>
+    <titleShort>technical cadet</titleShort>
+    <description>[PAWN_nameDef] attended a Dominion military technical academy, learning the engineering and mechanical skills that the corporate military considered essential to its operations. [PAWN_pronoun] graduated with a comprehensive understanding of how things are built and how they fail.</description>
+    <skillGains>
+      <Crafting>4</Crafting>
+      <Construction>2</Construction>
+      <Social>-2</Social>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <!-- DOMINION OFFICER CHILDHOOD -->
+
+  <BackstoryDef>
+    <defName>EOTF_OfficerAcademyCadet11</defName>
+    <identifier>EOTF_OfficerAcademyCadet11</identifier>
+    <slot>Childhood</slot>
+    <title>officer academy cadet</title>
+    <titleShort>officer cadet</titleShort>
+    <description>[PAWN_nameDef] was enrolled in a Dominion officer academy from a young age, learning the leadership, strategy, and command disciplines that the corporate military considers essential. [PAWN_pronoun] excelled and learned early that command is a different skill from competence.</description>
+    <skillGains>
+      <Social>3</Social>
+      <Shooting>3</Shooting>
+      <Intellectual>1</Intellectual>
+      <Melee>-2</Melee>
+    </skillGains>
+    <workDisables>ManualDumb</workDisables>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CorporateMilitaryHeir12</defName>
+    <identifier>EOTF_CorporateMilitaryHeir12</identifier>
+    <slot>Childhood</slot>
+    <title>corporate military heir</title>
+    <titleShort>military heir</titleShort>
+    <description>[PAWN_nameDef] was raised to follow a family tradition of Dominion military service at officer rank. [PAWN_pronoun] learned the expectations, the protocols, and the privileges of that position before [PAWN_pronoun] learned whether [PAWN_pronoun] wanted any of them.</description>
+    <skillGains>
+      <Social>4</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_DominionStrategyStudent13</defName>
+    <identifier>EOTF_DominionStrategyStudent13</identifier>
+    <slot>Childhood</slot>
+    <title>dominion strategy student</title>
+    <titleShort>strategy student</titleShort>
+    <description>[PAWN_nameDef] studied military strategy and corporate tactics in one of the Dominion's elite academies, learning to think about conflict as a system of resources, objectives, and acceptable losses. [PAWN_pronoun] was good at it and found the last part the most instructive.</description>
+    <skillGains>
+      <Intellectual>4</Intellectual>
+      <Social>2</Social>
+      <Melee>-2</Melee>
+    </skillGains>
+    <workDisables>ManualDumb</workDisables>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CommandTrainingInitiate14</defName>
+    <identifier>EOTF_CommandTrainingInitiate14</identifier>
+    <slot>Childhood</slot>
+    <title>command training initiate</title>
+    <titleShort>command initiate</titleShort>
+    <description>[PAWN_nameDef] was selected for a Dominion command training program on the basis of demonstrated leadership aptitude. [PAWN_pronoun] learned to give orders that people followed and to take responsibility for what happened when they did.</description>
+    <skillGains>
+      <Social>3</Social>
+      <Shooting>2</Shooting>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_MilitaryLeadershipStudent15</defName>
+    <identifier>EOTF_MilitaryLeadershipStudent15</identifier>
+    <slot>Childhood</slot>
+    <title>military leadership student</title>
+    <titleShort>leadership student</titleShort>
+    <description>[PAWN_nameDef] attended a Dominion military leadership program, learning the specific disciplines required to command soldiers in corporate operations. [PAWN_pronoun] learned that leadership in the Dominion's military and leadership in any other context are related but not identical skills.</description>
+    <skillGains>
+      <Social>4</Social>
+      <Intellectual>3</Intellectual>
+      <Melee>-3</Melee>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+</Defs>

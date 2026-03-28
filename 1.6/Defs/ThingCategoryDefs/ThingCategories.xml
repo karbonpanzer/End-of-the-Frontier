@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+	<ThingCategoryDef>
+		<defName>EOTF_Uniforms</defName>
+		<label>Frontier Apparel</label>
+		<parent>Apparel</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>EOTF_Headgear</defName>
+		<label>Frontier Headgear</label>
+		<parent>EOTF_Uniforms</parent>
+	</ThingCategoryDef>
+
+	<ThingCategoryDef>
+		<defName>EOTF_Accessories</defName>
+		<label>Frontier Accessories</label>
+		<parent>EOTF_Uniforms</parent>
+	</ThingCategoryDef>
+
+	<!-- Armor Directory-->
+	<ThingCategoryDef>
+		<defName>EOTF_Armor</defName>
+		<label>Frontier Armor</label>
+		<parent>EOTF_Uniforms</parent>
+	</ThingCategoryDef>
+
+	<!-- Helmet Subdirectory-->
+	<ThingCategoryDef>
+		<defName>EOTF_Helmets</defName>
+		<label>Helmets</label>
+		<parent>EOTF_Armor</parent>
+	</ThingCategoryDef>
+
+	<!-- Armor Accessories-->
+	<ThingCategoryDef>
+		<defName>EOTF_ArmorAccessories</defName>
+		<label>Armor Accessories</label>
+		<parent>EOTF_Armor</parent>
+	</ThingCategoryDef>
+
+</Defs>

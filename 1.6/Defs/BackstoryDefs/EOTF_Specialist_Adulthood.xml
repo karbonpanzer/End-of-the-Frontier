@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- DOMINION MEDIC ADULTHOOD -->
+
+  <BackstoryDef>
+    <defName>EOTF_DominionCombatMedic01</defName>
+    <identifier>EOTF_DominionCombatMedic01</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion combat medic</title>
+    <titleShort>combat medic</titleShort>
+    <description>[PAWN_nameDef] served as a combat medic in the Dominion's corporate military, treating casualties under fire with whatever supplies were available. [PAWN_pronoun] learned that the difference between alive and dead is often a matter of seconds and preparation.</description>
+    <skillGains>
+      <Medicine>7</Medicine>
+      <Shooting>4</Shooting>
+      <Crafting>2</Crafting>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <requiredWorkTags>
+      <li>Caring</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_ForwardSurgicalOfficer02</defName>
+    <identifier>EOTF_ForwardSurgicalOfficer02</identifier>
+    <slot>Adulthood</slot>
+    <title>forward surgical officer</title>
+    <titleShort>surgical officer</titleShort>
+    <description>[PAWN_nameDef] performed surgery in forward operating conditions for the Dominion's corporate military, developing exceptional skill under circumstances that no clinical setting could replicate. [PAWN_pronoun] was precise and fast and learned never to think about the odds.</description>
+    <skillGains>
+      <Medicine>7</Medicine>
+      <Crafting>3</Crafting>
+      <Intellectual>2</Intellectual>
+      <Construction>-3</Construction>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_MilitaryMedicalResearcher03</defName>
+    <identifier>EOTF_MilitaryMedicalResearcher03</identifier>
+    <slot>Adulthood</slot>
+    <title>military medical researcher</title>
+    <titleShort>medical researcher</titleShort>
+    <description>[PAWN_nameDef] conducted medical research for a Dominion corporate military division, developing treatments optimized for combat injuries and the specific conditions of active operations. [PAWN_pronoun] learned to separate the research from its applications.</description>
+    <skillGains>
+      <Medicine>6</Medicine>
+      <Intellectual>4</Intellectual>
+      <Shooting>2</Shooting>
+      <Social>-3</Social>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+      <li>Intellectual</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_ExtractionMedic04</defName>
+    <identifier>EOTF_ExtractionMedic04</identifier>
+    <slot>Adulthood</slot>
+    <title>extraction medic</title>
+    <titleShort>extraction medic</titleShort>
+    <description>[PAWN_nameDef] specialized in extracting and stabilizing casualties from active combat zones, developing a precise understanding of what the human body can survive and what it cannot. [PAWN_pronoun] operated alone more often than the protocols suggested and came back more often than the odds suggested.</description>
+    <skillGains>
+      <Medicine>7</Medicine>
+      <Shooting>4</Shooting>
+      <Melee>2</Melee>
+      <Artistic>-3</Artistic>
+    </skillGains>
+    <requiredWorkTags>
+      <li>Caring</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_DominionFieldSurgeon05</defName>
+    <identifier>EOTF_DominionFieldSurgeon05</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion field surgeon</title>
+    <titleShort>field surgeon</titleShort>
+    <description>[PAWN_nameDef] performed surgical procedures in the field for Dominion military operations, working in conditions that would have been unacceptable in any other context. [PAWN_pronoun] kept more people alive than [PAWN_possessive] equipment should have allowed.</description>
+    <skillGains>
+      <Medicine>7</Medicine>
+      <Crafting>3</Crafting>
+      <Shooting>2</Shooting>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>Artistic</workDisables>
+    <requiredWorkTags>
+      <li>Caring</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionMedic</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <!-- DOMINION ENGINEER ADULTHOOD -->
+
+  <BackstoryDef>
+    <defName>EOTF_DominionCombatEngineer06</defName>
+    <identifier>EOTF_DominionCombatEngineer06</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion combat engineer</title>
+    <titleShort>combat engineer</titleShort>
+    <description>[PAWN_nameDef] served as a combat engineer in the Dominion's corporate military, building fortifications, clearing obstacles, and occasionally doing both in the same engagement. [PAWN_pronoun] learned to work fast under conditions that made careful work difficult.</description>
+    <skillGains>
+      <Construction>7</Construction>
+      <Crafting>4</Crafting>
+      <Shooting>3</Shooting>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>Caring</workDisables>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_MilitaryDemolitionsExpert07</defName>
+    <identifier>EOTF_MilitaryDemolitionsExpert07</identifier>
+    <slot>Adulthood</slot>
+    <title>military demolitions expert</title>
+    <titleShort>demo expert</titleShort>
+    <description>[PAWN_nameDef] specialized in demolitions for the Dominion's corporate military, developing a precise understanding of structural failure and the forces required to cause it. [PAWN_pronoun] was methodical and careful and very good at a job that rewarded both.</description>
+    <skillGains>
+      <Crafting>6</Crafting>
+      <Construction>5</Construction>
+      <Shooting>3</Shooting>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>Caring, Artistic</workDisables>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_ForwardInstallationBuilder08</defName>
+    <identifier>EOTF_ForwardInstallationBuilder08</identifier>
+    <slot>Adulthood</slot>
+    <title>forward installation builder</title>
+    <titleShort>installation builder</titleShort>
+    <description>[PAWN_nameDef] constructed forward operating installations for Dominion military operations, building functional fortifications under active field conditions. [PAWN_pronoun] learned to build things that worked rather than things that looked like they should.</description>
+    <skillGains>
+      <Construction>7</Construction>
+      <Crafting>3</Crafting>
+      <Mining>2</Mining>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>Caring, Artistic</workDisables>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_DominionSiegeEngineer09</defName>
+    <identifier>EOTF_DominionSiegeEngineer09</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion siege engineer</title>
+    <titleShort>siege engineer</titleShort>
+    <description>[PAWN_nameDef] served in the Dominion's corporate military as a siege specialist, breaching fortifications and constructing assault positions under fire. [PAWN_pronoun] developed a comprehensive understanding of defensive construction by spending years defeating it.</description>
+    <skillGains>
+      <Construction>6</Construction>
+      <Crafting>5</Crafting>
+      <Shooting>3</Shooting>
+      <Intellectual>-3</Intellectual>
+    </skillGains>
+    <workDisables>Caring, Artistic</workDisables>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_MilitarySystemsTechnician10</defName>
+    <identifier>EOTF_MilitarySystemsTechnician10</identifier>
+    <slot>Adulthood</slot>
+    <title>military systems technician</title>
+    <titleShort>systems technician</titleShort>
+    <description>[PAWN_nameDef] maintained and repaired the mechanical and electronic systems of Dominion military installations and equipment. [PAWN_pronoun] learned that in the field the difference between functional and broken is often the difference between alive and dead.</description>
+    <skillGains>
+      <Crafting>7</Crafting>
+      <Construction>4</Construction>
+      <Shooting>2</Shooting>
+      <Social>-3</Social>
+    </skillGains>
+    <workDisables>Caring, Artistic</workDisables>
+    <requiredWorkTags>
+      <li>ManualSkilled</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionEngineer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <!-- DOMINION OFFICER ADULTHOOD -->
+
+  <BackstoryDef>
+    <defName>EOTF_DominionLineOfficer11</defName>
+    <identifier>EOTF_DominionLineOfficer11</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion line officer</title>
+    <titleShort>line officer</titleShort>
+    <description>[PAWN_nameDef] commanded a line unit in the Dominion's corporate military, leading soldiers through operations that the corporate briefings made sound simpler than they were. [PAWN_pronoun] learned to trust [PAWN_possessive] own judgment over the briefings.</description>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Social>5</Social>
+      <Intellectual>2</Intellectual>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CorporateMilitaryCommander12</defName>
+    <identifier>EOTF_CorporateMilitaryCommander12</identifier>
+    <slot>Adulthood</slot>
+    <title>corporate military commander</title>
+    <titleShort>military commander</titleShort>
+    <description>[PAWN_nameDef] commanded a significant Dominion corporate military force, planning and executing operations across multiple engagements. [PAWN_pronoun] learned that command at scale is an exercise in managing consequences rather than preventing them.</description>
+    <skillGains>
+      <Social>6</Social>
+      <Intellectual>5</Intellectual>
+      <Shooting>3</Shooting>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_DominionTacticalOfficer13</defName>
+    <identifier>EOTF_DominionTacticalOfficer13</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion tactical officer</title>
+    <titleShort>tactical officer</titleShort>
+    <description>[PAWN_nameDef] served as a tactical planning officer in the Dominion's corporate military, developing operational plans for engagements that ranged from straightforward to catastrophic. [PAWN_pronoun] learned to plan for the second and hope for the first.</description>
+    <skillGains>
+      <Intellectual>6</Intellectual>
+      <Social>4</Social>
+      <Shooting>3</Shooting>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_CorporateSpecialOperationsOfficer14</defName>
+    <identifier>EOTF_CorporateSpecialOperationsOfficer14</identifier>
+    <slot>Adulthood</slot>
+    <title>corporate special operations officer</title>
+    <titleShort>special ops officer</titleShort>
+    <description>[PAWN_nameDef] commanded special operations units for a Dominion corporate military division, leading small teams on assignments that did not appear in official operational records. [PAWN_pronoun] learned that the most effective operations are the ones nobody hears about.</description>
+    <skillGains>
+      <Shooting>6</Shooting>
+      <Social>4</Social>
+      <Melee>3</Melee>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+  <BackstoryDef>
+    <defName>EOTF_DominionGarrisonCommander15</defName>
+    <identifier>EOTF_DominionGarrisonCommander15</identifier>
+    <slot>Adulthood</slot>
+    <title>dominion garrison commander</title>
+    <titleShort>garrison commander</titleShort>
+    <description>[PAWN_nameDef] commanded a Dominion corporate military garrison, responsible for the security of a corporate installation and the management of the soldiers assigned to it. [PAWN_pronoun] learned that maintaining order in peacetime requires different skills than maintaining it in conflict and that the Dominion rarely distinguishes between the two.</description>
+    <skillGains>
+      <Social>6</Social>
+      <Shooting>4</Shooting>
+      <Intellectual>3</Intellectual>
+    </skillGains>
+    <workDisables>ManualDumb, ManualSkilled</workDisables>
+    <requiredWorkTags>
+      <li>Violent</li>
+    </requiredWorkTags>
+    <spawnCategories>
+      <li>EOTF_DominionOfficer</li>
+    </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
+    <shuffleable>true</shuffleable>
+  </BackstoryDef>
+
+</Defs>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<Defs> 	
+		
+		<ResearchProjectDef>
+			<defName>EOTF_OrbitalCarapaceArmor</defName>
+			<label>Orbital Carapace Armor and Helmet</label>
+			<description>Craft Carapace Armor for usage in orbit.</description>
+			<baseCost>500</baseCost>
+			<tab>EOTF_ResearchTab</tab>
+			<techLevel>Spacer</techLevel>
+			<prerequisites>
+				<li>EOTF_CarapaceArmor</li>
+				<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
+			</prerequisites>
+			<researchViewX>1</researchViewX>
+			<researchViewY>2.5</researchViewY>
+		</ResearchProjectDef>			
+			
+</Defs>

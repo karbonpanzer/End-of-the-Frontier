@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+	<FactionDef ParentName="PlayerFactionBase">
+		<defName>EOTF_Player</defName>
+		<label>Dominion prospectors</label>
+		<description>A sponsored group of Dominion prospectors, looking to find business interests on the world for a share of the profit.</description>
+		<colorSpectrum>
+            <li>(0, 0.737, 0.847)</li>
+		</colorSpectrum>
+		<isPlayer>true</isPlayer>
+		<basicMemberKind>EOTF_Player</basicMemberKind>
+		<pawnSingular>offworlder</pawnSingular>
+		<pawnsPlural>offworlders</pawnsPlural>
+		<techLevel>Spacer</techLevel>
+		<allowedCultures>
+			<li>Astropolitan</li>
+		</allowedCultures>
+		<factionNameMaker>EOTF_Faction_Civil</factionNameMaker>
+		<settlementNameMaker>EOTF_Settlement_Civil</settlementNameMaker>
+		<backstoryFilters>
+		  <li>
+			<categories>
+			    <li>Outlander</li>
+ 				<li>Pirate</li>
+			</categories>
+		  </li>
+		</backstoryFilters>
+		<apparelStuffFilter>
+			<thingDefs>
+				<li>Synthread</li>
+			</thingDefs>
+		</apparelStuffFilter>
+		<factionIconPath>UI/FactionIcons/OffworlderPlayerOutpostIII</factionIconPath>
+		<startingResearchTags>
+			<li>ClassicStart</li>
+		</startingResearchTags>
+		<startingTechprintsResearchTags>
+			<li>ClassicStart</li>
+			<li>ClassicStartTechprints</li>
+		</startingTechprintsResearchTags>
+	</FactionDef>
+
+</Defs>

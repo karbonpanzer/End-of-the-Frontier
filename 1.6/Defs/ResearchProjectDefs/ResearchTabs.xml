@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+	<ResearchTabDef>
+		<defName>EOTF_ResearchTab</defName>
+		<label>End of the Frontier</label>
+	</ResearchTabDef>
+</Defs>

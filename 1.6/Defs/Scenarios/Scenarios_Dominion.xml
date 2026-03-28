@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<ScenarioDef ParentName="ScenarioBase">
+		<defName>EOTF_Prospectors</defName>
+		<label>Dominion Prospectors</label>
+		<description>After years in cryptosleep, you have arrived to the Rimworld. You spend a pretty penny for a role in a prospecting mission. You are out of the company cities and are now free to make your own opportunities, at a quarter of a share of course.</description>
+
+		<scenario>
+			<name>Dominion Prospectors</name>
+			<summary>A group of prospectors, sent to survey for a larger empire.</summary>
+			<description>After years in cryptosleep, you have arrived to the Rimworld. You spend a pretty penny for a role in a prospecting mission. You are out of the company cities and are now free to make your own opportunities, at a quarter of a share of course.</description>
+			<playerFaction>
+				<def>PlayerFaction</def>
+				<factionDef>EOTF_Player</factionDef>
+			</playerFaction>
+
+			<parts>
+				<li Class="ScenPart_GameStartDialog">
+					<def>GameStartDialog</def>
+					<text>"You emerged from your pod and examined your surroundings. A new world lies before you where opportunity is at every corner.\n\nFree from the oversight patrols and the synergy compliance squads. You now have the means to make a fortune eventually. It is unlikely for the mission sponsor to come and collect your gains, so live to the fullest.\n\nThey did cheap out on the materials so it might be hard to get the profits rolling in."</text>
+					<closeSound>GameStartSting</closeSound>
+				</li>
+
+				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
+					<def>ConfigPage_ConfigureStartingPawns</def>
+					<pawnCount>5</pawnCount>
+					<pawnChoiceCount>8</pawnChoiceCount>
+				</li>
+
+				<li Class="ScenPart_PlayerPawnsArriveMethod">
+					<def>PlayerPawnsArriveMethod</def>
+					<method>DropPods</method>
+					<visible>false</visible>
+				</li>
+
+				<li Class="ScenPart_ForcedHediff">
+					<def>ForcedHediff</def>
+					<visible>false</visible>
+					<context>PlayerStarter</context>
+					<chance>0.5</chance>
+					<hediff>CryptosleepSickness</hediff>
+					<hideOffMap>true</hideOffMap>
+					<severityRange>1~1</severityRange>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EOTF_SuperShotgun</thingDef>
+					<quality>Normal</quality>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EOTF_ServiceRifle</thingDef>
+					<count>2</count>
+					<quality>Normal</quality>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EOTF_Bayonet</thingDef>
+					<count>2</count>
+					<stuff>Steel</stuff>
+					<quality>Normal</quality>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EOTF_CarapaceArmor</thingDef>
+					<count>3</count>
+					<stuff>Steel</stuff>
+					<quality>Normal</quality>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EOTF_CarapaceHelmet</thingDef>
+					<count>3</count>
+					<stuff>Steel</stuff>
+					<quality>Normal</quality>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Silver</thingDef>
+					<count>400</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>150</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>ComponentIndustrial</thingDef>
+					<count>40</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>MedicineIndustrial</thingDef>
+					<count>60</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>Steel</thingDef>
+					<count>200</count>
+				</li>
+
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>
+
+				<li Class="ScenPart_StartingResearch">
+					<def>StartingResearch</def>
+					<project>EOTF_FrontierUniforms</project>
+				</li>
+			</parts>
+		</scenario>
+	</ScenarioDef>
+</Defs>

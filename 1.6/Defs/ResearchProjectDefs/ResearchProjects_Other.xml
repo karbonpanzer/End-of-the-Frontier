@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>EOTF_Decompilier</defName>
+		<label>Dominion Technical License</label>
+		<description>Build a decompilier to learn secrets from the Dominion.</description>
+		<baseCost>1000</baseCost>
+		<tab>EOTF_ResearchTab</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>MicroelectronicsBasics</li>
+		</prerequisites>
+		<researchViewX>3</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+	<ResearchProjectDef>
+		<defName>EOTF_Refining_Metal</defName>
+		<label>Metallic Molecular Reinforcement</label>
+		<description>Refine the rare compound dominium from steel and plasteel.</description>
+		<baseCost>3500</baseCost>
+		<tab>EOTF_ResearchTab</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>EOTF_Decompilier</li>
+		</prerequisites>
+		<requiredResearchFacilities>
+			<li>EOTF_Dominion_Decompiler</li>
+		</requiredResearchFacilities>
+		<researchViewX>4</researchViewX>
+		<researchViewY>1</researchViewY>
+	</ResearchProjectDef>
+
+</Defs>
