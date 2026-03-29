@@ -13,8 +13,8 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>Officer</leaderTitle>
-		<factionIconPath>UI/FactionIcons/OffworlderRoughOutpostIII</factionIconPath>
+		<leaderTitle>commander</leaderTitle>
+		<factionIconPath>UI/FactionIcons/DominionRoughOutpost</factionIconPath>
 		<factionNameMaker>EOTF_Faction_Rough</factionNameMaker>
 		<settlementNameMaker>EOTF_Settlement_Rough</settlementNameMaker>
 		<colorSpectrum>

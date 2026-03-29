@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+<!-- CIVIL FACTION NAMER -->
+  <!-- Specific entity — formal governmental designation style -->
+
+  <RulePackDef>
+    <defName>EOTF_Faction_Civil</defName>
+    <rulePack>
+    <rulesStrings>
+        <li>r_name->Dominion of [ofThing]</li>
+        <li>r_name->The Dominion of [ofThing]</li>
+        <li>r_name->The Frontier Dominion</li>
+        <li>r_name->The Colonial Dominion</li>
+        <li>r_name->The Chartered Dominion</li>
+        <li>r_name->The Outer Dominion</li>
+        <li>r_name->The Expeditionary Dominion</li>
+        <li>r_name->The [Color] Dominion</li>
+        <li>r_name->The [ordinal] Dominion</li>
+        <li>r_name->[ordinal] Dominion</li>
+
+        <li>ofThing->the Rim</li>
+        <li>ofThing->the Frontier</li>
+        <li>ofThing->the Outer Worlds</li>
+        <li>ofThing->the Charter</li>
+        <li>ofThing->Industry</li>
+        <li>ofThing->Capital</li>
+        <li>ofThing->the Reaches</li>
+        <li>ofThing->the Interior</li>
+        <li>ofThing->the Expanse</li>
+        <li>ofThing->Commerce</li>
+        <li>ofThing->Production</li>
+        <li>ofThing->the Board</li>
+        <li>ofThing->the Contract</li>
+        <li>ofThing->Progress</li>
+        <li>ofThing->Prosperity</li>
+        <li>ofThing->Eternity</li>
+        <li>ofThing->the Machine</li>
+
+        <li>ordinal->First</li>
+        <li>ordinal->Second</li>
+        <li>ordinal->Third</li>
+        <li>ordinal->New</li>
+        <li>ordinal->Old</li>
+        <li>ordinal->Greater</li>
+        <li>ordinal->Lesser</li>
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+<!-- ROUGH FACTION NAMER -->
+
+  <RulePackDef>
+    <defName>EOTF_Faction_Rough</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name->[NamePerson]'s [merc_noun]</li>
+        <li>r_name->[NamePerson] [merc_noun]</li>
+        <li>r_name->[inventor]'s [merc_noun]</li>
+        <li>r_name->[inventor] [merc_noun]</li>
+        <li>r_name->The [merc_adjective] [merc_noun]</li>
+        <li>r_name->The [ConceptBadass] [merc_noun]</li>
+        <li>r_name->The [topicalnoun] [merc_noun]</li>
+        <li>r_name->[topicalnoun] [merc_noun]</li>
+        <li>r_name->[ColorBadass] [topicalnoun] [merc_noun]</li>
+        <li>r_name->The [Weapon] [merc_noun]</li>
+        <li>r_name->The [AdjectiveBadass] [merc_noun]</li>
+        <li>r_name->The [AdjectiveBadass] [AnimalBadass]s</li>
+        <li>r_name->[NamePerson]'s [AnimalBadass]s</li>
+        <li>r_name->The [ColorBadass] [merc_noun]</li>
+
+        <li>merc_noun->Company</li>
+        <li>merc_noun->Outfit</li>
+        <li>merc_noun->Contract</li>
+        <li>merc_noun->Crew</li>
+        <li>merc_noun->Detail</li>
+        <li>merc_noun->Associates</li>
+        <li>merc_noun->Coalition</li>
+        <li>merc_noun->Concern</li>
+        <li>merc_noun->Syndicate</li>
+        <li>merc_noun->Brigade</li>
+        <li>merc_noun->Retinue</li>
+        <li>merc_noun->Contingent</li>
+        <li>merc_noun->Bureau</li>
+        <li>merc_noun->Agency</li>
+        <li>merc_noun->Works</li>
+
+        <li>merc_adjective->Iron</li>
+        <li>merc_adjective->Dead</li>
+        <li>merc_adjective->Slag</li>
+        <li>merc_adjective->Spent</li>
+        <li>merc_adjective->Hollow</li>
+        <li>merc_adjective->Bitter</li>
+        <li>merc_adjective->Grim</li>
+        <li>merc_adjective->Burnt</li>
+        <li>merc_adjective->Broken</li>
+        <li>merc_adjective->Crooked</li>
+        <li>merc_adjective->Gravel</li>
+        <li>merc_adjective->Rusted</li>
+        <li>merc_adjective->Cinder</li>
+        <li>merc_adjective->Ash</li>
+
+        <li>topicalnoun->Iron</li>
+        <li>topicalnoun->Coal</li>
+        <li>topicalnoun->Slag</li>
+        <li>topicalnoun->Coke</li>
+        <li>topicalnoun->Ore</li>
+        <li>topicalnoun->Copper</li>
+        <li>topicalnoun->Steel</li>
+        <li>topicalnoun->Ash</li>
+        <li>topicalnoun->Cinder</li>
+        <li>topicalnoun->Haul</li>
+        <li>topicalnoun->Wage</li>
+        <li>topicalnoun->Yield</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>inventor->Words/Nouns/PlaceInventor_Dominion</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

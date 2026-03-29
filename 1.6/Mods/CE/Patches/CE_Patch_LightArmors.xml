@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Light Carapace Armor Series - CE Patches -->
+
+	<!-- Carapace Armor (Standard) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]/statBases</xpath>
+		<value>
+			<Bulk>25</Bulk>
+			<WornBulk>5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>350</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]/statBases/Mass</xpath>
+		<value>
+			<Mass>8</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]/statBases</xpath>
+		<value>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>32</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryWeight>45</CarryWeight>
+				<CarryBulk>8</CarryBulk>
+				<MoveSpeed>-0.04</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Carapace Armor (Medic) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]/statBases</xpath>
+		<value>
+			<Bulk>25</Bulk>
+			<WornBulk>5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>350</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]/statBases/Mass</xpath>
+		<value>
+			<Mass>8</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]/statBases</xpath>
+		<value>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>32</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryWeight>45</CarryWeight>
+				<CarryBulk>8</CarryBulk>
+				<MoveSpeed>-0.04</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Medic"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Carapace Armor (Engineer) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]/statBases</xpath>
+		<value>
+			<Bulk>25</Bulk>
+			<WornBulk>5</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>350</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]/statBases/Mass</xpath>
+		<value>
+			<Mass>8</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]/statBases</xpath>
+		<value>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>15</ArmorRating_Sharp>
+			<ArmorRating_Blunt>32</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<CarryWeight>45</CarryWeight>
+				<CarryBulk>8</CarryBulk>
+				<MoveSpeed>-0.04</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]/apparel/bodyPartGroups</xpath>
+		<value>
+			<li>Hands</li>
+			<li>Feet</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceArmor_Engineer"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.55</ArmorRating_Sharp>
+						<parts>
+							<li>Neck</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.55</ArmorRating_Blunt>
+						<parts>
+							<li>Neck</li>
+							<li>Hand</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.80</ArmorRating_Sharp>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.80</ArmorRating_Blunt>
+						<parts>
+							<li>Leg</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Sharp>0.70</ArmorRating_Sharp>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.70</ArmorRating_Blunt>
+						<parts>
+							<li>Arm</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Carapace Helmets -->
+
+	<!-- Carapace Helmet (Standard) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<NightVisionEfficiency_Apparel>0.5</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>200</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]/statBases/Mass</xpath>
+		<value>
+			<Mass>2.5</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]/statBases</xpath>
+		<value>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>30</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<AimingAccuracy>0.10</AimingAccuracy>
+				<SmokeSensitivity>-1</SmokeSensitivity>
+				<MoveSpeed>-0.01</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]/apparel/layers</xpath>
+		<value>
+			<li>OnHead</li>
+			<li>StrappedHead</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Carapace Helmet (Medic) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<NightVisionEfficiency_Apparel>0.5</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>200</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]/statBases/Mass</xpath>
+		<value>
+			<Mass>2.5</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]/statBases</xpath>
+		<value>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>30</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<AimingAccuracy>0.10</AimingAccuracy>
+				<SmokeSensitivity>-1</SmokeSensitivity>
+				<MoveSpeed>-0.01</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]/apparel/layers</xpath>
+		<value>
+			<li>OnHead</li>
+			<li>StrappedHead</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Medic"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+	<!-- Carapace Helmet (Engineer) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>1</WornBulk>
+			<NightVisionEfficiency_Apparel>0.5</NightVisionEfficiency_Apparel>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]/statBases/MaxHitPoints</xpath>
+		<value>
+			<MaxHitPoints>200</MaxHitPoints>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]/statBases/Mass</xpath>
+		<value>
+			<Mass>2.5</Mass>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]/statBases</xpath>
+		<value>
+			<Flammability>0.3</Flammability>
+			<ArmorRating_Sharp>14</ArmorRating_Sharp>
+			<ArmorRating_Blunt>30</ArmorRating_Blunt>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]/equippedStatOffsets</xpath>
+		<value>
+			<equippedStatOffsets>
+				<AimingAccuracy>0.10</AimingAccuracy>
+				<SmokeSensitivity>-1</SmokeSensitivity>
+				<MoveSpeed>-0.01</MoveSpeed>
+			</equippedStatOffsets>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]/apparel/layers</xpath>
+		<value>
+			<li>OnHead</li>
+			<li>StrappedHead</li>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationAddModExtension">
+		<xpath>Defs/ThingDef[defName="EOTF_CarapaceHelmet_Engineer"]</xpath>
+		<value>
+			<li Class="CombatExtended.PartialArmorExt">
+				<stats>
+					<li>
+						<ArmorRating_Sharp>0.75</ArmorRating_Sharp>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+					<li>
+						<ArmorRating_Blunt>0.75</ArmorRating_Blunt>
+						<parts>
+							<li>Eye</li>
+							<li>Nose</li>
+						</parts>
+					</li>
+				</stats>
+			</li>
+		</value>
+	</Operation>
+
+</Patch>

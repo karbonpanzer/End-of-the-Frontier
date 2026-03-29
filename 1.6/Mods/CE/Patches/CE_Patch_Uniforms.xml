@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Patch>
+
+	<!-- Field Uniforms - Environmental Protection Clothing -->
+	<!-- Minimal armor, utility focused -->
+
+	<!-- Frontier Uniform (Torrid/Hell) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_Field_Uniform_Hell"]/statBases</xpath>
+		<value>
+			<Bulk>3</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_Field_Uniform_Hell"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Field Hat (Torrid/Hell) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_FieldHat_Hell"]/statBases</xpath>
+		<value>
+			<Bulk>1</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_FieldHat_Hell"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Frontier Uniform (Frost/Ice) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_Field_Uniform_Ice"]/statBases</xpath>
+		<value>
+			<Bulk>4</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_Field_Uniform_Ice"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Field Hat (Frost/Ice) -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_FieldHat_Ice"]/statBases</xpath>
+		<value>
+			<Bulk>1</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_FieldHat_Ice"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Standard Field Uniform -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_Field_Uniform"]/statBases</xpath>
+		<value>
+			<Bulk>3</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_Field_Uniform"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Standard Field Hat -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_FieldHat"]/statBases</xpath>
+		<value>
+			<Bulk>1</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_FieldHat"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.5</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Dress Uniform -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_DressUniform"]/statBases</xpath>
+		<value>
+			<Bulk>2</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_DressUniform"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+	<!-- Dress Cap -->
+	
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/ThingDef[defName="EOTF_DressCap"]/statBases</xpath>
+		<value>
+			<Bulk>0.5</Bulk>
+			<WornBulk>0</WornBulk>
+		</value>
+	</Operation>
+
+	<Operation Class="PatchOperationReplace">
+		<xpath>Defs/ThingDef[defName="EOTF_DressCap"]/statBases/StuffEffectMultiplierArmor</xpath>
+		<value>
+			<StuffEffectMultiplierArmor>0.3</StuffEffectMultiplierArmor>
+		</value>
+	</Operation>
+
+</Patch>

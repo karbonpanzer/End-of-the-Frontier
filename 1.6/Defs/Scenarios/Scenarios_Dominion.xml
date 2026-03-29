@@ -68,7 +68,6 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>EOTF_CarapaceArmor</thingDef>
 					<count>3</count>
-					<stuff>Steel</stuff>
 					<quality>Normal</quality>
 				</li>
 
@@ -76,7 +75,6 @@
 					<def>StartingThing_Defined</def>
 					<thingDef>EOTF_CarapaceHelmet</thingDef>
 					<count>3</count>
-					<stuff>Steel</stuff>
 					<quality>Normal</quality>
 				</li>
 

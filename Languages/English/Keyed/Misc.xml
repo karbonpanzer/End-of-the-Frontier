@@ -2,26 +2,26 @@
 <LanguageData>
 
   <!-- Gizmo -->
-  <BNF_StyleDecalsGizmo>Customize Decal</BNF_StyleDecalsGizmo>
-  <BNF_StyleDecalsDesc>Edit the decal and color applied to this pawn's apparel.</BNF_StyleDecalsDesc>
-  <BNF_StyleDecalsTitle>Edit Decal - {0}</BNF_StyleDecalsTitle>
+  <EOTF_StyleDecalsGizmo>Customize Decal</EOTF_StyleDecalsGizmo>
+  <EOTF_StyleDecalsDesc>Edit the decal and color applied to this pawn's apparel.</EOTF_StyleDecalsDesc>
+  <EOTF_StyleDecalsTitle>Edit Decal - {0}</EOTF_StyleDecalsTitle>
 
   <!-- Sections -->
-  <BNF_Decals_Symbol>Decal</BNF_Decals_Symbol>
-  <BNF_Decals_Color>Color</BNF_Decals_Color>
+  <EOTF_Decals_Symbol>Decal</EOTF_Decals_Symbol>
+  <EOTF_Decals_Color>Color</EOTF_Decals_Color>
 
   <!-- Symbol -->
-  <BNF_Decals_RandomSymbol>Random Symbol</BNF_Decals_RandomSymbol>
-  <BNF_Decals_NoSymbolsFound>No symbols found.</BNF_Decals_NoSymbolsFound>
-  <BNF_Decals_NoSelection>No selection</BNF_Decals_NoSelection>
+  <EOTF_Decals_RandomSymbol>Random Symbol</EOTF_Decals_RandomSymbol>
+  <EOTF_Decals_NoSymbolsFound>No symbols found.</EOTF_Decals_NoSymbolsFound>
+  <EOTF_Decals_NoSelection>No selection</EOTF_Decals_NoSelection>
 
   <!-- Color -->
-  <BNF_Decals_SetIdeoColor>Set Ideology Color</BNF_Decals_SetIdeoColor>
-  <BNF_Decals_SetFavoriteColor>Set Favorite Color</BNF_Decals_SetFavoriteColor>
-  <BNF_Decals_RandomColor>Random Color</BNF_Decals_RandomColor>
+  <EOTF_Decals_SetIdeoColor>Set Ideology Color</EOTF_Decals_SetIdeoColor>
+  <EOTF_Decals_SetFavoriteColor>Set Favorite Color</EOTF_Decals_SetFavoriteColor>
+  <EOTF_Decals_RandomColor>Random Color</EOTF_Decals_RandomColor>
 
   <!-- Buttons -->
-  <BNF_Decals_Reset>Reset</BNF_Decals_Reset>
-  <BNF_Decals_Apply>Apply</BNF_Decals_Apply>
+  <EOTF_Decals_Reset>Reset</EOTF_Decals_Reset>
+  <EOTF_Decals_Apply>Apply</EOTF_Decals_Apply>
 
 </LanguageData>

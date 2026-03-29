@@ -30,7 +30,7 @@
 				<li>Synthread</li>
 			</thingDefs>
 		</apparelStuffFilter>
-		<factionIconPath>UI/FactionIcons/OffworlderPlayerOutpostIII</factionIconPath>
+		<factionIconPath>UI/FactionIcons/DominionPlayerOutpost</factionIconPath>
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>

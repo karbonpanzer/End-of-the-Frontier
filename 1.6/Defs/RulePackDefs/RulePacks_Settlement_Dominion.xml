@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <RulePackDef>
+    <defName>EOTF_Settlement_Civil</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <li>r_name->[townname_wordgen]</li>
+        <li>r_name->[fixed]</li>
+        <li>r_name->[townname_combo]</li>
+        <li>r_name->[townname_inventor]</li>
+        <li>r_name->[townname_near]</li>
+
+        <li>topicalnoun->[first]</li>
+        <li>topicalnoun->Iron</li>
+        <li>topicalnoun->Coal</li>
+        <li>topicalnoun->Slag</li>
+        <li>topicalnoun->Coke</li>
+        <li>topicalnoun->Ore</li>
+        <li>topicalnoun->Copper</li>
+        <li>topicalnoun->Steel</li>
+        <li>topicalnoun->Ash</li>
+        <li>topicalnoun->Furnace</li>
+        <li>topicalnoun->Shaft</li>
+        <li>topicalnoun->Seam</li>
+        <li>topicalnoun->Claim</li>
+        <li>topicalnoun->Draft</li>
+        <li>topicalnoun->Cinder</li>
+        <li>topicalnoun->Toll</li>
+        <li>topicalnoun->Shift</li>
+        <li>topicalnoun->Wage</li>
+        <li>topicalnoun->Haul</li>
+        <li>topicalnoun->Yield</li>
+
+        <li>townname_combo->[topicalnoun] [TerrainFeature]</li>
+        <li>townname_combo->[topicalnoun] [Community]</li>
+        <li>townname_combo->[topicalnoun]'s [TerrainFeature]</li>
+        <li>townname_combo->[topicalnoun]'s [Community]</li>
+        <li>townname_combo(p=2)->[prefix] [topicalnoun] [TerrainFeature]</li>
+        <li>townname_combo(p=2)->[prefix] [topicalnoun] [Community]</li>
+
+        <li>townname_near->[nearnameinitial]-at-the-[TerrainFeature]</li>
+        <li>townname_near->[nearnameinitial]-by-the-[TerrainFeature]</li>
+        <li>townname_near->[nearnameinitial]-on-the-[TerrainFeature]</li>
+        <li>nearnameinitial->[townname_wordgen]</li>
+        <li>nearnameinitial->[topicalnoun]</li>
+        <li>nearnameinitial->[inventor]</li>
+
+        <li>townname_inventor->[inventor] [TerrainFeature]</li>
+        <li>townname_inventor->[inventor]'s [TerrainFeature]</li>
+        <li>townname_inventor->[inventor] [Community]</li>
+        <li>townname_inventor->[inventor]'s [Community]</li>
+
+        <li>townname_wordgen(p=2)->[first] [TerrainFeature]</li>
+        <li>townname_wordgen(p=2)->[prefix] [first] [TerrainFeature]</li>
+        <li>townname_wordgen(p=2)->[first][townend]</li>
+        <li>townname_wordgen(p=2)->[topicalnoun][townend]</li>
+        <li>townname_wordgen->[TerrainFeature][townend]</li>
+
+        <li>townend->ville</li>
+        <li>townend->town</li>
+        <li>townend->dale</li>
+        <li>townend->wick</li>
+        <li>townend->ton</li>
+        <li>townend->ston</li>
+        <li>townend->den</li>
+        <li>townend->wood</li>
+        <li>townend->land</li>
+        <li>townend->worth</li>
+        <li>townend->well</li>
+        <li>townend->more</li>
+        <li>townend->burn</li>
+        <li>townend->ford</li>
+        <li>townend->field</li>
+        <li>townend->side</li>
+        <li>townend->hurst</li>
+        <li>townend->burg</li>
+        <li>townend->port</li>
+        <li>townend->works</li>
+
+        <li>prefix->New</li>
+        <li>prefix->Old</li>
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>first->Words/Nouns/PlaceFirst_Dominion</li>
+        <li>fixed->Words/Nouns/PlaceFixed_Dominion</li>
+        <li>inventor->Words/Nouns/PlaceInventor_Dominion</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ROUGH SETTLEMENT NAMER -->
+
+  <RulePackDef>
+    <defName>EOTF_Settlement_Rough</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <li>r_name->[townname_combo]</li>
+        <li>r_name->[townname_wordgen]</li>
+
+        <li>townname_combo->[AnimalBadass] [geography]</li>
+        <li>townname_combo->[AnimalBadass]'s [geography]</li>
+        <li>townname_combo->[ConceptBadass] [geography]</li>
+        <li>townname_combo->[ConceptBadass]'s [geography]</li>
+        <li>townname_combo->[PersonBadass] [geography]</li>
+        <li>townname_combo->[PersonBadass]'s [geography]</li>
+        <li>townname_combo->[Enemy]'s [geography]</li>
+        <li>townname_combo->[Enemy] [geography]</li>
+        <li>townname_combo->[Weapon]'s [geography]</li>
+        <li>townname_combo->[Weapon] [geography]</li>
+        <li>townname_combo->[ColorBadass] [geography]</li>
+
+        <li>townname_combo->[topicalnoun] [geography]</li>
+        <li>townname_combo->[topicalnoun]'s [geography]</li>
+
+        <li>townname_combo->[inventor]'s [geography]</li>
+        <li>townname_combo->[inventor] [geography]</li>
+
+        <li>geography(p=2)->[TerrainFeature]</li>
+        <li>geography->[Community]</li>
+
+        <li>topicalnoun->Iron</li>
+        <li>topicalnoun->Coal</li>
+        <li>topicalnoun->Slag</li>
+        <li>topicalnoun->Coke</li>
+        <li>topicalnoun->Ore</li>
+        <li>topicalnoun->Copper</li>
+        <li>topicalnoun->Steel</li>
+        <li>topicalnoun->Ash</li>
+        <li>topicalnoun->Cinder</li>
+        <li>topicalnoun->Haul</li>
+        <li>topicalnoun->Wage</li>
+        <li>topicalnoun->Yield</li>
+
+        <li>townname_wordgen(p=2)->[SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][townendevil]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][townendevil]</li>
+
+        <li>townendevil->vast</li>
+        <li>townendevil->varg</li>
+        <li>townendevil->vix</li>
+        <li>townendevil->tor</li>
+        <li>townendevil->tear</li>
+        <li>townendevil->cut</li>
+        <li>townendevil->lop</li>
+        <li>townendevil->oze</li>
+        <li>townendevil->ozzle</li>
+        <li>townendevil->latch</li>
+        <li>townendevil->lock</li>
+        <li>townendevil->burn</li>
+        <li>townendevil->sear</li>
+        <li>townendevil->shank</li>
+        <li>townendevil->hurt</li>
+        <li>townendevil->vash</li>
+        <li>townendevil->warg</li>
+        <li>townendevil->wug</li>
+        <li>townendevil->thot</li>
+        <li>townendevil->thard</li>
+        <li>townendevil->thad</li>
+
+      </rulesStrings>
+      <rulesFiles>
+        <li>inventor->Words/Nouns/PlaceInventor_Dominion</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>  
+</Defs>

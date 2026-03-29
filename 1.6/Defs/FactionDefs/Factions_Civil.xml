@@ -14,7 +14,7 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>governor</leaderTitle>
-		<factionIconPath>UI/FactionIcons/OffworlderCivilOutpostIII</factionIconPath>
+		<factionIconPath>UI/FactionIcons/DominionCivilOutpost</factionIconPath>
 		<factionNameMaker>EOTF_Faction_Civil</factionNameMaker>
 		<settlementNameMaker>EOTF_Settlement_Civil</settlementNameMaker>
 		<colorSpectrum>
