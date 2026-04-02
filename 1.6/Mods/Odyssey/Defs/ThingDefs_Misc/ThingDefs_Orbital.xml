@@ -19,31 +19,31 @@
 				<shaderType>CutoutComplex</shaderType>
 			</graphicData>
 			<statBases>
-				<WorkToMake>7000</WorkToMake>
-				<MaxHitPoints>60</MaxHitPoints>
+				<WorkToMake>15750</WorkToMake>
+				<MaxHitPoints>120</MaxHitPoints>
 				<Mass>1</Mass>
-				<StuffEffectMultiplierArmor>1.10</StuffEffectMultiplierArmor>
-				<StuffEffectMultiplierInsulation_Cold>6</StuffEffectMultiplierInsulation_Cold>
-				<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>				
-				<EquipDelay>5</EquipDelay>
+				<Flammability>0.4</Flammability>
+				<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.46</ArmorRating_Heat>
+				<Insulation_Cold>4</Insulation_Cold>
+				<Insulation_Heat>2</Insulation_Heat>
+				<EquipDelay>2</EquipDelay>
 			</statBases>
+			<thingCategories>
+				<li>EOTF_Helmets</li>
+			</thingCategories>
+			<costList>
+				<Cloth>10</Cloth>
+				<Steel>25</Steel>
+				<Plasteel>20</Plasteel>
+				<ComponentIndustrial>2</ComponentIndustrial>
+			</costList>
 			<equippedStatOffsets>
 				<MoveSpeed>-0.01</MoveSpeed>
 				<ToxicEnvironmentResistance>0.8</ToxicEnvironmentResistance>
 				<VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>				
 			</equippedStatOffsets>
-			<costList>
-				<Cloth>10</Cloth>
-				<Plasteel>5</Plasteel>
-				<ComponentIndustrial>2</ComponentIndustrial>
-			</costList>
-			<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
-			<costStuffCount>45</costStuffCount>
-			<thingCategories>
-				<li>EOTF_Helmets</li>
-			</thingCategories>
 			<apparel>
 			  <countsAsClothingForNudity>false</countsAsClothingForNudity>
 			  <immuneToToxGasExposure>true</immuneToToxGasExposure>
@@ -99,23 +99,27 @@
 				<shaderType>CutoutComplex</shaderType>
 				<drawSize>0.8</drawSize>
 			</graphicData>
-			<costStuffCount>150</costStuffCount>
-			<stuffCategories>
-				<li>Metallic</li>
-			</stuffCategories>
-			<thingCategories Inherit="False">
+			<statBases>
+				<WorkToMake>60000</WorkToMake>
+				<MarketValue>550</MarketValue>
+				<MaxHitPoints>300</MaxHitPoints>
+				<Mass>7</Mass>
+				<Flammability>0.4</Flammability>
+				<ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+				<ArmorRating_Blunt>0.40</ArmorRating_Blunt>
+				<ArmorRating_Heat>0.54</ArmorRating_Heat>
+				<Insulation_Cold>34</Insulation_Cold>
+				<Insulation_Heat>10</Insulation_Heat>
+				<EquipDelay>5</EquipDelay>
+			</statBases>
+			<thingCategories>
 				<li>EOTF_Armor</li>
 			</thingCategories>
-			<statBases>
-				<MaxHitPoints>200</MaxHitPoints>
-				<WorkToMake>7200</WorkToMake>
-				<Mass>7</Mass>
-				<StuffEffectMultiplierArmor>1.10</StuffEffectMultiplierArmor>
-				<StuffEffectMultiplierInsulation_Cold>6</StuffEffectMultiplierInsulation_Cold>
-				<StuffEffectMultiplierInsulation_Heat>2</StuffEffectMultiplierInsulation_Heat>
-				<EquipDelay>2</EquipDelay>
-				<JumpRange>11.9</JumpRange>
-			</statBases>
+			<costList>
+				<Steel>60</Steel>
+				<Plasteel>40</Plasteel>
+				<ComponentIndustrial>3</ComponentIndustrial>
+			</costList>
 			<equippedStatOffsets>
 				<PainShockThreshold>0.10</PainShockThreshold>
 		        <MoveSpeed>-1.25</MoveSpeed>
@@ -138,39 +142,37 @@
 				<defaultOutfitTags>
 					<li>Spacefarer</li>
 				</defaultOutfitTags>
+				<renderNodeProperties>
+					<li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
+					<nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
+					<workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
+					<parentTagDef>ApparelHead</parentTagDef>
+					<baseLayer>55</baseLayer>
+					<visibleFacing>
+						<li>South</li>
+						<li>North</li>
+					</visibleFacing>
+					<drawData>
+						<scale>0.100</scale>
+						<defaultData>
+						<layer>75</layer>
+						<offset>(0,0,0.17)</offset>
+						<flip>true</flip>
+						</defaultData>
+					</drawData>
+					</li>
+				</renderNodeProperties>      
 			</apparel>
 			<comps>
-				<li Class="CompProperties_ApparelReloadable">
-					<maxCharges>5</maxCharges>
-					<ammoDef>Chemfuel</ammoDef>
-					<ammoCountPerCharge>20</ammoCountPerCharge>
-					<baseReloadTicks>60</baseReloadTicks>
-					<soundReload>Standard_Reload</soundReload>
-					<hotKey>Misc4</hotKey>
-					<chargeNoun>jump</chargeNoun>
-					<displayGizmoWhileUndrafted>false</displayGizmoWhileUndrafted>
-				</li>
+				<li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
 			</comps>
-			<verbs>
-				<li>
-					<verbClass>Verb_Jump</verbClass>
-					<label>jump</label>
-					<commandIcon>Things/Pawn/Humanlike/Apparel/JumpPack/JumpPack</commandIcon>
-					<violent>false</violent>
-					<hasStandardCommand>true</hasStandardCommand>
-					<onlyManualCast>True</onlyManualCast>
-					<forceNormalTimeSpeed>false</forceNormalTimeSpeed>
-					<warmupTime>0.5</warmupTime>
-					<warmupEffecter>JumpWarmupEffect</warmupEffecter>
-					<flightEffecterDef>JumpFlightEffect</flightEffecterDef>
-					<requireLineOfSight>true</requireLineOfSight>
-					<targetParams>
-						<canTargetLocations>true</canTargetLocations>
-						<canTargetPawns>false</canTargetPawns>
-						<canTargetBuildings>false</canTargetBuildings>
-					</targetParams>
-				</li>
-			</verbs>
-			<colorGenerator Class="ColorGenerator_StandardApparel" />	
+			<colorGenerator Class="ColorGenerator_Options">
+				<options>
+					<li>
+					<weight>10</weight>
+					<only>(0.65,0.65,0.65)</only>
+					</li>
+				</options>
+			</colorGenerator>	
 		</ThingDef>	  
 </Defs>

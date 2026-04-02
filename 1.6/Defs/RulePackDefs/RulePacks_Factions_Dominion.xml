@@ -1,8 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-<!-- CIVIL FACTION NAMER -->
-  <!-- Specific entity — formal governmental designation style -->
+  <!-- CIVIL PLayer NAMER -->
+
+  <RulePackDef>
+    <defName>EOTF_Faction_Player</defName>
+    <rulePack>
+      <rulesStrings>
+
+        <!-- [adjective] [colony noun] -->
+        <li>r_name->The [colony_adjective] [colony_noun]</li>
+        <li>r_name->[colony_adjective] [colony_noun]</li>
+
+        <!-- [adjective] [colony noun] of [place] -->
+        <li>r_name->The [colony_adjective] [colony_noun] of [PlaceOutlander]</li>
+        <li>r_name->[colony_adjective] [colony_noun] of [PlaceOutlander]</li>
+
+        <!-- [colony noun] of [place] -->
+        <li>r_name->The [colony_noun] of [PlaceOutlander]</li>
+
+        <!-- Colony nouns -->
+        <li>colony_noun->Colonies</li>
+        <li>colony_noun->Territories</li>
+        <li>colony_noun->Settlements</li>
+        <li>colony_noun->Outposts</li>
+        <li>colony_noun->Holdings</li>
+        <li>colony_noun->Reaches</li>
+        <li>colony_noun->Commons</li>
+        <li>colony_noun->Grounds</li>
+        <li>colony_noun->Claims</li>
+        <li>colony_noun->Frontier</li>
+
+        <!-- Colony adjectives -->
+        <li>colony_adjective->United</li>
+        <li>colony_adjective->Free</li>
+        <li>colony_adjective->Independent</li>
+        <li>colony_adjective->Sovereign</li>
+        <li>colony_adjective->Allied</li>
+        <li>colony_adjective->Unified</li>
+        <li>colony_adjective->Common</li>
+        <li>colony_adjective->Outer</li>
+        <li>colony_adjective->Rimward</li>
+        <li>colony_adjective->Far</li>
+        <li>colony_adjective->New</li>
+        <li>colony_adjective->Open</li>
+
+      </rulesStrings>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- CIVIL FACTION NAMER -->
 
   <RulePackDef>
     <defName>EOTF_Faction_Civil</defName>
@@ -48,70 +95,81 @@
     </rulePack>
   </RulePackDef>
 
-<!-- ROUGH FACTION NAMER -->
+  <!-- ROUGH FACTION NAMER -->
 
   <RulePackDef>
     <defName>EOTF_Faction_Rough</defName>
     <rulePack>
       <rulesStrings>
-        <li>r_name->[NamePerson]'s [merc_noun]</li>
-        <li>r_name->[NamePerson] [merc_noun]</li>
-        <li>r_name->[inventor]'s [merc_noun]</li>
-        <li>r_name->[inventor] [merc_noun]</li>
-        <li>r_name->The [merc_adjective] [merc_noun]</li>
-        <li>r_name->The [ConceptBadass] [merc_noun]</li>
-        <li>r_name->The [topicalnoun] [merc_noun]</li>
-        <li>r_name->[topicalnoun] [merc_noun]</li>
-        <li>r_name->[ColorBadass] [topicalnoun] [merc_noun]</li>
-        <li>r_name->The [Weapon] [merc_noun]</li>
-        <li>r_name->The [AdjectiveBadass] [merc_noun]</li>
-        <li>r_name->The [AdjectiveBadass] [AnimalBadass]s</li>
+ 
+        <li>r_name->[NamePerson]'s [merc_descriptor]</li>
+        <li>r_name->[inventor]'s [merc_descriptor]</li>
         <li>r_name->[NamePerson]'s [AnimalBadass]s</li>
-        <li>r_name->The [ColorBadass] [merc_noun]</li>
-
-        <li>merc_noun->Company</li>
-        <li>merc_noun->Outfit</li>
-        <li>merc_noun->Contract</li>
-        <li>merc_noun->Crew</li>
-        <li>merc_noun->Detail</li>
-        <li>merc_noun->Associates</li>
-        <li>merc_noun->Coalition</li>
-        <li>merc_noun->Concern</li>
-        <li>merc_noun->Syndicate</li>
-        <li>merc_noun->Brigade</li>
-        <li>merc_noun->Retinue</li>
-        <li>merc_noun->Contingent</li>
-        <li>merc_noun->Bureau</li>
-        <li>merc_noun->Agency</li>
-        <li>merc_noun->Works</li>
-
+        <li>r_name->[inventor]'s [AnimalBadass]s</li>
+        <li>r_name->The [merc_adjective] [merc_unit]</li>
+        <li>r_name->The [ColorBadass] [merc_unit]</li>
+        <li>r_name->The [AdjectiveBadass] [merc_unit]</li>
+        <li>r_name->The [ConceptBadass] [merc_unit]</li>
+        <li>r_name->The [safe_topic] [merc_unit]</li>
+        <li>r_name->[merc_adjective] [merc_descriptor]</li>
+        <li>r_name->[safe_topic] [merc_descriptor]</li>
+        <li>r_name->[NamePerson] [merc_unit]</li>
+        <li>r_name->[inventor] [merc_unit]</li>
+        <li>r_name->The [AdjectiveBadass] [AnimalBadass]s</li>
+        <li>r_name->The [Weapon] [merc_descriptor]</li>
+ 
+        <li>merc_unit->Company</li>
+        <li>merc_unit->Corps</li>
+        <li>merc_unit->Legion</li>
+        <li>merc_unit->Regiment</li>
+        <li>merc_unit->Brigade</li>
+        <li>merc_unit->Battalion</li>
+        <li>merc_unit->Detachment</li>
+        <li>merc_unit->Outfit</li>
+        <li>merc_unit->Troop</li>
+        <li>merc_unit->Contingent</li>
+ 
+        <li>merc_descriptor->Marauders</li>
+        <li>merc_descriptor->Raiders</li>
+        <li>merc_descriptor->Roughnecks</li>
+        <li>merc_descriptor->Irregulars</li>
+        <li>merc_descriptor->Contractors</li>
+        <li>merc_descriptor->Operators</li>
+        <li>merc_descriptor->Dogs</li>
+        <li>merc_descriptor->Wolves</li>
+        <li>merc_descriptor->Guns</li>
+        <li>merc_descriptor->Blades</li>
+        <li>merc_descriptor->Hands</li>
+        <li>merc_descriptor->Cutters</li>
+        <li>merc_descriptor->Breakers</li>
+        <li>merc_descriptor->Wreckers</li>
+        <li>merc_descriptor->Runners</li>
+        <li>merc_descriptor->Strikers</li>
+        <li>merc_descriptor->Enforcers</li>
+        <li>merc_descriptor->Auxiliaries</li>
+ 
         <li>merc_adjective->Iron</li>
+        <li>merc_adjective->Black</li>
         <li>merc_adjective->Dead</li>
-        <li>merc_adjective->Slag</li>
-        <li>merc_adjective->Spent</li>
         <li>merc_adjective->Hollow</li>
         <li>merc_adjective->Bitter</li>
         <li>merc_adjective->Grim</li>
         <li>merc_adjective->Burnt</li>
         <li>merc_adjective->Broken</li>
         <li>merc_adjective->Crooked</li>
-        <li>merc_adjective->Gravel</li>
         <li>merc_adjective->Rusted</li>
-        <li>merc_adjective->Cinder</li>
         <li>merc_adjective->Ash</li>
-
-        <li>topicalnoun->Iron</li>
-        <li>topicalnoun->Coal</li>
-        <li>topicalnoun->Slag</li>
-        <li>topicalnoun->Coke</li>
-        <li>topicalnoun->Ore</li>
-        <li>topicalnoun->Copper</li>
-        <li>topicalnoun->Steel</li>
-        <li>topicalnoun->Ash</li>
-        <li>topicalnoun->Cinder</li>
-        <li>topicalnoun->Haul</li>
-        <li>topicalnoun->Wage</li>
-        <li>topicalnoun->Yield</li>
+        <li>merc_adjective->Spent</li>
+        <li>merc_adjective->Grey</li>
+        <li>merc_adjective->Scarred</li>
+ 
+        <li>safe_topic->Iron</li>
+        <li>safe_topic->Steel</li>
+        <li>safe_topic->Copper</li>
+        <li>safe_topic->Ash</li>
+        <li>safe_topic->Cinder</li>
+        <li>safe_topic->Coal</li>
+ 
       </rulesStrings>
       <rulesFiles>
         <li>inventor->Words/Nouns/PlaceInventor_Dominion</li>

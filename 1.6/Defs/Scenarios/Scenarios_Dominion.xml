@@ -6,9 +6,7 @@
 		<description>After years in cryptosleep, you have arrived to the Rimworld. You spend a pretty penny for a role in a prospecting mission. You are out of the company cities and are now free to make your own opportunities, at a quarter of a share of course.</description>
 
 		<scenario>
-			<name>Dominion Prospectors</name>
 			<summary>A group of prospectors, sent to survey for a larger empire.</summary>
-			<description>After years in cryptosleep, you have arrived to the Rimworld. You spend a pretty penny for a role in a prospecting mission. You are out of the company cities and are now free to make your own opportunities, at a quarter of a share of course.</description>
 			<playerFaction>
 				<def>PlayerFaction</def>
 				<factionDef>EOTF_Player</factionDef>
@@ -117,6 +115,36 @@
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>EOTF_FrontierUniforms</project>
+				</li>
+
+				 <!-- Scatter some things near player start -->
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>Steel</thingDef>
+					<count>450</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsNearPlayerStart">
+					<def>ScatterThingsNearPlayerStart</def>
+					<thingDef>WoodLog</thingDef>
+					<count>300</count>
+				</li>      
+
+				<!-- Scatter some things anywhere -->
+				<li Class="ScenPart_ScatterThingsAnywhere">
+				<def>ScatterThingsAnywhere</def>
+					<thingDef>ShipChunk</thingDef>
+					<allowRoofed>false</allowRoofed>
+					<count>3</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>Steel</thingDef>
+					<count>720</count>
+				</li>
+				<li Class="ScenPart_ScatterThingsAnywhere">
+					<def>ScatterThingsAnywhere</def>
+					<thingDef>MealSurvivalPack</thingDef>
+					<count>7</count>
 				</li>
 			</parts>
 		</scenario>

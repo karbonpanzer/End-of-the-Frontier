@@ -1277,7 +1277,26 @@
     </PawnKindDef>
 
     <PawnKindDef ParentName="EOTF_Civil_SpecialWeaponsTier">
-        <defName>EOTF_Civil_Grenadier</defName>
+        <defName>EOTF_Civil_GrenadierFrag</defName>
+        <label>grenadier</label>
+        <labelPlural>grenadiers</labelPlural>
+        <combatPower>145</combatPower>
+        <apparelTags>
+            <li>EOTF_Uniform</li>
+        </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GrenadeDestructive</li>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>EOTF_CarapaceArmor</li>
+            <li>EOTF_CarapaceHelmet</li>   
+            <li>EOTF_Webbing_GrenadierFrag</li>        
+		</apparelRequired>
+    </PawnKindDef>
+
+    <PawnKindDef ParentName="EOTF_Civil_SpecialWeaponsTier">
+        <defName>EOTF_Civil_GrenadierFire</defName>
         <label>grenadier</label>
         <labelPlural>grenadiers</labelPlural>
         <combatPower>145</combatPower>
@@ -1291,9 +1310,47 @@
         <apparelRequired>
             <li>EOTF_CarapaceArmor</li>
             <li>EOTF_CarapaceHelmet</li>
-        			<li>EOTF_Webbing_Grenadier</li>
+            <li>EOTF_Webbing_GrenadierFire</li>           
 		</apparelRequired>
     </PawnKindDef>
+    
+    <PawnKindDef ParentName="EOTF_Civil_SpecialWeaponsTier">
+        <defName>EOTF_Civil_GrenadierEMP</defName>
+        <label>grenadier</label>
+        <labelPlural>grenadiers</labelPlural>
+        <combatPower>145</combatPower>
+        <apparelTags>
+            <li>EOTF_Uniform</li>
+        </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GrenadeDestructive</li>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>EOTF_CarapaceArmor</li>
+            <li>EOTF_CarapaceHelmet</li>
+            <li>EOTF_Webbing_GrenadierEMP</li>         
+		</apparelRequired>
+    </PawnKindDef>   
+
+    <PawnKindDef ParentName="EOTF_Civil_SpecialWeaponsTier" MayRequire="Ludeon.RimWorld.Biotech">
+        <defName>EOTF_Civil_GrenadierTox</defName>
+        <label>grenadier</label>
+        <labelPlural>grenadiers</labelPlural>
+        <combatPower>145</combatPower>
+        <apparelTags>
+            <li>EOTF_Uniform</li>
+        </apparelTags>
+        <weaponTags Inherit="False">
+            <li>GrenadeDestructive</li>
+            <li>IndustrialGunAdvanced</li>
+        </weaponTags>
+        <apparelRequired>
+            <li>EOTF_CarapaceArmor</li>
+            <li>EOTF_CarapaceHelmet</li>
+            <li>EOTF_Webbing_GrenadierTox</li>         
+		</apparelRequired>
+    </PawnKindDef> 
 
     <PawnKindDef ParentName="EOTF_Civil_ShocktrooperTier">
         <defName>EOTF_Civil_Shocktrooper</defName>
@@ -1311,7 +1368,7 @@
         <apparelRequired>
             <li>EOTF_HeavyCarapaceArmor</li>
             <li>EOTF_HeavyCarapaceHelmet</li>
-        			<li>EOTF_Webbing_Shocktrooper</li>
+        	<li>EOTF_Webbing_Shocktrooper</li>
 		</apparelRequired>
     </PawnKindDef>
 
