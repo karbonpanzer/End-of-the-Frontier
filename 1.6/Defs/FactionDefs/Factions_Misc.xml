@@ -33,7 +33,7 @@
 				<li>Synthread</li>
 			</thingDefs>
 		</apparelStuffFilter>
-		<factionIconPath>UI/FactionIcons/DominionPlayerOutpost</factionIconPath>
+		<factionIconPath>UI/FactionIcons/DominionPlayerHome</factionIconPath>
 		<startingResearchTags>
 			<li>ClassicStart</li>
 		</startingResearchTags>
@@ -59,7 +59,7 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>governor</leaderTitle>
-		<factionIconPath>UI/FactionIcons/DominionCivilOutpost</factionIconPath>
+		<factionIconPath>UI/FactionIcons/Dominion</factionIconPath>
 		<factionNameMaker>EOTF_Faction_Civil</factionNameMaker>
 		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<colorSpectrum>
@@ -266,7 +266,7 @@
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>commander</leaderTitle>
-		<factionIconPath>UI/FactionIcons/DominionRoughOutpost</factionIconPath>
+		<factionIconPath>UI/FactionIcons/Freelancers</factionIconPath>
 		<factionNameMaker>NamerFactionPirate</factionNameMaker>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
 		<colorSpectrum>
