@@ -1,27 +1,29 @@
-<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="UTF-8"?>
 <LanguageData>
-
+ 
   <!-- Gizmo -->
-  <EOTF_StyleDecalsGizmo>Customize Decal</EOTF_StyleDecalsGizmo>
-  <EOTF_StyleDecalsDesc>Edit the decal and color applied to this pawn's apparel.</EOTF_StyleDecalsDesc>
-  <EOTF_StyleDecalsTitle>Edit Decal - {0}</EOTF_StyleDecalsTitle>
-
-  <!-- Sections -->
-  <EOTF_Decals_Symbol>Decal</EOTF_Decals_Symbol>
-  <EOTF_Decals_Color>Color</EOTF_Decals_Color>
-
-  <!-- Symbol -->
+  <EOTF_StyleDecalsGizmo>Style Decals: {0}</EOTF_StyleDecalsGizmo>
+  <EOTF_StyleDecalsDesc>Customize the decal markings on this pawn's armor and helmet.</EOTF_StyleDecalsDesc>
+ 
+  <!-- Dialog title -->
+  <EOTF_StyleDecalsTitle>Style Decals: {0}</EOTF_StyleDecalsTitle>
+ 
+  <!-- Section headers -->
+  <EOTF_Decals_Armor>Armor</EOTF_Decals_Armor>
+  <EOTF_Decals_Helmet>Helmet</EOTF_Decals_Helmet>
+ 
+  <!-- Symbol picker -->
   <EOTF_Decals_RandomSymbol>Random Symbol</EOTF_Decals_RandomSymbol>
-  <EOTF_Decals_NoSymbolsFound>No symbols found.</EOTF_Decals_NoSymbolsFound>
-  <EOTF_Decals_NoSelection>No selection</EOTF_Decals_NoSelection>
-
-  <!-- Color -->
-  <EOTF_Decals_SetIdeoColor>Set Ideology Color</EOTF_Decals_SetIdeoColor>
-  <EOTF_Decals_SetFavoriteColor>Set Favorite Color</EOTF_Decals_SetFavoriteColor>
+  <EOTF_Decals_NoSelection>No Symbol Selected</EOTF_Decals_NoSelection>
+ 
+  <!-- Color section -->
+  <EOTF_Decals_Color>Color</EOTF_Decals_Color>
+  <EOTF_Decals_IdeoColor>Ideo Color</EOTF_Decals_IdeoColor>
   <EOTF_Decals_RandomColor>Random Color</EOTF_Decals_RandomColor>
-
-  <!-- Buttons -->
+  <EOTF_Decals_FavColor>Favorite Color</EOTF_Decals_FavColor>
+ 
+  <!-- Bottom buttons -->
   <EOTF_Decals_Reset>Reset</EOTF_Decals_Reset>
   <EOTF_Decals_Apply>Apply</EOTF_Decals_Apply>
-
+ 
 </LanguageData>

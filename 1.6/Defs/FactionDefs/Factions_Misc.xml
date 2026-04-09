@@ -18,8 +18,8 @@
 		<allowedCultures>
 			<li>Astropolitan</li>
 		</allowedCultures>
-		<factionNameMaker>NamerInitialSettlementColony</factionNameMaker>
-		<settlementNameMaker>NamerInitialSettlementTribe</settlementNameMaker>
+		<factionNameMaker>NamerFactionOutlander</factionNameMaker>
+		<settlementNameMaker>NamerSettlementOutlander</settlementNameMaker>
 		<backstoryFilters>
 		  <li>
 			<categories>

@@ -10,10 +10,10 @@
 		<tab>EOTF_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>FlakArmor</li>
+			<li>EOTF_Decoder</li>
 		</prerequisites>
-		<researchViewX>0</researchViewX>
-		<researchViewY>0</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -26,7 +26,7 @@
 		<prerequisites>
 			<li>EOTF_CarapaceArmor</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
@@ -40,8 +40,8 @@
 		<prerequisites>
 			<li>EOTF_CarapaceArmor</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>0.75</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -54,8 +54,8 @@
 		<prerequisites>
 			<li>EOTF_CarapaceArmor</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>2</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>
 
 	<!--Apparel-->
@@ -67,10 +67,10 @@
 		<tab>EOTF_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>ComplexClothing</li>
+			<li>EOTF_Decoder</li>
 		</prerequisites>
-		<researchViewX>0</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>1</researchViewX>
+		<researchViewY>2.8</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -84,8 +84,8 @@
 		<prerequisites>
 			<li>EOTF_FrontierUniforms</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>4</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>2.8</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
@@ -99,11 +99,25 @@
 		<prerequisites>
 			<li>EOTF_FrontierUniforms</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>4.75</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>3.5</researchViewY>
 	</ResearchProjectDef>
 
 	<!--Accessories-->
+
+	<ResearchProjectDef>
+		<defName>EOTF_InfantryAccessories</defName>
+		<label>Infantry Kit</label>
+		<description>Craft equipment that improves reload speed and general combat readiness.</description>
+		<baseCost>1000</baseCost>
+		<tab>EOTF_ResearchTab</tab>
+		<techLevel>Spacer</techLevel>
+		<prerequisites>
+			<li>EOTF_Decoder</li>
+		</prerequisites>
+		<researchViewX>1</researchViewX>
+		<researchViewY>4.2</researchViewY>
+	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>EOTF_SupportAccessories</defName>
@@ -114,25 +128,12 @@
 		<tab>EOTF_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>ComplexClothing</li>
+			<li>EOTF_InfantryAccessories</li>
 		</prerequisites>
-		<researchViewX>0</researchViewX>
-		<researchViewY>5</researchViewY>
+		<researchViewX>2</researchViewX>
+		<researchViewY>4.2</researchViewY>
 	</ResearchProjectDef>
 
-	<ResearchProjectDef>
-		<defName>EOTF_InfantryAccessories</defName>
-		<label>Infantry Kit</label>
-		<description>Craft equipment that improves reload speed and general combat readiness.</description>
-		<baseCost>1000</baseCost>
-		<tab>EOTF_ResearchTab</tab>
-		<techLevel>Spacer</techLevel>
-		<prerequisites>
-			<li>ComplexClothing</li>
-		</prerequisites>
-		<researchViewX>0</researchViewX>
-		<researchViewY>5.75</researchViewY>
-	</ResearchProjectDef>
 
 	<ResearchProjectDef>
 		<defName>EOTF_SpecialistAccessories</defName>
@@ -142,10 +143,10 @@
 		<tab>EOTF_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>ComplexClothing</li>
+			<li>EOTF_SupportAccessories</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
-		<researchViewY>5.75</researchViewY>
+		<researchViewX>3</researchViewX>
+		<researchViewY>4.2</researchViewY>
 	</ResearchProjectDef>
 
 </Defs>

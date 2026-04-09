@@ -31,10 +31,6 @@
         <countRange>100~250</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>BNF_Dominium</thingDef>
-        <countRange>25~75</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
         <thingDef>Uranium</thingDef>
         <countRange>40~200</countRange>
       </li>

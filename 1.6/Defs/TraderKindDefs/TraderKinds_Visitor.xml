@@ -12,10 +12,6 @@
         <countRange>50~250</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>BNF_Dominium</thingDef>
-        <countRange>1~5</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
         <countRange>1~4</countRange>
       </li>

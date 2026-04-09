@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
-  <!-- Carapace Armor - Standard Light Infantry Armor -->
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>EOTF_CarapaceArmor</defName>
     <label>Carapace Armor</label>
     <description>A hardened armor set with segmented carapace plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Frontier infantry who expect direct fire contact.</description>
-    <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>         
+      <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.47, 0.47, 0.47)</color>
+    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -22,6 +22,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>550</MarketValue>
@@ -35,17 +40,9 @@
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Armor</li>
-    </thingCategories>
-    <costList>
-      <Steel>60</Steel>
-      <Plasteel>40</Plasteel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
     <apparel>
       <useWornGraphicMask>True</useWornGraphicMask>
-      <wornGraphicPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</wornGraphicPath>      
+      <wornGraphicPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</wornGraphicPath>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Shoulders</li>
@@ -73,22 +70,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>23</baseLayer>
           <texPaths>
-            <li>Things/Decals/Infantry/Arrowhead</li>
-            <li>Things/Decals/Infantry/CrossedRifles</li>
-            <li>Things/Decals/Infantry/CrossedSabers</li>
-            <li>Things/Decals/Infantry/CrossedSwords</li>
-            <li>Things/Decals/Infantry/Exoduster</li>
-            <li>Things/Decals/Infantry/Lambda</li>
-            <li>Things/Decals/Infantry/Skull</li>
-            <li>Things/Decals/Infantry/Sword</li>
-            <li>Things/Decals/Infantry/6Cav</li>
-            <li>Things/Decals/Infantry/12Inf</li>
-            <li>Things/Decals/Infantry/20Inf</li>
-            <li>Things/Decals/Infantry/Keystone</li>
-            <li>Things/Decals/Infantry/Club</li>
-            <li>Things/Decals/Infantry/Heart</li>
-            <li>Things/Decals/Infantry/Spade</li>
-            <li>Things/Decals/Infantry/Diamond</li>
+            <li>Things/Decals/Infantry/None</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -113,31 +95,33 @@
             </bodyTypeScales>
           </drawData>
         </li>
-      </renderNodeProperties>    
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
-    </comps> 
+    </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
     <tradeTags>
       <li>Armor</li>
       <li>EOTF_Armor</li>
     </tradeTags>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.47, 0.47, 0.47)</color>
-    </colorGenerator>
   </ThingDef>
 
-  <!-- Carapace Armor (Medic) -->
-  <ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ArmorMachineableBase">
     <defName>EOTF_CarapaceArmor_Medic</defName>
     <label>Carapace Armor (Medic)</label>
     <description>A hardened armor set with segmented carapace plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Frontier infantry who expect direct fire contact.\n\nThis variant is marked for usage by Medical staff.</description>
-    <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>         
+      <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.95, 0.95, 0.95)</color>
+    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -148,6 +132,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>550</MarketValue>
@@ -161,17 +150,9 @@
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Armor</li>
-    </thingCategories>
-    <costList>
-      <Steel>60</Steel>
-      <Plasteel>40</Plasteel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
     <apparel>
       <useWornGraphicMask>True</useWornGraphicMask>
-      <wornGraphicPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</wornGraphicPath>      
+      <wornGraphicPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</wornGraphicPath>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
@@ -196,18 +177,9 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>             
+          <baseLayer>16</baseLayer>
           <texPaths>
-            <li>Things/Decals/Medical/Blooddrop</li>
-            <li>Things/Decals/Medical/Caduseus</li>
-            <li>Things/Decals/Medical/Chalice</li>
             <li>Things/Decals/Medical/CrossCircle</li>
-            <li>Things/Decals/Medical/Medic</li>
-            <li>Things/Decals/Medical/Pill</li>
-            <li>Things/Decals/Medical/StaffofAsclepius</li>
-            <li>Things/Decals/Medical/StarofLife</li>
-            <li>Things/Decals/Medical/18Med</li>
-            <li>Things/Decals/Medical/2Med</li>                    
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -236,27 +208,29 @@
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
-    </comps> 
+    </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
     <tradeTags>
       <li>Armor</li>
       <li>EOTF_Armor</li>
     </tradeTags>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.95, 0.95, 0.95)</color>
-    </colorGenerator>
   </ThingDef>
 
-  <!-- Carapace Armor (Engineer) -->
-  <ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ArmorMachineableBase">
     <defName>EOTF_CarapaceArmor_Engineer</defName>
     <label>Carapace Armor (Engineer)</label>
     <description>A hardened armor set with segmented carapace plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Frontier infantry who expect direct fire contact.\n\nThis variant is marked for usage by Engineers.</description>
-    <techLevel>Spacer</techLevel>
     <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>         
+      <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
+    <colorGenerator Class="ColorGenerator_Single">
+      <color>(0.87, 0.60, 0.21)</color>
+    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -267,6 +241,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
+    <costList>
+      <Steel>60</Steel>
+      <Plasteel>40</Plasteel>
+      <ComponentIndustrial>3</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>550</MarketValue>
@@ -280,17 +259,9 @@
       <Insulation_Heat>10</Insulation_Heat>
       <EquipDelay>5</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Armor</li>
-    </thingCategories>
-    <costList>
-      <Steel>60</Steel>
-      <Plasteel>40</Plasteel>
-      <ComponentIndustrial>3</ComponentIndustrial>
-    </costList>
     <apparel>
       <useWornGraphicMask>True</useWornGraphicMask>
-      <wornGraphicPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</wornGraphicPath>      
+      <wornGraphicPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</wornGraphicPath>
       <bodyPartGroups>
         <li>Torso</li>
         <li>Neck</li>
@@ -315,19 +286,9 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerApparel</workerClass>
           <parentTagDef>ApparelBody</parentTagDef>
-          <baseLayer>16</baseLayer>             
+          <baseLayer>16</baseLayer>
           <texPaths>
-            <li>Things/Decals/Engineer/Anvil</li>
-            <li>Things/Decals/Engineer/Clockwork</li>
             <li>Things/Decals/Engineer/Cog</li>
-            <li>Things/Decals/Engineer/Hammer</li>
-            <li>Things/Decals/Engineer/HammerWrench</li>
-            <li>Things/Decals/Engineer/Rook</li>
-            <li>Things/Decals/Engineer/Wrench</li>
-            <li>Things/Decals/Engineer/Wrenches</li>
-            <li>Things/Decals/Engineer/16Eng</li>
-            <li>Things/Decals/Engineer/20Eng</li>
-            <li>Things/Decals/Engineer/176Eng</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -356,22 +317,34 @@
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
-    </comps> 
+    </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
     <tradeTags>
       <li>Armor</li>
       <li>EOTF_Armor</li>
     </tradeTags>
-    <colorGenerator Class="ColorGenerator_Single">
-      <color>(0.87, 0.60, 0.21)</color>
-    </colorGenerator>
   </ThingDef>
 
-  <!-- Carapace Helmet - Standard -->
-  <ThingDef ParentName="ArmorMachineableBase">
+	<ThingDef ParentName="ArmorMachineableBase">
     <defName>EOTF_CarapaceHelmet</defName>
     <label>Carapace Helmet</label>
     <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.</description>
-    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+      </options>
+    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -382,11 +355,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
@@ -399,14 +372,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Steel>40</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -423,10 +388,52 @@
         <li>EOTF_Armor_Light</li>
         <li>EOTF_Armor_Light_Shocktrooper</li>
       </tags>
+      <renderNodeProperties>
+        <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
+          <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
+          <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
+          <parentTagDef>ApparelHead</parentTagDef>
+          <baseLayer>55</baseLayer>
+          <texPaths>
+            <li>Things/Decals/Infantry/None</li>
+          </texPaths>
+          <visibleFacing>
+            <li>South</li>
+            <li>North</li>
+          </visibleFacing>
+          <drawData>
+            <scale>0.100</scale>
+            <defaultData>
+              <layer>75</layer>
+              <offset>(0,0,0.17)</offset>
+              <flip>true</flip>
+            </defaultData>
+          </drawData>
+        </li>
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_CarapaceHelmet_Medic</defName>
+    <label>Carapace Helmet (Medic)</label>
+    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by Medical staff.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -435,18 +442,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <!-- Carapace Helmet (Medic) -->
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Medic</defName>
-    <label>Carapace Helmet (Medic)</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by Medical staff.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -457,11 +452,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
@@ -474,14 +469,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Steel>40</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -502,18 +489,9 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>             
+          <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Medical/Blooddrop</li>
-            <li>Things/Decals/Medical/Caduseus</li>
-            <li>Things/Decals/Medical/Chalice</li>
             <li>Things/Decals/Medical/CrossCircle</li>
-            <li>Things/Decals/Medical/Medic</li>
-            <li>Things/Decals/Medical/Pill</li>
-            <li>Things/Decals/Medical/StaffofAsclepius</li>
-            <li>Things/Decals/Medical/StarofLife</li>
-            <li>Things/Decals/Medical/18Med</li>
-            <li>Things/Decals/Medical/2Med</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -528,11 +506,30 @@
             </defaultData>
           </drawData>
         </li>
-      </renderNodeProperties>         
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_CarapaceHelmet_Engineer</defName>
+    <label>Carapace Helmet (Engineer)</label>
+    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by Engineers.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -541,18 +538,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <!-- Carapace Helmet (Engineer) -->
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Engineer</defName>
-    <label>Carapace Helmet (Engineer)</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by Engineers.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -563,11 +548,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
@@ -580,14 +565,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Steel>40</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -608,19 +585,9 @@
           <nodeClass>EOTF.Core.DecalSystem.PawnRenderNodeDecal</nodeClass>
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
-          <baseLayer>55</baseLayer>             
+          <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Engineer/Anvil</li>
-            <li>Things/Decals/Engineer/Clockwork</li>
             <li>Things/Decals/Engineer/Cog</li>
-            <li>Things/Decals/Engineer/Hammer</li>
-            <li>Things/Decals/Engineer/HammerWrench</li>
-            <li>Things/Decals/Engineer/Rook</li>
-            <li>Things/Decals/Engineer/Wrench</li>
-            <li>Things/Decals/Engineer/Wrenches</li>
-            <li>Things/Decals/Engineer/16Eng</li>
-            <li>Things/Decals/Engineer/20Eng</li>
-            <li>Things/Decals/Engineer/176Eng</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -635,11 +602,30 @@
             </defaultData>
           </drawData>
         </li>
-      </renderNodeProperties>         
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_CarapaceHelmet_Officer</defName>
+    <label>Carapace Helmet (Officer)</label>
+    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by officers.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -648,18 +634,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <!-- Carapace Helmet (Officer) -->
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Officer</defName>
-    <label>Carapace Helmet (Officer)</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by officers.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_OfficerCarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -670,11 +644,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>40</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
@@ -687,14 +661,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Steel>40</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>UpperHead</li>
@@ -717,14 +683,7 @@
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
           <texPaths>
-            <li>Things/Decals/Officer/Captain</li>
-            <li>Things/Decals/Officer/Crown</li>
-            <li>Things/Decals/Officer/Hawk</li>
-            <li>Things/Decals/Officer/Leaf Cluster</li>
-            <li>Things/Decals/Officer/Lionhead</li>
             <li>Things/Decals/Officer/OfficerStar</li>
-            <li>Things/Decals/Officer/StarBurst</li>
-            <li>Things/Decals/Officer/Wreath</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -744,6 +703,25 @@
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_CarapaceHelmet_Insulated</defName>
+    <label>Carapace Helmet (Thermal)</label>
+    <description>A carapace helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetThermal/LightHelmetThermal</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -752,18 +730,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <!-- Carapace Helmet (Thermal) -->
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Insulated</defName>
-    <label>Carapace Helmet (Thermal)</label>
-    <description>A carapace helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -774,11 +740,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetThermal/LightHelmetThermal</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Cloth>80</Cloth>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>1</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>100</MaxHitPoints>
@@ -791,14 +757,6 @@
       <Insulation_Heat>0.2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Cloth>80</Cloth>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>1</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -820,6 +778,9 @@
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
+          <texPaths>
+            <li>Things/Decals/Infantry/None</li>
+          </texPaths>
           <visibleFacing>
             <li>South</li>
             <li>North</li>
@@ -833,11 +794,30 @@
             </defaultData>
           </drawData>
         </li>
-      </renderNodeProperties>      
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_CarapaceHelmet_Shield</defName>
+    <label>Carapace Helmet (Faceshield)</label>
+    <description>A carapace helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetMasked/LightHelmetMasked</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -846,18 +826,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <!-- Carapace Helmet (Faceshield) -->
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Shield</defName>
-    <label>Carapace Helmet (Faceshield)</label>
-    <description>A carapace helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -868,11 +836,12 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetMasked/LightHelmetMasked</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Cloth>60</Cloth>
+      <Steel>20</Steel>
+      <Plasteel>30</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>8000</WorkToMake>
       <MaxHitPoints>170</MaxHitPoints>
@@ -889,15 +858,6 @@
       <MoveSpeed>-0.10</MoveSpeed>
       <RangedCooldownFactor>0.15</RangedCooldownFactor>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Cloth>60</Cloth>
-      <Steel>20</Steel>
-      <Plasteel>30</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -919,6 +879,9 @@
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
+          <texPaths>
+            <li>Things/Decals/Infantry/None</li>
+          </texPaths>
           <visibleFacing>
             <li>South</li>
             <li>North</li>
@@ -932,11 +895,30 @@
             </defaultData>
           </drawData>
         </li>
-      </renderNodeProperties>      
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_CarapaceHelmet_Gasmask</defName>
+    <label>Carapace Helmet (Gasmask)</label>
+    <description>A carapace helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetGasmask/LightHelmetGasmask</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -945,18 +927,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <!-- Carapace Helmet (Gasmask) -->
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Gasmask</defName>
-    <label>Carapace Helmet (Gasmask)</label>
-    <description>A carapace helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -967,11 +937,12 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetGasmask/LightHelmetGasmask</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Cloth>10</Cloth>
+      <Steel>25</Steel>
+      <Plasteel>20</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>15750</WorkToMake>
       <MaxHitPoints>120</MaxHitPoints>
@@ -984,15 +955,6 @@
       <Insulation_Heat>2</Insulation_Heat>
       <EquipDelay>2</EquipDelay>
     </statBases>
-    <thingCategories>
-      <li>EOTF_Helmets</li>
-    </thingCategories>
-    <costList>
-      <Cloth>10</Cloth>
-      <Steel>25</Steel>
-      <Plasteel>20</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>FullHead</li>
@@ -1016,6 +978,9 @@
           <workerClass>EOTF.Core.DecalSystem.PawnRenderNodeWorkerHeadware</workerClass>
           <parentTagDef>ApparelHead</parentTagDef>
           <baseLayer>55</baseLayer>
+          <texPaths>
+            <li>Things/Decals/Infantry/None</li>
+          </texPaths>
           <visibleFacing>
             <li>South</li>
             <li>North</li>
@@ -1029,23 +994,18 @@
             </defaultData>
           </drawData>
         </li>
-      </renderNodeProperties>      
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.65,0.65,0.65)</only>
-        </li>
-      </options>
-    </colorGenerator>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Helmets</li>
+    </thingCategories>
     <tradeTags>
       <li>Armor</li>
       <li>EOTF_Armor</li>
     </tradeTags>
   </ThingDef>
-
 </Defs>

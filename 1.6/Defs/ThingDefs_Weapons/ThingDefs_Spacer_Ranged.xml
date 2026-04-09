@@ -1,0 +1,930 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<Defs>
+
+	<!-- ======================================================== -->
+	<!--                     PISTOLS                              -->
+	<!-- ======================================================== -->
+
+	<!-- ==================== DOMINATOR PISTOL ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_DominatorPistol</defName>
+		<label>dominator pistol round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.50</armorPenetrationBase>
+			<speed>52</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_DominatorPistol</defName>
+		<label>Dominator Pistol</label>
+		<description>A heavy caliber pistol favored by Dominion mercenaries. Powerful and weighty, it can easily pierce armor at a close range. Though it lacks in the ability to hit at a distance.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/assaultpistol</texPath>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_MercenaryWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>24000</WorkToMake>
+			<Mass>2.8</Mass>
+			<MarketValue>1600</MarketValue>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.74</AccuracyShort>
+			<AccuracyMedium>0.46</AccuracyMedium>
+			<AccuracyLong>0.25</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_DominatorPistol</defaultProjectile>
+				<warmupTime>0.6</warmupTime>
+				<range>20.0</range>
+				<soundCast>Shot_Revolver</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>Pistol</li>
+			<li>BNF_Commander</li>
+			<li>BNF_HRaider</li>
+			<li>BNF_FrontlineSupport</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ==================== SECURITY SMG ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_SecuritySMG</defName>
+		<label>security SMG round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>8</damageAmountBase>
+			<armorPenetrationBase>0.08</armorPenetrationBase>
+			<speed>62</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_SecuritySMG</defName>
+		<label>Security SMG</label>
+		<description>A compact sub-machinegun favored by corporate security for its size and operation. Made with light-polymers, it provides a easily concealable weapon for executive guards.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/compactpdw</texPath>
+			<drawSize>0.95</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_SMG</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_FrontierWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>8</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>20000</WorkToMake>
+			<Mass>1.8</Mass>
+			<MarketValue>1200</MarketValue>
+			<AccuracyTouch>0.84</AccuracyTouch>
+			<AccuracyShort>0.68</AccuracyShort>
+			<AccuracyMedium>0.40</AccuracyMedium>
+			<AccuracyLong>0.16</AccuracyLong>
+			<RangedWeapon_Cooldown>0.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_SecuritySMG</defaultProjectile>
+				<warmupTime>0.15</warmupTime>
+				<range>18.0</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>4</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>7</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>ShortShots</li>
+			<li>BNF_Raider</li>
+			<li>BNF_InfantrySupport</li>
+			<li>BNF_Civilian</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>7</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardMidTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ==================== SECURITY PISTOL ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_SecurityPistol</defName>
+		<label>security pistol round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>18</damageAmountBase>
+			<armorPenetrationBase>0.22</armorPenetrationBase>
+			<speed>54</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_SecurityPistol</defName>
+		<label>Security Pistol</label>
+		<description>A semi-automatic pistol chambered in a large caliber. It's heavy weight make it cumbersome, but the weight provides easier handling and control, allowing more accurate shots to be made."</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/frontierpistol</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Autopistol</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_FrontierWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>7</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>25</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>6</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>18000</WorkToMake>
+			<Mass>2.5</Mass>
+			<MarketValue>1100</MarketValue>
+			<AccuracyTouch>0.74</AccuracyTouch>
+			<AccuracyShort>0.76</AccuracyShort>
+			<AccuracyMedium>0.65</AccuracyMedium>
+			<AccuracyLong>0.46</AccuracyLong>
+			<RangedWeapon_Cooldown>1.3</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_SecurityPistol</defaultProjectile>
+				<warmupTime>0.55</warmupTime>
+				<range>22.0</range>
+				<soundCast>Shot_Autopistol</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>Pistol</li>
+			<li>BNF_Infantry</li>
+			<li>BNF_InfantrySupport</li>
+			<li>BNF_Civilian</li>
+			<li>BNF_Commander</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardMidTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ==================== CORPORATE SMG ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_CorporateSMG</defName>
+		<label>corporate SMG round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.5</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>11</damageAmountBase>
+			<armorPenetrationBase>0.15</armorPenetrationBase>
+			<speed>76</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_CorporateSMG</defName>
+		<label>Corporate SMG</label>
+		<description>A state of the art sub-machinegun design favored by corporate security. Light, accurate, and easy to use, it has found usage in hundreds of colonies now for security.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/RetroRifle</texPath>
+			<drawSize>1.0</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_SMG</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_AdvancedWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>9</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>20</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>12</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>28000</WorkToMake>
+			<Mass>2.0</Mass>
+			<MarketValue>2200</MarketValue>
+			<AccuracyTouch>0.86</AccuracyTouch>
+			<AccuracyShort>0.80</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.40</AccuracyLong>
+			<RangedWeapon_Cooldown>0.9</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_CorporateSMG</defaultProjectile>
+				<warmupTime>0.2</warmupTime>
+				<range>25.0</range>
+				<burstShotCount>5</burstShotCount>
+				<ticksBetweenBurstShots>5</ticksBetweenBurstShots>
+				<soundCast>Shot_HeavySMG</soundCast>
+				<soundCastTail>GunTail_Light</soundCastTail>
+				<muzzleFlashScale>8</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>ShortShots</li>
+			<li>BNF_Raider</li>
+			<li>BNF_InfantrySupport</li>
+			<li>BNF_Commander</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ==================== STAMPEDE REVOLVER ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_StampedeRevolver</defName>
+		<label>stampede revolver round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.7</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>26</damageAmountBase>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<speed>62</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_StampedeRevolver</defName>
+		<label>Stampede Revolver</label>
+		<description>A large frame revolver often seen with mercenaries. Despite its size, it is light and powerful, thanks to its advanced manufacturing and specialized high power ammunition.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/bigiron</texPath>
+			<drawSize>0.9</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Revolver</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_MercenaryWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>30</Steel>
+			<ComponentIndustrial>2</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>2.2</Mass>
+			<MarketValue>1800</MarketValue>
+			<AccuracyTouch>0.82</AccuracyTouch>
+			<AccuracyShort>0.78</AccuracyShort>
+			<AccuracyMedium>0.62</AccuracyMedium>
+			<AccuracyLong>0.44</AccuracyLong>
+			<RangedWeapon_Cooldown>1.6</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_StampedeRevolver</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<range>26.0</range>
+				<soundCast>Shot_Revolver</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>Revolver</li>
+			<li>BNF_Commander</li>
+			<li>BNF_HRaider</li>
+			<li>BNF_FrontlineSupport</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>grip</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ======================================================== -->
+	<!--                     RIFLES                               -->
+	<!-- ======================================================== -->
+
+	<!-- ==================== DOMINION RIFLE ==================== -->
+
+	<!-- Duplex ammo: two AP rounds per cartridge, simulated as a rapid burst of 2 -->
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_DominionRifle</defName>
+		<label>dominion duplex round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+			<drawSize>0.6</drawSize>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>20</damageAmountBase>
+			<armorPenetrationBase>0.52</armorPenetrationBase>
+			<speed>88</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_DominionRifle</defName>
+		<label>Dominion Rifle</label>
+		<description>A advanced rifle design used by executive commandos and rarely seen outside of Eisengrad. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/flechetterifle</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_AdvancedWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>10</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>60</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>4</ComponentSpacer>
+			<Plasteel>20</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>56000</WorkToMake>
+			<Mass>3.8</Mass>
+			<MarketValue>5200</MarketValue>
+			<AccuracyTouch>0.74</AccuracyTouch>
+			<AccuracyShort>0.84</AccuracyShort>
+			<AccuracyMedium>0.80</AccuracyMedium>
+			<AccuracyLong>0.70</AccuracyLong>
+			<RangedWeapon_Cooldown>1.5</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_DominionRifle</defaultProjectile>
+				<warmupTime>1.0</warmupTime>
+				<range>40.0</range>
+				<burstShotCount>3</burstShotCount>
+				<ticksBetweenBurstShots>3</ticksBetweenBurstShots>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>AssaultRifle</li>
+			<li>BNF_Infantry</li>
+			<li>BNF_HInfantry</li>
+			<li>BNF_Commander</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ==================== PROSPECTOR RIFLE ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Bullet_ProspectorRifle</defName>
+		<label>prospector rifle round</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Small</texPath>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>14</damageAmountBase>
+			<armorPenetrationBase>0.10</armorPenetrationBase>
+			<speed>64</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_ProspectorRifle</defName>
+		<label>Prospector Rifle</label>
+		<description>An older designed rifle using less complex methods earning it favor with prospectors. This rifle is build with stamped materials, making it cheaper to produce but not as well built.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/servicerifle</texPath>
+			<drawSize>1.1</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Rifle</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_FrontierWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>6</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>1</ComponentSpacer>
+			<Plasteel>6</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>26000</WorkToMake>
+			<Mass>3.5</Mass>
+			<MarketValue>900</MarketValue>
+			<AccuracyTouch>0.56</AccuracyTouch>
+			<AccuracyShort>0.66</AccuracyShort>
+			<AccuracyMedium>0.60</AccuracyMedium>
+			<AccuracyLong>0.50</AccuracyLong>
+			<RangedWeapon_Cooldown>1.9</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Bullet_ProspectorRifle</defaultProjectile>
+				<warmupTime>1.2</warmupTime>
+				<range>32.0</range>
+				<soundCast>Shot_AssaultRifle</soundCast>
+				<soundCastTail>GunTail_Medium</soundCastTail>
+				<muzzleFlashScale>9</muzzleFlashScale>
+				<burstShotCount>4</burstShotCount>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>AssaultRifle</li>
+			<li>BNF_Infantry</li>
+			<li>BNF_Raider</li>
+			<li>BNF_Civilian</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>9</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>8</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ======================================================== -->
+	<!--                     SHOTGUNS                             -->
+	<!-- ======================================================== -->
+
+	<!-- ==================== JACKHAMMER SHOTGUN ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Shell_JackhammerShotgun</defName>
+		<label>jackhammer shotgun shell</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>13</damageAmountBase>
+			<armorPenetrationBase>0.20</armorPenetrationBase>
+			<stoppingPower>2</stoppingPower>
+			<speed>30</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_JackhammerShotgun</defName>
+		<label>Jackhammer Shotgun</label>
+		<description>An ancient design for a multi-purpose automatic shotgun favored by mercenaries. Firing high-power shells via a drum magazine, it easily shreds flesh and can even damage armor.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/coreburner</texPath>
+			<drawSize>1.25</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_MercenaryWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>50</Steel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>2</ComponentSpacer>
+			<Plasteel>10</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>38000</WorkToMake>
+			<Mass>5.5</Mass>
+			<MarketValue>2400</MarketValue>
+			<AccuracyTouch>0.88</AccuracyTouch>
+			<AccuracyShort>0.62</AccuracyShort>
+			<AccuracyMedium>0.32</AccuracyMedium>
+			<AccuracyLong>0.14</AccuracyLong>
+			<RangedWeapon_Cooldown>1.8</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Shell_JackhammerShotgun</defaultProjectile>
+				<warmupTime>0.5</warmupTime>
+				<range>18.0</range>
+				<burstShotCount>4</burstShotCount>
+				<ticksBetweenBurstShots>8</ticksBetweenBurstShots>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>10</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>PumpShotgun</li>
+			<li>BNF_HRaider</li>
+			<li>BNF_FrontlineSupport</li>
+			<li>BNF_Commander</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>12</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+	<!-- ==================== DOMINION SHOTGUN ==================== -->
+
+	<ThingDef ParentName="BaseBullet">
+		<defName>EOTF_Shell_DominionShotgun</defName>
+		<label>8 gauge shotgun shell</label>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Projectile/Bullet_Shotgun</texPath>
+		</graphicData>
+		<projectile>
+			<flyOverhead>false</flyOverhead>
+			<damageDef>Bullet</damageDef>
+			<damageAmountBase>24</damageAmountBase>
+			<armorPenetrationBase>0.32</armorPenetrationBase>
+			<stoppingPower>3</stoppingPower>
+			<speed>34</speed>
+		</projectile>
+	</ThingDef>
+
+	<ThingDef ParentName="BaseHumanMakeableGun">
+		<defName>EOTF_DominionShotgun</defName>
+		<label>Dominion Shotgun</label>
+		<description>A large gauge shotgun, favored on the Frontier for its ruggedness and accuracy. Though lacking in stamina, it makes up for it in firepower with its uncommon 8 gauge shell.</description>
+		<graphicData>
+			<graphicClass>Graphic_Single</graphicClass>
+			<texPath>Things/Item/Equipment/WeaponRanged/supershotgun</texPath>
+			<drawSize>1.2</drawSize>
+		</graphicData>
+		<techLevel>Spacer</techLevel>
+		<soundInteract>Interact_Shotgun</soundInteract>
+		<recipeMaker>
+			<researchPrerequisite>EOTF_AdvancedWeaponry</researchPrerequisite>
+			<skillRequirements>
+				<Crafting>8</Crafting>
+			</skillRequirements>
+			<recipeUsers>
+				<li>TableMachining</li>
+			</recipeUsers>
+		</recipeMaker>
+		<costList>
+			<Steel>45</Steel>
+			<ComponentIndustrial>3</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>14</Plasteel>
+		</costList>
+		<statBases>
+			<WorkToMake>34000</WorkToMake>
+			<Mass>4.8</Mass>
+			<MarketValue>2800</MarketValue>
+			<AccuracyTouch>0.90</AccuracyTouch>
+			<AccuracyShort>0.74</AccuracyShort>
+			<AccuracyMedium>0.50</AccuracyMedium>
+			<AccuracyLong>0.26</AccuracyLong>
+			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
+		</statBases>
+		<verbs>
+			<li>
+				<verbClass>Verb_Shoot</verbClass>
+				<hasStandardCommand>true</hasStandardCommand>
+				<defaultProjectile>EOTF_Shell_DominionShotgun</defaultProjectile>
+				<warmupTime>0.8</warmupTime>
+				<burstShotCount>2</burstShotCount>
+				<range>24.0</range>
+				<soundCast>Shot_Shotgun</soundCast>
+				<soundCastTail>GunTail_Heavy</soundCastTail>
+				<muzzleFlashScale>11</muzzleFlashScale>
+			</li>
+		</verbs>
+		<weaponTags>
+			<li>SpacerGun</li>
+			<li>PumpShotgun</li>
+			<li>BNF_HRaider</li>
+			<li>BNF_HInfantry</li>
+			<li>BNF_Commander</li>
+		</weaponTags>
+		<tools>
+			<li>
+				<label>stock</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>13</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+			<li>
+				<label>barrel</label>
+				<capacities>
+					<li>Blunt</li>
+					<li>Poke</li>
+				</capacities>
+				<power>10</power>
+				<cooldownTime>2</cooldownTime>
+			</li>
+		</tools>
+		<thingSetMakerTags>
+			<li>RewardStandardHighTech</li>
+		</thingSetMakerTags>
+		<tradeTags>
+			<li>WeaponRanged</li>
+		</tradeTags>
+	</ThingDef>
+
+</Defs>

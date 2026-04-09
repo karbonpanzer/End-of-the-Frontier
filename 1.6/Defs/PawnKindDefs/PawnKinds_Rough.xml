@@ -155,26 +155,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>2</min>
-                    <max>4</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.3</generateChance>
-                        <sidearmMoney>
-                            <min>200</min>
-                            <max>400</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_RecruitMeleeTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -197,14 +177,6 @@
                 <range>2~8</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>2</min>
-                    <max>4</max>
-                </primaryMagazineCount>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_InfantryRangedTier1" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -229,26 +201,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.5</generateChance>
-                        <sidearmMoney>
-                            <min>300</min>
-                            <max>500</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_InfantryMeleeTier1" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -270,14 +222,6 @@
                 <range>4~10</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_InfantryRangedTier2" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -303,26 +247,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.6</generateChance>
-                        <sidearmMoney>
-                            <min>400</min>
-                            <max>600</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_InfantryMeleeTier2" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -345,14 +269,6 @@
                 <range>6~12</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_HeavyInfantryTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -372,26 +288,6 @@
                 <range>6~14</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.7</generateChance>
-                        <sidearmMoney>
-                            <min>500</min>
-                            <max>800</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_VeteranRangedTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -415,26 +311,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>4</min>
-                    <max>6</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.8</generateChance>
-                        <sidearmMoney>
-                            <min>600</min>
-                            <max>1000</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_VeteranMeleeTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -455,14 +331,6 @@
                 <range>8~14</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>4</min>
-                    <max>6</max>
-                </primaryMagazineCount>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_NCOTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -499,26 +367,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.6</generateChance>
-                        <sidearmMoney>
-                            <min>400</min>
-                            <max>700</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_VeteranTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -546,26 +394,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>4</min>
-                    <max>6</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.8</generateChance>
-                        <sidearmMoney>
-                            <min>600</min>
-                            <max>1000</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_SupportTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -585,26 +413,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.4</generateChance>
-                        <sidearmMoney>
-                            <min>300</min>
-                            <max>500</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_OfficerTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -642,26 +450,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.8</generateChance>
-                        <sidearmMoney>
-                            <min>800</min>
-                            <max>1200</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_SpecialWeaponsTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -684,26 +472,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.5</generateChance>
-                        <sidearmMoney>
-                            <min>400</min>
-                            <max>600</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_WardenTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -742,26 +510,6 @@
                 <range>5~11</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.9</generateChance>
-                        <sidearmMoney>
-                            <min>700</min>
-                            <max>1200</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef Name="EOTF_Rough_ShocktrooperTier" ParentName="EOTF_Rough_MilitaryBase" Abstract="True">
@@ -789,26 +537,6 @@
                 <range>7~13</range>
             </li>
         </skills>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>4</min>
-                    <max>6</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.9</generateChance>
-                        <sidearmMoney>
-                            <min>800</min>
-                            <max>1500</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <!-- ========================================= -->
@@ -855,14 +583,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>2</min>
-                    <max>4</max>
-                </primaryMagazineCount>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef ParentName="EOTF_Rough_CivilianBase">
@@ -907,26 +627,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.3</generateChance>
-                        <sidearmMoney>
-                            <min>200</min>
-                            <max>400</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <PawnKindDef ParentName="EOTF_Rough_LaborerBase">
@@ -1011,26 +711,6 @@
         <disallowedTraits>
             <li>Brawler</li>
         </disallowedTraits>
-        <modExtensions>
-            <li Class="CombatExtended.LoadoutPropertiesExtension" MayRequire="ceteam.combatextended">
-                <primaryMagazineCount>
-                    <min>3</min>
-                    <max>5</max>
-                </primaryMagazineCount>
-                <sidearms>
-                    <li>
-                        <generateChance>0.7</generateChance>
-                        <sidearmMoney>
-                            <min>800</min>
-                            <max>1200</max>
-                        </sidearmMoney>
-                        <weaponTags>
-                            <li>CE_Sidearm_Melee</li>
-                        </weaponTags>
-                    </li>
-                </sidearms>
-            </li>
-        </modExtensions>
     </PawnKindDef>
 
     <!-- ========================================= -->

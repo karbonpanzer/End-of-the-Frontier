@@ -1,11 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
-
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>EOTF_OfficerCarapaceArmor</defName>
     <label>Officer Carapace Armor</label>
     <description>A carapace armor set finished for officer-grade wear. Offers equivalent protection to standard carapace while maintaining the appearance expected of command personnel.</description>
-    <techLevel>Spacer</techLevel>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Armor/OfficerArmor/OfficerArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <colorGenerator Class="ColorGenerator_Options">
+      <options>
+        <li>
+          <weight>10</weight>
+          <only>(0.65,0.65,0.65)</only>
+        </li>
+      </options>
+    </colorGenerator>
     <recipeMaker>
       <researchPrerequisite>EOTF_OfficerCarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -16,11 +27,12 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/OfficerArmor/OfficerArmor</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>70</Steel>
+      <Plasteel>55</Plasteel>
+      <Gold>15</Gold>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>1200</MarketValue>
@@ -37,15 +49,6 @@
     <equippedStatOffsets>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>EOTF_Armor</li>
-    </thingCategories>
-    <costList>
-      <Steel>70</Steel>
-      <Plasteel>55</Plasteel>
-      <Gold>15</Gold>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -72,14 +75,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>16</baseLayer>
           <texPaths>
-            <li>Things/Decals/Officer/Captain</li>
-            <li>Things/Decals/Officer/Crown</li>
-            <li>Things/Decals/Officer/Hawk</li>
-            <li>Things/Decals/Officer/Leaf Cluster</li>
-            <li>Things/Decals/Officer/Lionhead</li>
             <li>Things/Decals/Officer/OfficerStar</li>
-            <li>Things/Decals/Officer/StarBurst</li>
-            <li>Things/Decals/Officer/Wreath</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -109,6 +105,25 @@
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_OfficerScoutCarapaceArmor</defName>
+    <label>Officer Carapace Armor (Scout)</label>
+    <description>A lighter carapace armor set worn by officers who operate close to or ahead of their unit. Trimmed for mobility while retaining markings that identify the wearer as command personnel.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Armor/OfficerScoutArmor/OfficerScoutArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -117,17 +132,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_OfficerScoutCarapaceArmor</defName>
-    <label>Officer Carapace Armor (Scout)</label>
-    <description>A lighter carapace armor set worn by officers who operate close to or ahead of their unit. Trimmed for mobility while retaining markings that identify the wearer as command personnel.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_OfficerCarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -138,11 +142,12 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/OfficerScoutArmor/OfficerScoutArmor</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>70</Steel>
+      <Plasteel>55</Plasteel>
+      <Gold>15</Gold>
+      <ComponentIndustrial>4</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>60000</WorkToMake>
       <MarketValue>1200</MarketValue>
@@ -159,15 +164,6 @@
     <equippedStatOffsets>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>EOTF_Armor</li>
-    </thingCategories>
-    <costList>
-      <Steel>70</Steel>
-      <Plasteel>55</Plasteel>
-      <Gold>15</Gold>
-      <ComponentIndustrial>4</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -192,14 +188,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>16</baseLayer>
           <texPaths>
-            <li>Things/Decals/Officer/Captain</li>
-            <li>Things/Decals/Officer/Crown</li>
-            <li>Things/Decals/Officer/Hawk</li>
-            <li>Things/Decals/Officer/Leaf Cluster</li>
-            <li>Things/Decals/Officer/Lionhead</li>
             <li>Things/Decals/Officer/OfficerStar</li>
-            <li>Things/Decals/Officer/StarBurst</li>
-            <li>Things/Decals/Officer/Wreath</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -229,6 +218,25 @@
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_ScoutCarapaceArmor</defName>
+    <label>Scout Carapace Armor</label>
+    <description>A reduced carapace armor set designed for reconnaissance personnel. Coverage is trimmed to allow faster movement and quieter operation well ahead of the main force.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Armor/ScoutArmor/ScoutArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -237,17 +245,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>  
-
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_ScoutCarapaceArmor</defName>
-    <label>Scout Carapace Armor</label>
-    <description>A reduced carapace armor set designed for reconnaissance personnel. Coverage is trimmed to allow faster movement and quieter operation well ahead of the main force.</description>
-    <techLevel>Spacer</techLevel>
     <recipeMaker>
       <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -258,11 +255,11 @@
         <li>TableMachining</li>
       </recipeUsers>
     </recipeMaker>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/ScoutArmor/ScoutArmor</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
+    <costList>
+      <Steel>50</Steel>
+      <Plasteel>25</Plasteel>
+      <ComponentIndustrial>2</ComponentIndustrial>
+    </costList>
     <statBases>
       <WorkToMake>45000</WorkToMake>
       <MarketValue>400</MarketValue>
@@ -279,14 +276,6 @@
     <equippedStatOffsets>
       <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.2</SlaveSuppressionOffset>
     </equippedStatOffsets>
-    <thingCategories>
-      <li>EOTF_Armor</li>
-    </thingCategories>
-    <costList>
-      <Steel>50</Steel>
-      <Plasteel>25</Plasteel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -311,15 +300,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>16</baseLayer>
           <texPaths>
-            <li>Things/Decals/Scout/22inf</li>
-            <li>Things/Decals/Scout/32Inf</li>
-            <li>Things/Decals/Scout/40Inf</li>
-            <li>Things/Decals/Scout/50Inf</li>
-            <li>Things/Decals/Scout/79Inf</li>
-            <li>Things/Decals/Scout/116Inf</li>
-            <li>Things/Decals/Scout/135Air</li>
-            <li>Things/Decals/Scout/460Chem</li>
-            <li>Things/Decals/Scout/Thunderbird</li>
+            <li>Things/Decals/Infantry/None</li>
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -349,6 +330,25 @@
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
+    <tradeTags>
+      <li>Armor</li>
+      <li>EOTF_Armor</li>
+    </tradeTags>
+  </ThingDef>
+
+	<ThingDef ParentName="ArmorMachineableBase">
+    <defName>EOTF_RiotCarapaceArmor</defName>
+    <label>Riot Carapace Armor</label>
+    <description>A carapace armor set reinforced for crowd control operations. Additional blunt-trauma protection on the front panel helps absorb impacts common in suppression engagements.</description>
+    <graphicData>
+      <texPath>Things/Pawn/Humanlike/Armor/RiotArmor/RiotArmor</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
     <colorGenerator Class="ColorGenerator_Options">
       <options>
         <li>
@@ -357,22 +357,6 @@
         </li>
       </options>
     </colorGenerator>
-    <tradeTags>
-      <li>Armor</li>
-      <li>EOTF_Armor</li>
-    </tradeTags>
-  </ThingDef>
-
-  <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_RiotCarapaceArmor</defName>
-    <label>Riot Carapace Armor</label>
-    <description>A carapace armor set reinforced for crowd control operations. Additional blunt-trauma protection on the front panel helps absorb impacts common in suppression engagements.</description>
-    <techLevel>Spacer</techLevel>
-    <graphicData>
-      <texPath>Things/Pawn/Humanlike/Armor/RiotArmor/RiotArmor</texPath>
-      <graphicClass>Graphic_Single</graphicClass>
-      <shaderType>CutoutComplex</shaderType>
-    </graphicData>
     <recipeMaker>
       <researchPrerequisite>EOTF_RiotArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
@@ -389,19 +373,16 @@
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <statBases>
-        <WorkToMake>9000</WorkToMake>
-        <MaxHitPoints>200</MaxHitPoints>
-        <Mass>2</Mass>
-        <Flammability>0.6</Flammability>
-        <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
-        <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
-        <ArmorRating_Heat>0.44</ArmorRating_Heat>
-        <Insulation_Cold>3</Insulation_Cold>
-        <EquipDelay>3</EquipDelay>
+      <WorkToMake>9000</WorkToMake>
+      <MaxHitPoints>200</MaxHitPoints>
+      <Mass>2</Mass>
+      <Flammability>0.6</Flammability>
+      <ArmorRating_Sharp>0.65</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.33</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.44</ArmorRating_Heat>
+      <Insulation_Cold>3</Insulation_Cold>
+      <EquipDelay>3</EquipDelay>
     </statBases>
-    <thingCategories>
-        <li>EOTF_Armor</li>
-    </thingCategories>
     <apparel>
       <bodyPartGroups>
         <li>Torso</li>
@@ -432,16 +413,7 @@
           <parentTagDef>ApparelBody</parentTagDef>
           <baseLayer>16</baseLayer>
           <texPaths>
-            <li>Things/Decals/Police/142MP</li>
-            <li>Things/Decals/Police/300MP</li>
-            <li>Things/Decals/Police/Column</li>
-            <li>Things/Decals/Police/Dredd</li>
-            <li>Things/Decals/Police/Gavel</li>
-            <li>Things/Decals/Police/Police</li>
-            <li>Things/Decals/Police/Scales</li>
-            <li>Things/Decals/Police/Shield</li>
             <li>Things/Decals/Police/TinStar</li>
-            <li>Things/Decals/Police/Torch</li>            
           </texPaths>
           <visibleFacing>
             <li>South</li>
@@ -466,23 +438,18 @@
             </bodyTypeScales>
           </drawData>
         </li>
-      </renderNodeProperties> 
+      </renderNodeProperties>
     </apparel>
     <comps>
       <li Class="EOTF.Core.DecalSystem.CompPropertiesEditDecalMarker" />
     </comps>
-    <colorGenerator Class="ColorGenerator_Options">
-      <options>
-        <li>
-          <weight>10</weight>
-          <only>(0.65,0.65,0.65)</only>
-        </li>
-      </options>
-    </colorGenerator>
+    <techLevel>Spacer</techLevel>
+    <thingCategories>
+      <li>EOTF_Armor</li>
+    </thingCategories>
     <tradeTags>
       <li>Armor</li>
       <li>EOTF_Armor</li>
-    </tradeTags> 
+    </tradeTags>
   </ThingDef>
-
 </Defs>

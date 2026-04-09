@@ -12,10 +12,6 @@
         <countRange>750~1200</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>BNF_Dominium</thingDef>
-        <countRange>25~75</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
         <thingDef>ComponentIndustrial</thingDef>
         <countRange>30~40</countRange>
       </li>
@@ -308,10 +304,6 @@
       <li Class="StockGenerator_SingleDef">
         <thingDef>Plasteel</thingDef>
         <countRange>50~150</countRange>
-      </li>
-      <li Class="StockGenerator_SingleDef">
-        <thingDef>BNF_Dominium</thingDef>
-        <countRange>25~50</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
         <thingDef>Gold</thingDef>
