@@ -22,8 +22,7 @@ namespace EOTF.Core.DecalSystem
         private bool _committed;
         private Vector2 _scrollPos;
         private List<Color>? _allColors;
-
-        // Cached per-slot actions — avoids allocating closure lambdas every paint call.
+        
         private Action? _helmetLeft, _helmetCenter, _helmetRight;
         private Action? _armorLeft, _armorCenter, _armorRight;
         

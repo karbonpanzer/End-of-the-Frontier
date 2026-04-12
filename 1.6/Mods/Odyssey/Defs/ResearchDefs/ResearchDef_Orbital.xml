@@ -13,7 +13,7 @@
 				<li>EOTF_CarapaceArmor</li>
 				<li MayRequire="Ludeon.RimWorld.Odyssey">OrbitalTech</li>
 			</prerequisites>
-			<researchViewX>3</researchViewX>
+			<researchViewX>4</researchViewX>
 			<researchViewY>0.7</researchViewY>
 		</ResearchProjectDef>			
 			

@@ -1,0 +1,28 @@
+// Military legacy
+Redoubt
+Bastion
+Garrison
+Command
+Post
+Outpost
+March
+Keep
+Citadel
+Bulwark
+Hold
+Station
+
+// Transitional
+Refuge
+Sanctuary
+Enclave
+Seat
+Sanctum
+
+// Civilian life taking root
+Haven
+Hearth
+Landing
+Rest
+Commons
+Lodge

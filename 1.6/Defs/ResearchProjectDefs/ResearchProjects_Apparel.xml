@@ -10,9 +10,9 @@
 		<tab>EOTF_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_Decoder</li>
+			<li>EOTF_DominionFabricator</li>
 		</prerequisites>
-		<researchViewX>1</researchViewX>
+		<researchViewX>2</researchViewX>
 		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -26,7 +26,7 @@
 		<prerequisites>
 			<li>EOTF_CarapaceArmor</li>
 		</prerequisites>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
@@ -40,7 +40,7 @@
 		<prerequisites>
 			<li>EOTF_CarapaceArmor</li>
 		</prerequisites>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
@@ -54,7 +54,7 @@
 		<prerequisites>
 			<li>EOTF_CarapaceArmor</li>
 		</prerequisites>
-		<researchViewX>2</researchViewX>
+		<researchViewX>3</researchViewX>
 		<researchViewY>1.4</researchViewY>
 	</ResearchProjectDef>
 

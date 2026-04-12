@@ -24,7 +24,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -139,7 +139,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -253,7 +253,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -367,7 +367,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -464,7 +464,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -560,7 +560,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -656,7 +656,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -753,7 +753,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -849,7 +849,7 @@
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -950,7 +950,7 @@
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TableMachining</li>
+        <li>EOTF_DominionFabricator</li>
       </recipeUsers>
     </recipeMaker>
     <costList>

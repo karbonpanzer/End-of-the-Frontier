@@ -9,7 +9,7 @@
 		<tab>EOTF_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_Decoder</li>
+			<li>EOTF_DominionFabricator</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>2.1</researchViewY>

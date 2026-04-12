@@ -7,19 +7,12 @@
     <defName>EOTF_Faction_Player</defName>
     <rulePack>
       <rulesStrings>
-
-        <!-- [adjective] [colony noun] -->
         <li>r_name->The [colony_adjective] [colony_noun]</li>
         <li>r_name->[colony_adjective] [colony_noun]</li>
-
-        <!-- [adjective] [colony noun] of [place] -->
         <li>r_name->The [colony_adjective] [colony_noun] of [PlaceOutlander]</li>
         <li>r_name->[colony_adjective] [colony_noun] of [PlaceOutlander]</li>
-
-        <!-- [colony noun] of [place] -->
         <li>r_name->The [colony_noun] of [PlaceOutlander]</li>
 
-        <!-- Colony nouns -->
         <li>colony_noun->Colonies</li>
         <li>colony_noun->Territories</li>
         <li>colony_noun->Settlements</li>
@@ -31,7 +24,6 @@
         <li>colony_noun->Claims</li>
         <li>colony_noun->Frontier</li>
 
-        <!-- Colony adjectives -->
         <li>colony_adjective->United</li>
         <li>colony_adjective->Free</li>
         <li>colony_adjective->Independent</li>
@@ -49,59 +41,38 @@
     </rulePack>
   </RulePackDef>
 
-  <!-- CIVIL FACTION NAMER -->
 
   <RulePackDef>
     <defName>EOTF_Faction_Civil</defName>
+    <include>
+      <li>OutlanderPlaceNameUtility</li>
+    </include>
     <rulePack>
-    <rulesStrings>
-        <li>r_name->Dominion of [ofThing]</li>
-        <li>r_name->The Dominion of [ofThing]</li>
-        <li>r_name->The Frontier Dominion</li>
-        <li>r_name->The Colonial Dominion</li>
-        <li>r_name->The Chartered Dominion</li>
-        <li>r_name->The Outer Dominion</li>
-        <li>r_name->The Expeditionary Dominion</li>
-        <li>r_name->The [Color] Dominion</li>
-        <li>r_name->The [ordinal] Dominion</li>
-        <li>r_name->[ordinal] Dominion</li>
+      <rulesStrings>
+        <li>r_name->[nearnameinitial] [political_union_exile]</li>
+        <li>r_name->[nearnameinitial] [political_adjective_exile] [political_union_exile]</li>
+        <li>r_name->[political_union_exile] of [nearnameinitial]</li>
+        <li>r_name->[political_adjective_exile] [political_union_exile] of [nearnameinitial]</li>
+        <li>r_name->[political_adjective_exile] [political_union_civic] of [nearnameinitial]</li>
+        <li>r_name->[nearnameinitial] [political_union_civic]</li>
+        <li>r_name->[political_union_civic] of [nearnameinitial]</li>
 
-        <li>ofThing->the Rim</li>
-        <li>ofThing->the Frontier</li>
-        <li>ofThing->the Outer Worlds</li>
-        <li>ofThing->the Charter</li>
-        <li>ofThing->Industry</li>
-        <li>ofThing->Capital</li>
-        <li>ofThing->the Reaches</li>
-        <li>ofThing->the Interior</li>
-        <li>ofThing->the Expanse</li>
-        <li>ofThing->Commerce</li>
-        <li>ofThing->Production</li>
-        <li>ofThing->the Board</li>
-        <li>ofThing->the Contract</li>
-        <li>ofThing->Progress</li>
-        <li>ofThing->Prosperity</li>
-        <li>ofThing->Eternity</li>
-        <li>ofThing->the Machine</li>
-
-        <li>ordinal->First</li>
-        <li>ordinal->Second</li>
-        <li>ordinal->Third</li>
-        <li>ordinal->New</li>
-        <li>ordinal->Old</li>
-        <li>ordinal->Greater</li>
-        <li>ordinal->Lesser</li>
+        <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+        <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
       </rulesStrings>
+      <rulesFiles>
+        <li>political_union_exile->Words/Nouns/PoliticalUnions_Exile</li>
+        <li>political_union_civic->Words/Nouns/PoliticalUnions_ExileCivic</li>
+        <li>political_adjective_exile->Words/Adjectives/Political_Adjective_Exile</li>
+      </rulesFiles>
     </rulePack>
   </RulePackDef>
 
-  <!-- ROUGH FACTION NAMER -->
 
   <RulePackDef>
     <defName>EOTF_Faction_Rough</defName>
     <rulePack>
       <rulesStrings>
- 
         <li>r_name->[NamePerson]'s [merc_descriptor]</li>
         <li>r_name->[inventor]'s [merc_descriptor]</li>
         <li>r_name->[NamePerson]'s [AnimalBadass]s</li>

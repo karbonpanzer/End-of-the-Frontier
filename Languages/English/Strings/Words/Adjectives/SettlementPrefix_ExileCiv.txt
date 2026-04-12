@@ -1,0 +1,8 @@
+// Pairs with exile concept words
+// Fort included here — towns named after forts they outgrew
+New
+Old
+Free
+Restored
+True
+Fort

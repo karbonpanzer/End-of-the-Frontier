@@ -37,7 +37,7 @@
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TableMachining</li>
+				<li>EOTF_DominionFabricator</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -144,7 +144,7 @@
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TableMachining</li>
+				<li>EOTF_DominionFabricator</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -248,7 +248,7 @@
 				<Crafting>11</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TableMachining</li>
+				<li>EOTF_DominionFabricator</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -352,7 +352,7 @@
 				<Crafting>12</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TableMachining</li>
+				<li>EOTF_DominionFabricator</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>

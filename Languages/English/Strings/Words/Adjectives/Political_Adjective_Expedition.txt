@@ -1,9 +1,0 @@
-﻿//Expedition Adjective Prefix
-Expeditionary
-Transitional
-Colonial
-Provisional
-Territorial
-Frontier
-Interim
-Exploratory

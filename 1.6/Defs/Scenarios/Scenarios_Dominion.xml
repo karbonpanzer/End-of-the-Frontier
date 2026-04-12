@@ -111,6 +111,13 @@
 					<count>300</count>
 				</li>
 
+				<!-- Needed for Scenario Start to get Early Research-->
+				<li Class="ScenPart_StartingThing_Defined">
+					<def>StartingThing_Defined</def>
+					<thingDef>EOTF_Decompiler_Codes</thingDef>
+					<count>1</count>
+				</li>
+
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
 					<project>EOTF_FrontierUniforms</project>

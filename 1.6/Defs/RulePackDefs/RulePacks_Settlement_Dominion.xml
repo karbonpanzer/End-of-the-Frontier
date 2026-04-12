@@ -1,96 +1,88 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <RulePackDef>
-    <defName>EOTF_Settlement_Civil</defName>
+    <defName>EOTF_Settlement_Exile</defName>
     <rulePack>
       <rulesStrings>
-
-        <li>r_name->[townname_wordgen]</li>
-        <li>r_name->[fixed]</li>
-        <li>r_name->[townname_combo]</li>
-        <li>r_name->[townname_inventor]</li>
+        <li>r_name(p=12)->[townname_wordgen]</li>
+        <li>r_name(p=6)->[townname_fixed]</li>
+        <li>r_name(p=4)->[townname_combo]</li>
         <li>r_name->[townname_near]</li>
+        <li>r_name->[exile_prefix_mil] [cityname_fixed]</li>
+        <li>r_name->[exile_prefix_mil] [townname_wordgen]</li>
+        <li>r_name->[exile_prefix_mil] [townname_fixed]</li>
 
-        <li>topicalnoun->[first]</li>
-        <li>topicalnoun->Iron</li>
-        <li>topicalnoun->Coal</li>
-        <li>topicalnoun->Slag</li>
-        <li>topicalnoun->Coke</li>
-        <li>topicalnoun->Ore</li>
-        <li>topicalnoun->Copper</li>
-        <li>topicalnoun->Steel</li>
-        <li>topicalnoun->Ash</li>
-        <li>topicalnoun->Furnace</li>
-        <li>topicalnoun->Shaft</li>
-        <li>topicalnoun->Seam</li>
-        <li>topicalnoun->Claim</li>
-        <li>topicalnoun->Draft</li>
-        <li>topicalnoun->Cinder</li>
-        <li>topicalnoun->Toll</li>
-        <li>topicalnoun->Shift</li>
-        <li>topicalnoun->Wage</li>
-        <li>topicalnoun->Haul</li>
-        <li>topicalnoun->Yield</li>
+        <!-- Military legacy settlement patterns -->
+        <li>r_name->[townname_wordgen] [mil_suffix]</li>
+        <li>r_name->[townname_fixed] [mil_suffix]</li>
+        <li>r_name->[exile_prefix_mil] [mil_suffix]</li>
 
+        <!-- Warrior-turned-settler patterns -->
+        <li>r_name->[exile_concept] [mil_suffix]</li>
+        <li>r_name->[exile_prefix_civ] [exile_concept]</li>
+
+        <!-- Combo patterns -->
         <li>townname_combo->[topicalnoun] [TerrainFeature]</li>
-        <li>townname_combo->[topicalnoun] [Community]</li>
+        <li>townname_combo->[topicalnoun] [mil_suffix]</li>
         <li>townname_combo->[topicalnoun]'s [TerrainFeature]</li>
-        <li>townname_combo->[topicalnoun]'s [Community]</li>
-        <li>townname_combo(p=2)->[prefix] [topicalnoun] [TerrainFeature]</li>
-        <li>townname_combo(p=2)->[prefix] [topicalnoun] [Community]</li>
+        <li>townname_combo->[topicalnoun]'s [mil_suffix]</li>
+        <li>townname_combo(p=2)->[exile_concept]'s [TerrainFeature]</li>
+        <li>townname_combo(p=2)->[exile_concept] [TerrainFeature]</li>
+        <li>townname_combo(p=2)->[exile_concept] [mil_suffix]</li>
+        <li>townname_combo(p=3)->[Character]'s [TerrainFeature]</li>
+        <li>townname_combo(p=3)->[Character]'s [mil_suffix]</li>
+        <li>townname_combo(p=3)->[Character]'s Rest</li>
+        <li>townname_combo(p=3)->[Character]'s Landing</li>
 
+        <!-- Near patterns -->
         <li>townname_near->[nearnameinitial]-at-the-[TerrainFeature]</li>
         <li>townname_near->[nearnameinitial]-by-the-[TerrainFeature]</li>
         <li>townname_near->[nearnameinitial]-on-the-[TerrainFeature]</li>
         <li>nearnameinitial->[townname_wordgen]</li>
-        <li>nearnameinitial->[topicalnoun]</li>
-        <li>nearnameinitial->[inventor]</li>
+        <li>nearnameinitial->[Community]</li>
 
-        <li>townname_inventor->[inventor] [TerrainFeature]</li>
-        <li>townname_inventor->[inventor]'s [TerrainFeature]</li>
-        <li>townname_inventor->[inventor] [Community]</li>
-        <li>townname_inventor->[inventor]'s [Community]</li>
-
-        <li>townname_wordgen(p=2)->[first] [TerrainFeature]</li>
-        <li>townname_wordgen(p=2)->[prefix] [first] [TerrainFeature]</li>
-        <li>townname_wordgen(p=2)->[first][townend]</li>
-        <li>townname_wordgen(p=2)->[topicalnoun][townend]</li>
+        <!-- Wordgen -->
+        <li>townname_wordgen(p=2)->[SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][townend]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][townend]</li>
         <li>townname_wordgen->[TerrainFeature][townend]</li>
+        <li>townname_wordgen->[topicalnoun][townend]</li>
 
         <li>townend->ville</li>
         <li>townend->town</li>
+        <li>townend->hurst</li>
+        <li>townend->bourne</li>
+        <li>townend->brad</li>
         <li>townend->dale</li>
+        <li>townend->hope</li>
+        <li>townend->ing</li>
+        <li>townend->ness</li>
+        <li>townend->mere</li>
+        <li>townend->shaw</li>
         <li>townend->wick</li>
         <li>townend->ton</li>
         <li>townend->ston</li>
+        <li>townend->os</li>
         <li>townend->den</li>
+        <li>townend->tas</li>
         <li>townend->wood</li>
         <li>townend->land</li>
         <li>townend->worth</li>
+        <li>townend->roon</li>
+        <li>townend->ron</li>
         <li>townend->well</li>
-        <li>townend->more</li>
-        <li>townend->burn</li>
-        <li>townend->ford</li>
-        <li>townend->field</li>
-        <li>townend->side</li>
-        <li>townend->hurst</li>
-        <li>townend->burg</li>
-        <li>townend->port</li>
-        <li>townend->works</li>
-
-        <li>prefix->New</li>
-        <li>prefix->Old</li>
-
       </rulesStrings>
       <rulesFiles>
-        <li>first->Words/Nouns/PlaceFirst_Dominion</li>
-        <li>fixed->Words/Nouns/PlaceFixed_Dominion</li>
-        <li>inventor->Words/Nouns/PlaceInventor_Dominion</li>
+        <li>cityname_fixed->Names/CityNames</li>
+        <li>townname_fixed->Names/ExpeditionTowns</li>
+        <li>exile_prefix_mil->Words/Adjectives/SettlementPrefix_ExileMil</li>
+        <li>exile_prefix_civ->Words/Adjectives/SettlementPrefix_ExileCiv</li>
+        <li>mil_suffix->Words/Nouns/MilitarySuffix_Exile</li>
+        <li>exile_concept->Words/Nouns/Concepts_Exile</li>
       </rulesFiles>
     </rulePack>
   </RulePackDef>
-
-  <!-- ROUGH SETTLEMENT NAMER -->
 
   <RulePackDef>
     <defName>EOTF_Settlement_Rough</defName>
