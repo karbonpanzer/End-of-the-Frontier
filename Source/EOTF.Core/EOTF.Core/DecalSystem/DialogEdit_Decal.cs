@@ -29,7 +29,6 @@ namespace EOTF.Core.DecalSystem
         private float _viewRectHeight = 750f;
         private readonly Listing_Standard _listing = new Listing_Standard(); 
 
-        #region Window Setup
         public override Vector2 InitialSize => new Vector2(600f, 750f);
 
         public DialogEditDecals(Pawn pawn)
@@ -59,9 +58,8 @@ namespace EOTF.Core.DecalSystem
             _armorCenter  = () => FloatMenuUtility.MakeMenu(_symbols, e => e.LabelCap, v => () => { SetIndex(DecalSlot.Armor,  _symbols.IndexOf(v)); SyncSelection(); PushLive(); });
             _armorRight   = () => { UpdateIndex(DecalSlot.Armor,   1); SyncSelection(); PushLive(); };
         }
-        #endregion
 
-        #region Drawing
+        // Main window drawing, this whole thing needs a rewrite honestly
         public override void Close(bool doCloseSound = true)
         {
 
@@ -90,7 +88,6 @@ namespace EOTF.Core.DecalSystem
             Widgets.BeginScrollView(inner, ref _scrollPos, viewRect);
             _listing.Begin(viewRect);
 
-            // Armor Section
             Text.Font = GameFont.Medium;
             _listing.Label("EOTF_Decals_Armor".Translate());
             Text.Font = GameFont.Small;
@@ -99,7 +96,6 @@ namespace EOTF.Core.DecalSystem
             
             _listing.Gap(24f); 
 
-            // Helmet Section
             Text.Font = GameFont.Medium;
             _listing.Label("EOTF_Decals_Helmet".Translate());
             Text.Font = GameFont.Small;
@@ -118,6 +114,7 @@ namespace EOTF.Core.DecalSystem
             DrawBottomButtons(footer);
         }
 
+        // All the helmet and armor editing shit lives here
         private void DrawSlotEditor(Listing_Standard listing, DecalSlot slot)
         {
             bool isArmor = (slot == DecalSlot.Armor);
@@ -190,9 +187,7 @@ namespace EOTF.Core.DecalSystem
             }
         }
 
-        #endregion
-
-        #region Bottom Buttons
+        // Apply, Reset, Close - the usual bottom bar crap
         private void DrawBottomButtons(Rect rect)
         {
             float w = 110f;
@@ -209,9 +204,8 @@ namespace EOTF.Core.DecalSystem
             if (Widgets.ButtonText(new Rect(x + w + 10f, btnY, w, 32f), "EOTF_Decals_Apply".Translate())) { _committed = true; Close(); }
             if (Widgets.ButtonText(new Rect(rect.xMax - w, btnY, w, 32f), "Close".Translate())) { _committed = false; Close(); }
         }
-        #endregion
 
-        #region Index Helpers
+        // Left/right arrows just blindly cycle through symbols for now
         private void UpdateIndex(DecalSlot slot, int delta)
         {
             if (_symbols.Count == 0) return;
@@ -238,9 +232,8 @@ namespace EOTF.Core.DecalSystem
             _selectedArmorSymbol = _symbols[_selectedArmorIndex];
             _profileSet.Armor.SymbolPath = _selectedArmorSymbol?.Path ?? "";
         }
-        #endregion
 
-        #region Color Helpers
+        // Color palette crap, sorts by hue so it doesn't look like ass
         private List<Color> AllColors()
         {
             if (_allColors != null) return _allColors;
@@ -263,9 +256,7 @@ namespace EOTF.Core.DecalSystem
             return _allColors;
         }
 
-        #endregion
-
-        #region Utilities
+        // Ideo and fav color button helpers, these break if Ideology isn't active obviously
         private void PushLive() => DecalUtil.SetLiveEditFull(_pawn, _profileSet);
         private static bool TryGetIdeoColor(Pawn? pawn, out Color c) { c = Color.white; if (!ModsConfig.IdeologyActive || pawn?.Ideo == null || Find.IdeoManager.classicMode) return false; c = pawn.Ideo.ApparelColor; return true; }
         private static bool TryGetFavoriteColor(Pawn? pawn, out Color c) { c = Color.white; if (!ModsConfig.IdeologyActive || pawn?.story == null || pawn.DevelopmentalStage.Baby()) return false; ColorDef def = pawn.story.favoriteColor; if (def == null) return false; c = def.color; return true; }
@@ -280,6 +271,5 @@ namespace EOTF.Core.DecalSystem
             if (Widgets.ButtonText(m, centerButtonName)) centerAction();
             if (Widgets.ButtonText(r, ">")) rightAction();
         }
-        #endregion
     }
 }

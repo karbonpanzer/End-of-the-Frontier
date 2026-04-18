@@ -3,6 +3,7 @@ using Verse;
 
 namespace EOTF.Core.DecalSystem
 {
+    //SymbolDef setup, shared between Helmet and Armor since they just get scaled and offset differently anyway
     public sealed class DecalSymbolDef : Def
     {
         public string Path = "";

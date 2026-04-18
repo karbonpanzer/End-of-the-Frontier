@@ -9,6 +9,7 @@ namespace EOTF.Core.DecalSystem
     [StaticConstructorOnStartup]
     public static class DecalBootstrap
     {
+        //Harmony bootstrap, mainly here so I can tell if this shit actually loaded
         static DecalBootstrap()
         {
             try
@@ -23,6 +24,7 @@ namespace EOTF.Core.DecalSystem
         }
     }
 
+    //Gizmo that opens the decal editing UI, still needs work
     [StaticConstructorOnStartup]
     [HarmonyPatch(typeof(Pawn), nameof(Pawn.GetGizmos))]
     public static class PatchPawnGetGizmosDecals

@@ -4,7 +4,7 @@
 		<defName>EOTF_Player</defName>
 		<label>Offworlder</label>
 		<race>Human</race>
-		<defaultFactionType>EOTF_Player</defaultFactionType>
+		<defaultFactionType>EOTF_Player</defaultFactionType>	
 		<backstoryCategories>
 			<li>Outlander</li>
 		</backstoryCategories>

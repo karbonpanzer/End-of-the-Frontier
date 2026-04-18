@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+
+  <!-- ==========================================================
+       CIVIL FACTION (Dominion government / Player faction)
+       Modeled on vanilla NamerFactionOutlander with a provisional
+       adjective injected. Vanilla has 5 top-level rules; we keep 6.
+       E.g.:
+         - Varstead
+         - Provisional Republic of Ferrun
+         - Ferrun Commonwealth
+         - Transitional Authority of Hollowvale
+         - Commonwealth of Ironhold
+       ========================================================== -->
+  <RulePackDef>
+    <defName>EOTF_Faction_Civil</defName>
+    <include>
+      <li>OutlanderPlaceNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- PRIMARY PATTERN: [adjective] [union] of [place]
+             This produces the signature Dominion naming convention:
+             - Unified Republic of Ferrun
+             - United Commonwealth of Ironhold
+             - Reformed Federation of Varstead
+             - Sovereign Directorate of Kalaris
+             Weighted heavily to dominate output. -->
+        <li>r_name(p=6)->[political_adjective_expedition] [political_union_cap] of [nearnameinitial]</li>
+        <li>r_name(p=4)->[political_adjective] [political_union_cap] of [nearnameinitial]</li>
+
+        <!-- Secondary: place-first variants
+             - Ferrun Republic
+             - Blackridge Directorate -->
+        <li>r_name(p=2)->[nearnameinitial] [political_union_cap]</li>
+
+        <!-- Standalone "The" forms (no placename)
+             - The United Republic
+             - The Territorial Compact
+             - The Sovereign Commonwealth
+             - The Reformed Accord
+             Uses an expanded noun set that includes agreement-words
+             (Compact, Concord, Accord, Charter) which read well
+             without a placename. -->
+        <li>r_name(p=3)->The [political_adjective_expedition] [political_union_standalone]</li>
+        <li>r_name(p=2)->The [political_adjective] [political_union_standalone]</li>
+
+        <!-- Standalone union nouns: all the state nouns PLUS agreement-words
+             that only work in this standalone context -->
+        <li>political_union_standalone->[political_union_cap]</li>
+        <li>political_union_standalone->Compact</li>
+        <li>political_union_standalone->Concord</li>
+        <li>political_union_standalone->Accord</li>
+        <li>political_union_standalone->Charter</li>
+        <li>political_union_standalone->Covenant</li>
+        <li>political_union_standalone->Pact</li>
+
+        <!-- Placename sources (vanilla pattern) -->
+        <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+        <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>political_union_cap->Words/Nouns/PoliticalUnions_ExpeditionCap</li>
+        <li>political_adjective_expedition->Words/Adjectives/Political_Adjective_Expedition</li>
+        <li>political_adjective->Words/Adjectives/PoliticalUnions</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ==========================================================
+       CIVIL SETTLEMENT (Dominion government / Player settlements)
+       Near-direct copy of vanilla NamerSettlementOutlander.
+       Same 4 top-level rules, same weights, same combo patterns.
+       The only difference: concept_positive file is shared (vanilla).
+       ========================================================== -->
+  <RulePackDef>
+    <defName>EOTF_Settlement_Civil</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=12)->[townname_wordgen]</li>
+        <li>r_name(p=6)->[townname_fixed]</li>
+        <li>r_name(p=4)->[townname_combo]</li>
+        <li>r_name->[townname_near]</li>
+
+        <!-- Topical noun (vanilla resolves to Vegetable/Game/BodyPart) -->
+        <li>topicalnoun->[Vegetable]</li>
+        <li>topicalnoun->[Game]</li>
+        <li>topicalnoun->[BodyPart]</li>
+
+        <!-- Combo names (vanilla-exact) -->
+        <li>townname_combo->[topicalnoun] [TerrainFeature]</li>
+        <li>townname_combo->[topicalnoun] [Community]</li>
+        <li>townname_combo->[topicalnoun]'s [TerrainFeature]</li>
+        <li>townname_combo->[topicalnoun]'s [Community]</li>
+        <li>townname_combo(p=2)->[concept_positive]'s [TerrainFeature]</li>
+        <li>townname_combo(p=2)->[concept_positive] [TerrainFeature]</li>
+        <li>townname_combo(p=2)->[concept_positive] [Community]</li>
+        <li>townname_combo(p=3)->[Character]'s [TerrainFeature]</li>
+        <li>townname_combo(p=3)->[Character]'s [Community]</li>
+
+        <!-- Near-feature names (vanilla-exact) -->
+        <li>townname_near->[nearnameinitial]-at-the-[TerrainFeature]</li>
+        <li>townname_near->[nearnameinitial]-by-the-[TerrainFeature]</li>
+        <li>townname_near->[nearnameinitial]-on-the-[TerrainFeature]</li>
+        <li>nearnameinitial->[townname_wordgen]</li>
+        <li>nearnameinitial->[Community]</li>
+
+        <!-- Word-generated names (vanilla-exact) -->
+        <li>townname_wordgen(p=2)->[SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][townend]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][townend]</li>
+        <li>townname_wordgen->[TerrainFeature][townend]</li>
+        <li>townname_wordgen->[topicalnoun][townend]</li>
+        <li>townend->ville</li>
+        <li>townend->town</li>
+        <li>townend->hurst</li>
+        <li>townend->bourne</li>
+        <li>townend->brad</li>
+        <li>townend->dale</li>
+        <li>townend->hope</li>
+        <li>townend->ing</li>
+        <li>townend->ness</li>
+        <li>townend->mere</li>
+        <li>townend->shaw</li>
+        <li>townend->wick</li>
+        <li>townend->ton</li>
+        <li>townend->ston</li>
+        <li>townend->os</li>
+        <li>townend->den</li>
+        <li>townend->tas</li>
+        <li>townend->wood</li>
+        <li>townend->land</li>
+        <li>townend->worth</li>
+        <li>townend->roon</li>
+        <li>townend->ron</li>
+        <li>townend->well</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>townname_fixed->Names/ExpeditionTowns</li>
+        <li>concept_positive->Words/Nouns/Concepts_Positive</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ==========================================================
+       ROUGH FACTION (Freelancer pirates / mercenary bands)
+       Modeled on vanilla NamerFactionPirate patterns, trimmed to
+       the name+band aesthetic. Vanilla has 27 rules; we keep 9.
+       Uses pirate_leader for NamePerson-equivalent role.
+       E.g.:
+         - The Marauders
+         - The Red Corsairs
+         - Maddox's Raiders
+         - The Iron Brigade
+         - The Wolves of Varstead
+       ========================================================== -->
+  <RulePackDef>
+    <defName>EOTF_Faction_Rough</defName>
+    <include>
+      <li>OutlanderPlaceNameUtility</li>
+    </include>
+    <rulePack>
+      <rulesStrings>
+        <!-- Bare pirate bands (vanilla: The [AnimalBadass]s) -->
+        <li>r_name->The [pirate_band]</li>
+
+        <!-- Color/adjective + unit (vanilla: The [ColorBadass] [Weapon]s) -->
+        <li>r_name(p=2)->The [pirate_adjective] [pirate_band]</li>
+        <li>r_name(p=2)->The [pirate_adjective] [military_unit]</li>
+
+        <!-- Bands of place (vanilla: The [X]s of [ConceptBadass]) -->
+        <li>r_name->The [pirate_band] of [nearnameinitial]</li>
+
+        <!-- Leader + bands (vanilla: [NamePerson]'s [X]s) -->
+        <li>r_name(p=3)->[pirate_leader]'s [pirate_band]</li>
+        <li>r_name(p=2)->[pirate_leader]'s [military_unit]</li>
+
+        <!-- Placename sources (for "of X") -->
+        <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
+        <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>pirate_leader->Names/PirateLeaderNames</li>
+        <li>pirate_band->Words/Nouns/PirateBandNouns</li>
+        <li>military_unit->Words/Nouns/MilitaryUnits</li>
+        <li>pirate_adjective->Words/Adjectives/PirateAdjectives</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+  <!-- ==========================================================
+       ROUGH SETTLEMENT (Freelancer hideouts / pirate camps)
+       Modeled on vanilla NamerSettlementPirate. Vanilla has 2
+       top-level rules (combo + wordgen); we match that exactly.
+       Uses vanilla's geography pattern and townendevil mechanic.
+       E.g.:
+         - Bloodcove (wordgen)
+         - Wolf's Hollow (combo)
+         - Crimson Creek (combo)
+         - Vextor (wordgen with townendevil)
+       ========================================================== -->
+  <RulePackDef>
+    <defName>EOTF_Settlement_Rough</defName>
+    <rulePack>
+      <rulesStrings>
+        <li>r_name(p=4)->[townname_combo]</li>
+        <li>r_name->[townname_wordgen]</li>
+
+        <!-- Combo names (vanilla pirate structure with our sources) -->
+        <li>townname_combo->[pirate_leader]'s [geography]</li>
+        <li>townname_combo->[concept_badass] [geography]</li>
+        <li>townname_combo->[concept_badass]'s [geography]</li>
+        <li>townname_combo->[pirate_adjective] [geography]</li>
+        <li>geography(p=2)->[TerrainFeature]</li>
+        <li>geography->[Community]</li>
+
+        <!-- Word-generated names (vanilla-exact structure) -->
+        <li>townname_wordgen(p=2)->[SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][SylE]</li>
+        <li>townname_wordgen(p=2)->[SylE][townendevil]</li>
+        <li>townname_wordgen(p=2)->[SylE][SylE][townendevil]</li>
+
+        <!-- Townendevil (vanilla-exact list) -->
+        <li>townendevil->vast</li>
+        <li>townendevil->varg</li>
+        <li>townendevil->vix</li>
+        <li>townendevil->tor</li>
+        <li>townendevil->tear</li>
+        <li>townendevil->cut</li>
+        <li>townendevil->lop</li>
+        <li>townendevil->oze</li>
+        <li>townendevil->ozzle</li>
+        <li>townendevil->latch</li>
+        <li>townendevil->lock</li>
+        <li>townendevil->burn</li>
+        <li>townendevil->sear</li>
+        <li>townendevil->shank</li>
+        <li>townendevil->hurt</li>
+        <li>townendevil->vash</li>
+        <li>townendevil->warg</li>
+        <li>townendevil->wug</li>
+        <li>townendevil->thot</li>
+        <li>townendevil->thard</li>
+        <li>townendevil->thad</li>
+      </rulesStrings>
+      <rulesFiles>
+        <li>pirate_leader->Names/PirateLeaderNames</li>
+        <li>concept_badass->Words/Nouns/Concepts_Badass</li>
+        <li>pirate_adjective->Words/Adjectives/PirateAdjectives</li>
+      </rulesFiles>
+    </rulePack>
+  </RulePackDef>
+
+</Defs>

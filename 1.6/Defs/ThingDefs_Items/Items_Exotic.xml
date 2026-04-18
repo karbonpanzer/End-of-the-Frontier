@@ -27,5 +27,28 @@
     <tradeTags>
       <li>ExoticMisc</li>
     </tradeTags>
+    <comps>
+      <li Class="CompProperties_CompAnalyzableUnlockResearch">
+        <analysisID>332846384</analysisID>
+        <requiresMechanitor>false</requiresMechanitor>
+        <analysisDurationHours>0.5</analysisDurationHours>
+        <destroyedOnAnalyzed>false</destroyedOnAnalyzed>
+        <completedLetterLabel>Blackbox studied: {RESEARCH} unlocked</completedLetterLabel>
+        <completedLetter>By studying the blackbox, {PAWN_labelShort} has acquired the insight needed for the research project(s) {RESEARCH}.\n\nYour researchers can now use research benches to begin researching how to actually use the technology.</completedLetter>
+        <completedLetterDef>PositiveEvent</completedLetterDef>
+        <activateTexPath>UI/Icons/Study</activateTexPath>
+        <activateLabelString>Analyze...</activateLabelString>
+        <activateDescString>Analyze the blockbox.</activateDescString>
+        <jobString>Analyze blackbox</jobString>
+        <guiLabelString>Choose who should analyze this</guiLabelString>
+        <inspectString>Can be analyzed by a colonist.</inspectString>
+        <targetingParameters>
+          <canTargetBuildings>false</canTargetBuildings>
+          <canTargetAnimals>false</canTargetAnimals>
+          <canTargetMechs>false</canTargetMechs>
+          <onlyTargetControlledPawns>true</onlyTargetControlledPawns>
+        </targetingParameters>
+      </li>
+    </comps>
   </ThingDef>
 </Defs>

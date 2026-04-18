@@ -24,6 +24,7 @@ namespace EOTF.Core.DecalSystem
             if (comp != null) comp.ProfileSet = profileSet;
         }
 
+        //Live preview so you can see changes without closing the damn dialog
         public static void SetLiveEditFull(Pawn pawn, DecalProfileSet profileSet)
         {
             WriteProfileSetTo(pawn, profileSet);
@@ -39,6 +40,7 @@ namespace EOTF.Core.DecalSystem
             pawn.Drawer.renderer?.SetAllGraphicsDirty();
         }
 
+        //Tries WorldComponent cache first, falls back to brute force apparel scan if that's fucked
         private static CompEditDecalMarker? GetMarker(Pawn? pawn)
         {
             if (pawn?.apparel == null) return null;
@@ -63,6 +65,7 @@ namespace EOTF.Core.DecalSystem
             return null;
         }
 
+        //Sanity checks because the comp kept showing up on shit it shouldn't
         public static List<DecalSymbolDef> AllSymbols() => DefDatabase<DecalSymbolDef>.AllDefsListForReading;
         public static bool IsHumanlikePawn(Pawn? pawn) => pawn?.RaceProps.Humanlike ?? false;
         public static bool PawnHasAnyDecalApparel(Pawn? pawn) => GetMarker(pawn) != null;

@@ -1,0 +1,45 @@
+//Military/paramilitary unit nouns - used in BOTH:
+//  1) "The [Color] [Unit]" pattern: "The Iron Brigade", "The Crimson Legion"
+//  2) "[Leader]'s [Unit]" pattern: "Maddox's Regiment", "Kane's Cohort"
+//All entries must read well in both. Singular weapon-words (Blade, Shield,
+//Hammer, Spear, Lance, Fist, Banner, Rearguard) are reserved for
+//TheFactionName uses and excluded here to prevent "Tanner's Shield"
+//(which reads as a weapon, not a faction).
+Brigade
+Legion
+Company
+Cohort
+Battalion
+Regiment
+Division
+Corps
+Host
+Band
+Pack
+Order
+Crew
+Squad
+Platoon
+Guard
+Watch
+Vanguard
+Skirmishers
+Auxilia
+Freebooters
+Dragoons
+Hussars
+Jaegers
+Riflemen
+Grenadiers
+Fusiliers
+Cavaliers
+Outriders
+Brotherhood
+Sisterhood
+Syndicate
+Consortium
+Cartel
+Enclave
+Outfit
+Compact
+Coterie

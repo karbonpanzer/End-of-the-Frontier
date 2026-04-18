@@ -1,8 +1,0 @@
-// Pairs with military suffixes and fixed/wordgen names
-// Fort removed — redundant with military suffix words (Fort Garrison, Fort Keep etc.)
-Forward
-Field
-Advance
-Remnant
-Provisional
-Last

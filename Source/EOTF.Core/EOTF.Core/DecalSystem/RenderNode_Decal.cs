@@ -18,6 +18,7 @@ namespace EOTF.Core.DecalSystem
             _slot = DetermineSlot(props);
         }
 
+        //Graphic lookup with caching so we're not hammering GraphicDatabase every goddamn frame
         public override Graphic? GraphicFor(Pawn pawn)
         {
             var eotfProps = Props as PawnRenderNodePropertiesOmni;
@@ -38,6 +39,7 @@ namespace EOTF.Core.DecalSystem
             return _cachedGraphic;
         }
 
+        //Figures out if this is helmet or armor, defaults to armor if XML doesn't specify
         private static DecalSlot DetermineSlot(PawnRenderNodeProperties props)
         {
             if (props is PawnRenderNodePropertiesOmni eotfProps && eotfProps.ExplicitSlot.HasValue)
@@ -53,6 +55,7 @@ namespace EOTF.Core.DecalSystem
             return DecalSlot.Armor;
         }
 
+        //Default texture path when nobody's picked a decal, falls back to whatever's in the XML texPaths
         private string GetDefaultPath(Pawn pawn)
         {
             if (Props is PawnRenderNodePropertiesOmni eotfProps && eotfProps.texPaths.Count > 0)

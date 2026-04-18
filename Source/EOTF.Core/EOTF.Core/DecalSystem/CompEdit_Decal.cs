@@ -7,6 +7,7 @@ namespace EOTF.Core.DecalSystem
     {
         public DecalProfileSet ProfileSet = DecalProfileSet.Default;
 
+        // XML save/load for decal state, this is the fallback structure if the symboldefs shit the bed
         public override void PostExposeData()
         {
             base.PostExposeData();
@@ -20,6 +21,7 @@ namespace EOTF.Core.DecalSystem
             Scribe_Values.Look(ref ProfileSet.Armor.SymbolColor, "eotfDecalArmorColor", Color.white);
         }
 
+        //Hook into the WorldComponent so pawn tracking doesn't break when gear changes
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);

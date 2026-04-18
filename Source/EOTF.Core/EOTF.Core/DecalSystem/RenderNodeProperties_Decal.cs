@@ -6,6 +6,7 @@ namespace EOTF.Core.DecalSystem
 {
     public class PawnRenderNodePropertiesOmni : PawnRenderNodeProperties
     {
+        //The actual shit that gets read from XML at runtime
         public Color Color = new Color(0.2f, 0.2f, 0.2f);
 
         public DecalSlot? ExplicitSlot = null;

@@ -11,6 +11,9 @@
 		<prerequisites>
 			<li>Fabrication</li>
 		</prerequisites>
+		<requiredAnalyzed>
+			<li>EOTF_Decompiler_Codes</li>
+		</requiredAnalyzed>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.1</researchViewY>
 	</ResearchProjectDef>
