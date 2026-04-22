@@ -10,7 +10,7 @@ namespace EOTF.Core.DecalSystem
 
         private HashSet<Pawn> _pawns = new HashSet<Pawn>();
 
-        // WorldComponent to track which pawns have decal gear, ripped from how VFEM2 does heraldics but stripped way down
+        // WorldComponent to track which pawns have decal gear
         // Persists the pawn set across saves so it doesn't lose track of who has what
         public WorldComponentDecalPawns(World world) : base(world) => Instance = this;
 
