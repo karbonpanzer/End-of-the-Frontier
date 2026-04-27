@@ -1,4 +1,4 @@
-﻿//Expedition Adjective Prefix
+//Expedition Adjective Prefix
 Expeditionary
 Transitional
 Colonial
@@ -7,3 +7,26 @@ Territorial
 Frontier
 Interim
 Exploratory
+
+//Additional provisional/transitional adjectives
+United
+Federated
+Allied
+Associated
+Unified
+Free
+Sovereign
+Independent
+Reformed
+Restored
+Founding
+Chartered
+Sanctioned
+Consolidated
+Conjoined
+Common
+Joint
+Emerging
+Nascent
+Pioneering
+Settler

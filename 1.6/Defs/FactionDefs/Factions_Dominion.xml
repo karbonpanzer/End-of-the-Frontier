@@ -23,8 +23,8 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-			    <li>Outlander</li>
- 				<li>Pirate</li>
+				<!--li>Ringer</li-->
+				<li>Outlander</li>
 			</categories>
 		  </li>
 		</backstoryFilters>

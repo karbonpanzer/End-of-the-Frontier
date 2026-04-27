@@ -1,4 +1,4 @@
-﻿suffering
+suffering
 victory
 murder
 death
@@ -22,7 +22,6 @@ anguish
 misery
 persecution
 torture
-suffering
 tyranny
 oppression
 cruelty
@@ -39,7 +38,6 @@ bloodshed
 hostility
 strife
 struggle
-
 brutality
 slaughter
 massacre
@@ -47,16 +45,29 @@ execution
 wrath
 fury
 rage
-cruelty
-violence
 bloodlust
 destruction
 devastation
 havoc
-terror
 menace
 ruin
-bloodshed
-oppression
 onslaught
 retribution
+
+// Additional grimdark concepts
+carnage
+reckoning
+conquest
+subjugation
+plunder
+pillage
+sack
+siege
+razing
+wreckage
+wasteland
+firestorm
+bloodfall
+ironfist
+deathmark
+warpath
