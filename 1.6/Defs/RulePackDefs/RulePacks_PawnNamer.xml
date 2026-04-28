@@ -1,45 +1,42 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <!-- Dominion pawn name utility -->
   <RulePackDef>
-    <defName>EOTF_PawnNamerDominion</defName>
+    <defName>EOTF_PawnNamerRinger</defName>
     <rulePack>
       <rulesFiles>
-        <li>EOTF_FirstM->Names/Dominion_FirstM</li>
-        <li>EOTF_FirstF->Names/Dominion_FirstF</li>
-        <li>EOTF_Last->Names/Dominion_Last</li>
+        <li>EOTF_Ringer_Male->Names/EOTF_Ringer_Male</li>
+        <li>EOTF_Ringer_Female->Names/EOTF_Ringer_Female</li>
+        <li>EOTF_Ringer_Surname->Names/EOTF_Ringer_Surname</li>
       </rulesFiles>
       <rulesStrings>
-        <li>EOTF_Dominion_FirstM->[EOTF_FirstM]</li>
-        <li>EOTF_Dominion_FirstF->[EOTF_FirstF]</li>
-        <li>EOTF_Dominion_Last->[EOTF_Last]</li>
+        <li>EOTF_Ringer_Male->[EOTF_Ringer_Male]</li>
+        <li>EOTF_Ringer_Female->[EOTF_Ringer_Female]</li>
+        <li>EOTF_Ringer_Surname->[EOTF_Ringer_Surname]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
 
-  <!-- Male Dominion pawn name generator -->
   <RulePackDef>
-    <defName>EOTF_NamerPerson_DominionMale</defName>
+    <defName>EOTF_Ringer_NamerMale</defName>
     <include>
-      <li>EOTF_PawnNamerDominion</li>
+      <li>EOTF_PawnNamerRinger</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=2)->[EOTF_Dominion_FirstM] [EOTF_Dominion_Last]</li>
+        <li>r_name(p=2)->[EOTF_Ringer_Male] [EOTF_Ringer_Surname]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
 
-  <!-- Female Dominion pawn name generator -->
   <RulePackDef>
-    <defName>EOTF_NamerPerson_DominionFemale</defName>
+    <defName>EOTF_Ringer_NamerFemale</defName>
     <include>
-      <li>EOTF_PawnNamerDominion</li>
+      <li>EOTF_PawnNamerRinger</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=2)->[EOTF_Dominion_FirstF] [EOTF_Dominion_Last]</li>
+        <li>r_name(p=2)->[EOTF_Ringer_Female] [EOTF_Ringer_Surname]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

@@ -23,7 +23,7 @@
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<!--li>Ringer</li-->
+				<li>Ringer</li>
 				<li>Outlander</li>
 			</categories>
 		  </li>
@@ -85,6 +85,7 @@
 				<categories>
 					<li>Outlander</li>
 					<li>Pirate</li>
+					<li>Ringer</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -290,6 +291,7 @@
 				<categories>
 					<li>Outlander</li>
 					<li>Pirate</li>
+					<li>Ringer</li>
 				</categories>
 			</li>
 		</backstoryFilters>

@@ -17,9 +17,17 @@
         <maxGenerationAge>50</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-        <backstoryCategories>
-            <li>Outlander</li>
-        </backstoryCategories>
+        <nameMaker>EOTF_Ringer_NamerMale</nameMaker>
+        <nameMakerFemale>EOTF_Ringer_NamerFemale</nameMakerFemale>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Ringer</li>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
         <initialWillRange>2~4</initialWillRange>
         <initialResistanceRange>15~25</initialResistanceRange>
         <xenotypeSet Inherit="False">
@@ -71,9 +79,17 @@
         <maxGenerationAge>60</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>false</isFighter>
-        <backstoryCategories>
-            <li>Outlander</li>
-        </backstoryCategories>
+        <nameMaker>EOTF_Ringer_NamerMale</nameMaker>
+        <nameMakerFemale>EOTF_Ringer_NamerFemale</nameMakerFemale>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Ringer</li>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
         <initialWillRange>4~6</initialWillRange>
         <initialResistanceRange>25~35</initialResistanceRange>
         <xenotypeSet Inherit="False">
@@ -110,9 +126,17 @@
         <maxGenerationAge>35</maxGenerationAge>
         <combatEnhancingDrugsChance>0</combatEnhancingDrugsChance>
         <isFighter>true</isFighter>
-        <backstoryCategories>
-            <li>Outlander</li>
-        </backstoryCategories>
+        <nameMaker>EOTF_Ringer_NamerMale</nameMaker>
+        <nameMakerFemale>EOTF_Ringer_NamerFemale</nameMakerFemale>
+        <backstoryFiltersOverride>
+            <li>
+                <categories>
+                    <li>Ringer</li>
+                    <li>Outlander</li>
+                    <li>Pirate</li>
+                </categories>
+            </li>
+        </backstoryFiltersOverride>
         <initialWillRange>3~5</initialWillRange>
         <initialResistanceRange>7~11</initialResistanceRange>
         <xenotypeSet Inherit="False">

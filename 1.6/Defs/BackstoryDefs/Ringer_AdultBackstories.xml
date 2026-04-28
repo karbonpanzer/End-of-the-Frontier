@@ -19,6 +19,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -34,6 +36,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -50,6 +54,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -65,6 +71,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -83,6 +90,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -99,6 +108,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -114,6 +125,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -129,6 +142,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -144,6 +159,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -159,6 +176,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -179,6 +197,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -197,6 +216,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -212,6 +232,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -228,6 +250,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -247,6 +271,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -266,6 +291,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -281,6 +308,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -300,6 +329,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -315,6 +345,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -334,6 +365,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -349,6 +381,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -367,6 +401,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -383,6 +419,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -401,6 +439,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -416,6 +456,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -434,6 +476,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -449,6 +493,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -464,6 +509,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -482,6 +529,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -497,6 +546,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -513,6 +564,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -531,6 +583,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -547,6 +600,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -565,6 +620,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -584,6 +641,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -599,6 +657,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -615,6 +675,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -633,6 +694,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -648,6 +710,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -667,6 +731,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -682,6 +748,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Fat</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -697,6 +764,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -712,6 +781,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -730,6 +801,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Fat</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -745,6 +817,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -760,6 +834,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -775,6 +850,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -790,6 +867,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -805,6 +884,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -821,6 +901,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Fat</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -840,6 +921,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -859,6 +941,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -874,6 +957,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -893,6 +978,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -908,6 +994,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -927,6 +1014,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -942,6 +1031,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -960,6 +1051,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -976,6 +1069,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -991,6 +1086,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1007,6 +1103,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1022,6 +1120,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1037,6 +1137,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1052,6 +1154,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1067,6 +1171,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1082,6 +1187,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1097,6 +1204,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1112,6 +1221,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1131,6 +1242,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1146,6 +1258,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1162,6 +1276,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1181,6 +1297,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1196,6 +1314,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1212,6 +1332,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1227,6 +1349,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1243,6 +1366,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1258,6 +1382,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1274,6 +1400,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1289,6 +1416,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1307,6 +1436,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1322,6 +1453,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1340,6 +1472,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1358,6 +1491,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1373,6 +1508,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1388,6 +1525,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1406,6 +1545,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1424,6 +1565,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1442,6 +1584,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1458,6 +1602,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1473,6 +1618,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1488,6 +1635,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1503,6 +1652,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1518,6 +1669,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1533,6 +1685,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1548,6 +1702,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1563,6 +1718,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1578,6 +1735,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1593,6 +1752,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1608,6 +1768,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1626,6 +1788,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1645,6 +1809,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1663,6 +1829,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1681,6 +1849,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1699,6 +1869,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1718,6 +1890,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1736,6 +1910,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1755,6 +1930,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1773,6 +1950,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1791,6 +1970,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1809,6 +1990,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1827,6 +2010,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1846,6 +2030,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1865,6 +2050,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1884,6 +2070,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1899,6 +2087,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1917,6 +2107,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1936,6 +2127,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Thin</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1951,6 +2144,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1969,6 +2164,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -1988,6 +2184,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2004,6 +2202,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2020,6 +2220,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2039,6 +2240,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2059,6 +2261,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2074,6 +2278,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2094,6 +2299,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2113,6 +2319,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2131,6 +2339,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2150,6 +2360,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2168,6 +2379,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Hulk</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2183,6 +2395,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2199,6 +2412,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2217,6 +2431,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2235,6 +2451,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2251,6 +2469,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2266,6 +2486,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2284,6 +2506,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2302,6 +2526,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2318,6 +2544,7 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeGlobal>Thin</bodyTypeGlobal>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2334,6 +2561,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Male</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
   <BackstoryDef>
@@ -2350,6 +2579,8 @@
     <spawnCategories>
       <li>Ringer</li>
     </spawnCategories>
+    <bodyTypeMale>Hulk</bodyTypeMale>
+    <bodyTypeFemale>Female</bodyTypeFemale>
   </BackstoryDef>
 
 </Defs>

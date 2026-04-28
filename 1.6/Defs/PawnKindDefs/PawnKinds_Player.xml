@@ -2,17 +2,23 @@
 <Defs>
 	<PawnKindDef ParentName="BasePlayerPawnKind">
 		<defName>EOTF_Player</defName>
-		<label>Offworlder</label>
+		<label>Ringer</label>
 		<race>Human</race>
-		<defaultFactionType>EOTF_Player</defaultFactionType>	
-		<backstoryCategories>
-			<li>Outlander</li>
-		</backstoryCategories>
+		<defaultFactionType>EOTF_Player</defaultFactionType>
+		<nameMaker>EOTF_Ringer_NamerMale</nameMaker>
+		<nameMakerFemale>EOTF_Ringer_NamerFemale</nameMakerFemale>
+		<backstoryFiltersOverride>
+			<li>
+				<categories>
+					<li>Ringer</li>
+					<li>Outlander</li>
+				</categories>
+			</li>
+		</backstoryFiltersOverride>
 		<apparelTags>
 			<li>EOTF_Uniform</li>
 		</apparelTags>
-		<apparelAllowHeadgearChance>0
-		</apparelAllowHeadgearChance>
+		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<gearHealthRange>
 			<min>0.2</min>
 			<max>0.6</max>
