@@ -2,9 +2,9 @@
 <Defs>
 
   <ThingDef ParentName="BenchBase">
-    <defName>EOTF_DominionFabricator</defName>
-    <label>dominion fabricator</label>
-    <description>A precision fabrication bench used to produce Dominion-grade armor and protective equipment. Requires materials refined at the molecular reinforcer.</description>
+    <defName>TMG_FabricationBench</defName>
+    <label>Ringer Fabricator</label>
+    <description>A workbench using proprietary equipment and tools for the manufacturing of Ringer technologies. Requires a Ringer Decoder to unlock.</description>
     <thingClass>Building_WorkTable</thingClass>
     <graphicData>
       <!-- TEMP: Using simple research bench texture until custom art -->
@@ -33,8 +33,8 @@
     </statBases>
     <costList>
       <Steel>150</Steel>
-      <ComponentIndustrial>8</ComponentIndustrial>
-      <ComponentSpacer>2</ComponentSpacer>
+      <ComponentIndustrial>3</ComponentIndustrial>
+      <ComponentSpacer>1</ComponentSpacer>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -63,7 +63,7 @@
     <constructionSkillPrerequisite>8</constructionSkillPrerequisite>
     <constructEffect>ConstructMetal</constructEffect>
     <researchPrerequisites>
-      <li>EOTF_DominionFabricator</li>
+      <li>TMG_FabricationBench</li>
     </researchPrerequisites>
     <placeWorkers>
       <li>PlaceWorker_PreventInteractionSpotOverlap</li>

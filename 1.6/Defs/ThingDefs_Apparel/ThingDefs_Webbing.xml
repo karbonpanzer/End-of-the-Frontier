@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_Infantry</defName>
+    <defName>TMG_Webbing_Infantry</defName>
     <label>Infantry Webbing</label>
-    <description>.</description>
+    <description>A standard load-bearing harness worn by Meridia infantry. Distributes the weight of ammunition and field kit across the torso. Issued to most front-line personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/InfantryPouches/InfantryPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -30,7 +30,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_InfantryAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_InfantryAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -62,8 +62,8 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Webbing_Infantry</li>
-        <li>EOTF_Accessories_Infantry</li>
+        <li>TMG_Webbing_Infantry</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -72,18 +72,18 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_Engineer</defName>
+    <defName>TMG_Webbing_Engineer</defName>
     <label>Engineer Webbing</label>
-    <description>Armies are built on the ability to build defenses. Engineers have been needed on the battlefield for centuries from maintenance to fortifications. Their necessity is even needed now, this belt is the standard answer for that need. Containing both magazine pouches, a canteen, and a generalized toolbelt that contains everything an engineer might need for any problem they may encounter.</description>
+    <description>A load-bearing harness fitted with tool loops, component pouches, and cable management clips. Used by combat engineers who carry both weapons and technical equipment into the field.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/SupportPouches/SupportPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -110,7 +110,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>30</Steel>
@@ -144,9 +144,9 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Webbing_Engineer</li>
-        <li>EOTF_Accessories_Engineer</li>
-        <li>EOTF_Carapace_Engineer</li>
+        <li>TMG_Webbing_Engineer</li>
+        <li>TMG_Accessories</li>
+        <li>TMG_Webbing_Engineer</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -155,18 +155,18 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_Medic</defName>
+    <defName>TMG_Webbing_Medic</defName>
     <label>Medic Webbing</label>
-    <description>Keeping a soldier in fighting condition is the most important factor in success of an army. A strong medical corps is necessary in this task. This is the standard kit for a medic in the field, providing several items necessary for stabilization of a wounded soldier. Though it lacks the ability to treat life-threatening wounds it makes up for it in its speed and ease of access.</description>
+    <description>A load-bearing harness configured with medical pouches, tourniquet holders, and quick-access loops for field dressings. Designed to keep essential trauma supplies within immediate reach.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/MedicPouches/MedicPouches</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -193,7 +193,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>30</Steel>
@@ -227,9 +227,9 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Webbing_Medic</li>
-        <li>EOTF_Accessories_Medic</li>
-        <li>EOTF_Carapace_Medic</li>
+        <li>TMG_Webbing_Medic</li>
+        <li>TMG_Accessories</li>
+        <li>TMG_Webbing_Medic</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -238,18 +238,18 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_Riot</defName>
+    <defName>TMG_Webbing_Riot</defName>
     <label>Riot Webbing</label>
-    <description>Justice is a concept that defies the colonial experience. Lawlessness is anathema to the civlization being brought to the Rimworlds by the expeditions. Justice now comes in a convient belt form which allows them to subdue, pacify, and protect your families from all threats foreign. Despite your utter lack of real skills and borderline to actual psychopathy, you can use physical violence to gain the respect of the community. Also, the body cams were smashed before you go your belt so there is no recording to submit to evidence during your brutality trial.</description>
+    <description>A heavy-duty load-bearing harness used in crowd control operations. Carries restraints, less-lethal munitions, and a baton loop alongside standard kit.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/PoliceBelt/PoliceBelt</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -272,7 +272,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SupportAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SupportAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>50</Steel>
@@ -305,8 +305,8 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Webbing_Riot</li>
-        <li>EOTF_Police</li>
+        <li>TMG_Webbing_Riot</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -315,14 +315,14 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_Scout</defName>
+    <defName>TMG_Webbing_Scout</defName>
     <label>Scout Webbing</label>
-    <description>The most important aspect in the army is intelligence, such intelligence can be provided by the Vanguard of an army. Scouts and rangers are those who lead the way, often several days in advance of any army. As such they need all the bare necessities for this duty, from spare rations, their haversack, and their ammunition are added integrally to their kit. A member of the Vanguard is always ready for anything.</description>
+    <description>A minimal load-bearing harness designed to carry only essential equipment. Low profile and free of rattling hardware, suited for personnel who need to move quietly.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/ScoutWebbing/ScoutWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -349,7 +349,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -382,8 +382,8 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Webbing_Scout</li>
-        <li>EOTF_Accessories_Scout</li>
+        <li>TMG_Webbing_Scout</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -397,18 +397,18 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_Shocktrooper</defName>
+    <defName>TMG_Webbing_Shocktrooper</defName>
     <label>Shocktrooper Webbing</label>
-    <description>.</description>
+    <description>A load-bearing harness configured for close-quarters assault. High-capacity magazine pouches and breach tool loops are positioned for fast access under fire.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/ShocktrooperWebbing/ShocktrooperWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -435,7 +435,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -468,8 +468,8 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Webbing_Shocktrooper</li>
-        <li>EOTF_Accessories_Shocktrooper</li>
+        <li>TMG_Webbing_Shocktrooper</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -483,17 +483,17 @@
       <useWornGraphicMask>True</useWornGraphicMask>
     </apparel>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_GrenadierFrag</defName>
-    <label>Grenadier Webbing</label>
+    <defName>TMG_Webbing_GrenadierFrag</defName>
+    <label>Grenadier Webbing (Frag)</label>
     <description>A load-bearing chest harness fitted with dedicated loops and pouches for fragmentation grenades. Standard kit for grenadier infantry who need their munitions close at hand.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -521,7 +521,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -554,7 +554,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Accessories_Grenadier</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -578,7 +578,7 @@
       </li>
     </comps>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <verbs>
       <li>
@@ -603,9 +603,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_GrenadierEMP</defName>
+    <defName>TMG_Webbing_GrenadierEMP</defName>
     <label>Grenadier Webbing (EMP)</label>
-    <description>A load-bearing chest harness fitted with dedicated loops and pouches for fragmentation grenades. Standard kit for grenadier infantry who need their munitions close at hand.</description>
+    <description>A load-bearing chest harness configured for EMP grenades. Signal-dampening lining keeps the electromagnetic pulse charges from interfering with nearby electronics between engagements.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -632,7 +632,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -665,7 +665,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Accessories_Grenadier</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -689,7 +689,7 @@
       </li>
     </comps>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <verbs>
       <li>
@@ -714,9 +714,9 @@
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Webbing_GrenadierFire</defName>
+    <defName>TMG_Webbing_GrenadierIncendiary</defName>
     <label>Grenadier Webbing (Incendiary)</label>
-    <description>A load-bearing chest harness designed to carry incendiary grenades. The canister loops are heat-resistant and spaced to prevent sympathetic ignition.</description>
+    <description>A load-bearing chest harness designed to carry incendiary grenades. Glass bottles filled with flammable liquid create devastating fires on impact. Heat-resistant loops and spacing prevent sympathetic ignition.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -743,7 +743,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_SpecialistAccessories</researchPrerequisite>
+      <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
     </recipeMaker>
     <costList>
       <Steel>40</Steel>
@@ -776,7 +776,7 @@
         <li>Shell</li>
       </layers>
       <tags>
-        <li>EOTF_Accessories_Grenadier</li>
+        <li>TMG_Accessories</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -800,7 +800,7 @@
       </li>
     </comps>
     <thingCategories>
-      <li>EOTF_Accessories</li>
+      <li>TMG_Accessories</li>
     </thingCategories>
     <verbs>
       <li>

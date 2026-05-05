@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Officer_Uniform</defName>
-    <label>Frontier Officer Uniform</label>
-    <description>Distinction is an important aspect of an army, from the hero of the ancient world to the home-grown heroes. This uniform serves as a symbol of that distinction, a heavy coat designed with comfort and protection in mind, comfortable in both hot and cold though costly to produce. Such was the case for the Great Domain that this uniform is rarely seen outside of professional armies, often in the hands of remnant armies of the Great Domain. Though its rarity does not prohibit its usage, it is still found even among the most remote worlds of the Rim.</description>
+    <defName>TMG_OfficerUniform</defName>
+    <label>Meridia Officer Uniform</label>
+    <description>A tailored duty uniform worn by commissioned Meridian officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/OfficerUniform/OfficerUniform</texPath>
@@ -32,7 +32,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -65,7 +65,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_OfficerUniform</li>
+        <li>TMG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -73,18 +73,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_Officer_Cap</defName>
-    <label>Officer Cap</label>
-    <description>Based on an Old Earth symbol of authority, this headwear was said to exude an air of authority over ones subordinates. Its ability to drawn a stronger response from soldiers has not been measured though some still see it as a true sign of authority and power. Though many of it’s wearers also have mentioned the lack of warmth from it and the discomfort of the tight headband.</description>
+    <defName>TMG_OfficerHat</defName>
+    <label>Meridia Officer Headwear</label>
+    <description>A structured cap worn by Meridia officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/OfficerCap/OfficerCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -113,7 +113,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -138,7 +138,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_OfficerUniform</li>
+        <li>TMG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -150,18 +150,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Officer_Uniform_Winter</defName>
-    <label>Frontier Officer Uniform (Polar)</label>
-    <description>While the Officer Uniform is a strong contender for a perfect uniform for the Rim, it has come up short in one aspect, the cold. In polar environments the Officer uniform fails to maintain a warm temperature for the wearer. The solution was simple, a modified form of the mesh heating network found in the Polar Uniforms that now functions off a kinetic battery which was more effective due to the layers of the uniform. Though issues have still arisen with this variant, many prefer faulty item that can work rather than hoping for something else to keep them warm.</description>
+    <defName>TMG_OfficerUniform_SuperCold</defName>
+    <label>Meridia Officer Uniform (Tundra)</label>
+    <description>An officer's duty uniform insulated for extreme cold. Thermal lining and sealed cuffs allow command personnel to function in conditions that would otherwise be debilitating.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/OfficerUniformWinter/OfficerUniformWinter</texPath>
@@ -190,8 +190,8 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_OfficerUniforms</researchPrerequisite>
-      <researchPrerequisite>EOTF_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -224,7 +224,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_OfficerUniform</li>
+        <li>TMG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -232,18 +232,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_OfficerCap_Polar</defName>
-    <label>Officer Cap (Polar)</label>
-    <description>The traditional tailored headwear for an officer. Modified to have thermal materials to surround the head and maintain warmth even in the coldest environments. A balanced approach to both maintaining comfort and displaying of ones rank.</description>
+    <defName>TMG_OfficerHat_SuperCold</defName>
+    <label>Meridia Officer Headwear (Tundra)</label>
+    <description>An officer's cap insulated for extreme cold. Full brow and ear coverage protects against frostbite without obscuring the rank markings that identify command personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/OfficerCapArctic/OfficerCapArctic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -271,8 +271,8 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_OfficerUniforms</researchPrerequisite>
-      <researchPrerequisite>EOTF_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -297,7 +297,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -309,11 +309,11 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 </Defs>

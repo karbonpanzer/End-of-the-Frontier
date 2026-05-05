@@ -3,56 +3,56 @@
 
 	<!--Armor-->
 	<ResearchProjectDef>
-		<defName>EOTF_CarapaceArmor</defName>
-		<label>Carapace Armor and Helmets</label>
+		<defName>TMG_MarauderArmor</defName>
+		<label>Marauder Armor and Helmets</label>
 		<description>Craft armor and helmets that provide stronger protection than flak gear and cover more of the body.</description>
 		<baseCost>1600</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_DominionFabricator</li>
+			<li>TMG_FabricationBench</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_HeavyCarapaceArmor</defName>
-		<label>Heavy Carapace Armor and Helmets</label>
-		<description>Craft heavy armor and helmets that adds additional plating for improved protection at increased material cost.</description>
+		<defName>TMG_HeavyMarauderArmor</defName>
+		<label>Heavy Marauder Armor and Helmets</label>
+		<description>Craft heavy armor and helmets that add additional plating for improved protection at increased material cost.</description>
 		<baseCost>2000</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_CarapaceArmor</li>
+			<li>TMG_MarauderArmor</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_OfficerCarapaceArmor</defName>
-		<label>Officer Carapace Armor</label>
+		<defName>TMG_OfficerMarauderArmor</defName>
+		<label>Officer Marauder Armor</label>
 		<description>Craft officer armor that adds protection and prestige with increased material cost.</description>
 		<baseCost>2400</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_CarapaceArmor</li>
+			<li>TMG_MarauderArmor</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>0.7</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_RiotArmor</defName>
+		<defName>TMG_RiotArmor</defName>
 		<label>Riot Armor</label>
 		<description>Craft streamlined armor and equipment for protecting the colony from crime.</description>
 		<baseCost>500</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_CarapaceArmor</li>
+			<li>TMG_MarauderArmor</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>1.4</researchViewY>
@@ -60,44 +60,44 @@
 
 	<!--Apparel-->
 	<ResearchProjectDef>
-		<defName>EOTF_FrontierUniforms</defName>
-		<label>Frontier Uniforms</label>
+		<defName>TMG_RingerUniforms</defName>
+		<label>Ringer Uniforms</label>
 		<description>Tailor garments that provide light protection and insulation for a variety of climates.</description>
 		<baseCost>1200</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_Decoder</li>
+			<li>TMG_Decoder</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>2.8</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_OfficerUniforms</defName>
+		<defName>TMG_OfficerUniforms</defName>
 		<label>Officer Uniforms</label>
 		<description>Tailor garments with officer markings that offer the same protection as
 			standard apparel.</description>
 		<baseCost>1500</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_FrontierUniforms</li>
+			<li>TMG_RingerUniforms</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>2.8</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_ExtremeWeatherUniforms</defName>
+		<defName>TMG_ExtremeWeatherUniforms</defName>
 		<label>Extreme Weather Uniforms</label>
 		<description>Tailor heavily modified garments designed for survival and work in extreme heat
 			and cold.</description>
 		<baseCost>1500</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_FrontierUniforms</li>
+			<li>TMG_RingerUniforms</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>3.5</researchViewY>
@@ -106,29 +106,29 @@
 	<!--Accessories-->
 
 	<ResearchProjectDef>
-		<defName>EOTF_InfantryAccessories</defName>
+		<defName>TMG_InfantryAccessories</defName>
 		<label>Infantry Kit</label>
 		<description>Craft equipment that improves reload speed and general combat readiness.</description>
 		<baseCost>1000</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_Decoder</li>
+			<li>TMG_Decoder</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>4.2</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_SupportAccessories</defName>
+		<defName>TMG_SupportAccessories</defName>
 		<label>Support Kits</label>
 		<description>Craft equipment that assist the work of support roles such as engineers and
 			medics.</description>
 		<baseCost>1000</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_InfantryAccessories</li>
+			<li>TMG_InfantryAccessories</li>
 		</prerequisites>
 		<researchViewX>2</researchViewX>
 		<researchViewY>4.2</researchViewY>
@@ -136,14 +136,14 @@
 
 
 	<ResearchProjectDef>
-		<defName>EOTF_SpecialistAccessories</defName>
+		<defName>TMG_SpecialistAccessories</defName>
 		<label>Stormtrooper Kit</label>
 		<description>Craft specilized equipment for heavy frontline use by shocktroopers.</description>
 		<baseCost>1800</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_SupportAccessories</li>
+			<li>TMG_SupportAccessories</li>
 		</prerequisites>
 		<researchViewX>3</researchViewX>
 		<researchViewY>4.2</researchViewY>

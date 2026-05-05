@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Field_Uniform_Hell</defName>
-    <label>Frontier Uniform (Torrid)</label>
-    <description>Some worlds within the great domain were not made for life, such as the Spiceworlds, who great produced the addictions of the domain's courts. The hellish worlds rose to such high temperatures that the presence of water was considered an anomaly. However the desire for the drugs of which the Spiceworlds produced drove humanity into hell itself. Rather than loose clothing like many desert cultures, the Torrid uniform uses a series of chemical bladders filled with a liquid compound which generates a pleasent cold in the hot environments. Some coats in the past have malfunctioned, leading some to freeze to death in the desert.</description>
+    <defName>TMG_MeridiaUniform_SuperHot</defName>
+    <label>Meridia Guard Uniform (Desert)</label>
+    <description>A standard Meridian duty uniform adapted for extreme heat. Stripped to the minimum needed for function, with a light weave that resists heat buildup.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformHell/FieldUniformHell</texPath>
@@ -31,7 +31,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -65,7 +65,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -73,18 +73,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_FieldHat_Hell</defName>
-    <label>Field Hat (Torrid)</label>
-    <description>A modified form of the arid headgear, this variant possess a few chemical bladders similar to the torrid uniform. However, when it came to the hazards fo the desert, instead of keeping ones head cool, one must protect themselves from the other elements. Possessing a facewrap which in addition to the chemical bladder also possess a robust filter to keep the hazardous dusts from ones lungs, and a pair of goggles which protect the wearers eyes from the dust and from the often blinding lights of the desert.</description>
+    <defName>TMG_MeridiaHat_Hot</defName>
+    <label>Meridia Guard Uniform Headwear (Steppe)</label>
+    <description>A wide-brimmed field cap worn by Meridia personnel in desert postings. Shades the face and neck from direct sun.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatHell/FieldHatHell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -112,7 +112,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -138,7 +138,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -150,18 +150,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Field_Uniform_Desert</defName>
-    <label>Frontier Uniform (Arid)</label>
-    <description>From the dense jungles to the dry deserts, this uniform is designed to be proficient at both. While being made from common textiles, it retains a composition that allows a high level of comfort in any form of heat. This was initially used on the Spiceworlds of the Great Domain, the planets themselves being low static desert worlds perfect to produce advanced circuitry needed for the first generation of Mechanoids. While the Great Domain has fallen, this uniforms remains as a memory of a time long past, when humanity dominated all worlds they encountered.</description>
+    <defName>TMG_MeridiaUniform_Hot</defName>
+    <label>Meridia Guard Uniform (Steppe)</label>
+    <description>A standard Meridian duty uniform adapted for Steppe and desert postings. Loose-weave fabric reduces heat absorption and allows some airflow.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformDesert/FieldUniformDesert</texPath>
@@ -185,7 +185,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_FrontierUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -219,7 +219,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -227,16 +227,16 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_Field_Hat_Desert</defName>
+    <defName>TMG_MeridiaHat_SuperHot</defName>
     <label>Field Hat (Arid)</label>
     <description>Based on an Old Earth design from the 3rd Era of Imperialism. This headgear is designed to protect the wearer from the worst heat they can find in the Rim. Providing not only cool headwear but also protecting the wearer from the worst that the sun can provide. Originally designed for usage on Spiceworld Regiments, it is now found in more worlds than the uniform that it came from.</description>
     <graphicData>
@@ -266,7 +266,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_FrontierUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -292,7 +292,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -304,18 +304,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Field_Uniform_Temperate</defName>
-    <label>Frontier Uniform (Temperate)</label>
-    <description>This was the first symbol of the Great Domain, a uniform designed not for the perils of the Rim. Instead, this uniform was the symbol of the expansion of humanity, as it was these worlds that settled the New Earths. The planets that were closest in composition to Earth that made them ripe for settlement in the early years. Perfect for the temperate environments that were common on Earth which are now finding usage on the more palatable Rimworlds. The popularity of this uniform is still found after centuries of usage, even outside of military organizations.</description>
+    <defName>TMG_MeridiaUniform</defName>
+    <label>Meridia Guard Uniform (Temperate)</label>
+    <description>The standard Meridian duty uniform, balanced for moderate climates. Worn by most deployed Meridia personnel across a wide range of postings.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformTemperate/FieldUniformTemperate</texPath>
@@ -343,7 +343,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_FrontierUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -377,7 +377,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -385,18 +385,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_Field_Hat_Temperate</defName>
-    <label>Field Hat (Temperate)</label>
-    <description>A common headwear of the Great Domain Infantry, a basic headwear that follows the Old Earth design of the 21st Century. Providing basic protection from the elements, the most important thing about the headwear is its strict adherence to military code. Though many find themselves abandoning this headwear in favor of other choices which provide specific benefits rather than aesthetic ones.</description>
+    <defName>TMG_MeridiaHat</defName>
+    <label>Meridia Guard Uniform Headwear (Temperate)</label>
+    <description>A standard Meridia field cap, worn across most postings. Provides modest weather protection and carries unit markings.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatTemperate/FieldHatTemperate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -424,7 +424,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_FrontierUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -450,7 +450,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -462,18 +462,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories>
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Field_Uniform_Winter</defName>
-    <label>Frontier Uniform (Boreal)</label>
-    <description>As the Great Domain expanded its borders, it found itself settling on worlds that provided a harder living than what many were used too. On the coldest worlds of Rim, this is a common sight. Dense textiles mixed with wool and composite fibers that allow a certain level of warmth without creating discomfort. This design still remains top of the line on many worlds due to the simplicity of the design and the ease of creation. Even now many paramilitaries are using this uniform and see no reason to replace or even redesign them, a time-tested design from the Old World.</description>
+    <defName>TMG_MeridiaUniform_Cold</defName>
+    <label>Meridia Guard Uniform (Boreal)</label>
+    <description>A standard Meridian duty uniform layered for cold forest climates. Thick enough to retain warmth, flexible enough for movement through difficult terrain.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformWinter/FieldUniformWinter</texPath>
@@ -501,7 +501,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_FrontierUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -535,7 +535,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -543,18 +543,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_Field_Hat_Winter</defName>
-    <label>Field Hat (Boreal)</label>
-    <description>Like many of the Great Domain’s designs, this one is based on the headwear of the warriors of Old Earth. A fur lined headwear designed to keep the wearer warm, other than that it is a very basic design. Such simplicity was the reason for its usage by the Great Domain, its simplicity allowed it to be constructed in even the most barren of environments, though like many things some are better than others.</description>
+    <defName>TMG_MeridiaHat_Cold</defName>
+    <label>Meridia Guard Uniform Headwear (Boreal)</label>
+    <description>A mid-weight field cap with insulated lining, worn by Meridia personnel in cold forest postings. Covers the ears without significantly restricting peripheral vision.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatWinter/FieldHatWinter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -582,7 +582,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_FrontierUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -608,7 +608,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -620,18 +620,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>EOTF_Field_Uniform_Arctic</defName>
-    <label>Frontier Uniform (Polar)</label>
-    <description>While many worlds in the Great Domain were settled for the resources they provided for the whole of humanity, during the Final War many less habitable planets were being occupied. These worlds became the first Fortressworlds, planets dedicated to holding the line against the Mechs and the Bugs. This uniform is heavily modified from the original template, featuring a mesh heating network powered by dead skin cells.  This keeps the wearer warm in the coldest of environments without stressing any infrastructure on a planet. Though the methods of creating such a uniform are a significantly more complex process, though worth it for the cold.</description>
+    <defName>TMG_MeridiaUniform_SuperCold</defName>
+    <label>Meridia Guard Uniform (Tundra)</label>
+    <description>A standard Meridian duty uniform insulated for extreme cold. Reinforced seams and sealed cuffs keep heat in when outside temperatures become dangerous.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformArctic/FieldUniformArctic</texPath>
@@ -659,7 +659,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -693,7 +693,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -701,18 +701,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Uniforms</li>
+      <li>TMG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>EOTF_Field_Hat_Arctic</defName>
-    <label>Field Hat (Polar)</label>
-    <description>Though a similar design to other cold weather gear, this one is more than it appears. This headwear features the same mesh heating network as the Polar Uniform, though with a few modifications, mainly it can be powered by both dead skin cells and shed hair to ensure comfortable warmth during the coldest of environments. Much like its companion piece, this one requires additional research for it to be produced.</description>
+    <defName>TMG_MeridiaHat_SuperCold</defName>
+    <label>Meridia Guard Uniform Headwear (Tundra)</label>
+    <description>A fully insulated field cap worn by Meridia personnel in extreme cold. Covers the ears, brow, and most of the face to prevent frostbite in subzero conditions.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatArctic/FieldHatArctic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -740,7 +740,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -766,7 +766,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>EOTF_Uniform</li>
+        <li>TMG_MeridiaUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -778,11 +778,11 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>EOTF_Headgear</li>
+      <li>TMG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>EOTF_Clothing</li>
+      <li>TMG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 </Defs>

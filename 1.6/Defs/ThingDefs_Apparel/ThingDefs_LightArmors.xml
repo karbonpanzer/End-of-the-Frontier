@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceArmor</defName>
-    <label>Carapace Armor</label>
-    <description>A hardened armor set with segmented carapace plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Frontier infantry who expect direct fire contact.</description>
+    <defName>TMG_MarauderArmor</defName>
+    <label>Marauder Armor</label>
+    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Meridia infantry who expect direct fire contact.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -13,13 +13,13 @@
       <color>(0.47, 0.47, 0.47)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -60,8 +60,8 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light</li>
-        <li>EOTF_Armor_Light_Shocktrooper</li>
+        <li>TMG_Armor</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -102,18 +102,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceArmor_Medic</defName>
-    <label>Carapace Armor (Medic)</label>
-    <description>A hardened armor set with segmented carapace plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Frontier infantry who expect direct fire contact.\n\nThis variant is marked for usage by Medical staff.</description>
+    <defName>TMG_MarauderArmor_Medic</defName>
+    <label>Marauder Armor (Medic)</label>
+    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Meridia infantry who expect direct fire contact.
+
+This variant is marked for usage by Medical staff.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -123,13 +125,13 @@
       <color>(0.95, 0.95, 0.95)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -170,7 +172,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light_Medic</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -211,18 +213,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceArmor_Engineer</defName>
-    <label>Carapace Armor (Engineer)</label>
-    <description>A hardened armor set with segmented carapace plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Frontier infantry who expect direct fire contact.\n\nThis variant is marked for usage by Engineers.</description>
+    <defName>TMG_MarauderArmor_Engineer</defName>
+    <label>Marauder Armor (Engineer)</label>
+    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Meridia infantry who expect direct fire contact.
+
+This variant is marked for usage by Engineers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -232,13 +236,13 @@
       <color>(0.87, 0.60, 0.21)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -279,7 +283,7 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light_Engineer</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -320,18 +324,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet</defName>
-    <label>Carapace Helmet</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.</description>
+    <defName>TMG_MarauderHelmet_Officer</defName>
+    <label>Marauder Helmet (Officer)</label>
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.
+
+This variant is marked for usage by officers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -346,13 +352,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -385,8 +391,8 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>EOTF_Armor_Light</li>
-        <li>EOTF_Armor_Light_Shocktrooper</li>
+        <li>TMG_Armor</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -417,18 +423,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Medic</defName>
-    <label>Carapace Helmet (Medic)</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by Medical staff.</description>
+    <defName>TMG_MarauderHelmet_Medic</defName>
+    <label>Marauder Helmet (Medic)</label>
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.
+
+This variant is marked for usage by Medical staff.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -443,13 +451,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -482,7 +490,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light_Medic</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -513,18 +521,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Engineer</defName>
-    <label>Carapace Helmet (Engineer)</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by Engineers.</description>
+    <defName>TMG_MarauderHelmet_Engineer</defName>
+    <label>Marauder Helmet (Engineer)</label>
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.
+
+This variant is marked for usage by Engineers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -539,13 +549,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -578,7 +588,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light_Engineer</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -609,18 +619,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Officer</defName>
-    <label>Carapace Helmet (Officer)</label>
-    <description>A hard-shell combat helmet with a carapace outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Frontier combat personnel.\n\nThis variant is marked for usage by officers.</description>
+    <defName>TMG_MarauderHelmet</defName>
+    <label>Marauder Helmet (Officer)</label>
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.\n\nThis variant is marked for usage by officers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -635,13 +645,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_OfficerCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_OfficerMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -674,7 +684,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Officer</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -705,18 +715,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Insulated</defName>
-    <label>Carapace Helmet (Thermal)</label>
-    <description>A carapace helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
+    <defName>TMG_MarauderHelmet_Insulated</defName>
+    <label>Marauder Helmet (Insulated)</label>
+    <description>A Marauder helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetThermal/LightHelmetThermal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -731,13 +741,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -770,7 +780,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -801,18 +811,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Shield</defName>
-    <label>Carapace Helmet (Faceshield)</label>
-    <description>A carapace helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
+    <defName>TMG_MarauderHelmet_Shield</defName>
+    <label>Marauder Helmet (Reinforced)</label>
+    <description>A Marauder helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetMasked/LightHelmetMasked</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -827,13 +837,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -871,7 +881,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light_Shocktrooper</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -902,18 +912,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_CarapaceHelmet_Gasmask</defName>
-    <label>Carapace Helmet (Gasmask)</label>
-    <description>A carapace helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
+    <defName>TMG_MarauderHelmet_Gasmask</defName>
+    <label>Marauder Helmet (Gasmask)</label>
+    <description>A Marauder helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmetGasmask/LightHelmetGasmask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -928,13 +938,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_CarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -969,8 +979,8 @@
       <useWornGraphicMask>True</useWornGraphicMask>
       <immuneToToxGasExposure>true</immuneToToxGasExposure>
       <tags Inherit="False">
-        <li>EOTF_Armor_Light</li>
-        <li>EOTF_Armor_Scout</li>
+        <li>TMG_Armor</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -1001,11 +1011,11 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 </Defs>

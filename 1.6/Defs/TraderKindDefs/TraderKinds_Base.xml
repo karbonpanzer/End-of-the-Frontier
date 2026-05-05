@@ -2,7 +2,7 @@
 <Defs>
 
   <TraderKindDef>
-    <defName>Base_Dominion_Standard</defName>
+    <defName>Base_Ringer_Standard</defName>
     <stockGenerators>
 
       <!-- Resources -->
@@ -132,7 +132,7 @@
         </countChances>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>EOTF_Decompiler_Codes</thingDef>
+        <thingDef>TMG_Codex</thingDef>
         <countRange>1~1</countRange>
       </li>
 

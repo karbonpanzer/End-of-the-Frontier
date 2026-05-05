@@ -3,12 +3,12 @@
 <Defs> 				
 			
 		<ThingDef ParentName="ArmorHelmetMakeableBase">
-			<defName>EOTF_OrbitalCarapaceHelmet</defName>
-			<label>EVA Helmet</label>
-			<description>Made on the moon of Karloff, this helmet is a modifed rebreather from a dominion gasmask mixed with parts from a astro-miner helmet. It provides decent protection and the ability to function in a vacuum which is all it needed to do during the Laemelle Rebellion. Laemelle propaganda states taht the origin of this device was from the leader of the rebellion whose name had been lost to time, one they called Abraham Stroker, a miner who eventually took up arms against the explotation of the world by the dominion and led the revolt himself. Of course though actual records show that it was a woman by the name of Vilhemina Gotwyn who lead a division of miners against the Dominion after the death of 300 people in a cave-in. However, her falling out with the party led to the eventually take over of Abraham Stroker during the Reconstruction of the world of Chaney Major.</description>
+			<defName>TMG_OrbitalMarauderHelmet</defName>
+			<label>Orbital Marauder Helmet</label>
+			<description>A fully sealed Marauder helmet rated for low-pressure environments. Integrated visor and pressure-lock collar allow short-duration operations in vacuum or near-vacuum conditions.</description>
 			<techLevel>Spacer</techLevel>
 		   <recipeMaker>
-			  <researchPrerequisite>EOTF_OrbitalCarapaceArmor</researchPrerequisite>
+			  <researchPrerequisite>TMG_OrbitalMarauderArmor</researchPrerequisite>
 			  <recipeUsers>
 				<li>TableMachining</li>
 			  </recipeUsers>
@@ -31,7 +31,7 @@
 				<EquipDelay>2</EquipDelay>
 			</statBases>
 			<thingCategories>
-				<li>EOTF_Helmets</li>
+				<li>TMG_Helmets</li>
 			</thingCategories>
 			<costList>
 				<Cloth>10</Cloth>
@@ -59,7 +59,7 @@
 				<li>Overhead</li>
 			  </layers>
 			  <tags>
-				<li>EOTF_Spacer</li>
+				<li>TMG_Armor</li>
 				<li>Vacsuit</li>
 			  </tags>
 			<forceEyesVisibleForRotations>
@@ -86,12 +86,12 @@
 		</ThingDef>	
 
 		<ThingDef ParentName="ApparelMakeableBase">
-			<defName>EOTF_OrbitalCarapaceArmor</defName>
-			<label>EVA Armor</label>
+			<defName>TMG_OrbitalMarauderArmor</defName>
+			<label>Orbital Marauder Armor</label>
 			<techLevel>Spacer</techLevel>
-			<description>During the reign of the Great Domain, a battle between the Dominion Infantry and the Laemelle Expanse, a secessionist movement of seven worlds who fought agains the Dominion.The Laemelle Republic formed the fall of the Dominion and armed several meteors as fortresses protecting the worlds of Chapman, Legosi, and Chaney Minor and Major, their greatest fortresses being on the moons of Rains and Karloff. On those worlds, they use a modified form of the standard dominion armor which allows its usage in space, using reinforced space suit seen by astro-miners before the rebellion. It is not a complex equipment but functions well for combat.</description>			
+			<description>A vacuum-rated variant of standard Marauder armor, with sealed joints and passive pressure retention. Used by personnel conducting boarding actions or operations in low-pressure environments.</description>			
 			<recipeMaker>
-				<researchPrerequisite>EOTF_OrbitalCarapaceArmor</researchPrerequisite>
+				<researchPrerequisite>TMG_OrbitalMarauderArmor</researchPrerequisite>
 			</recipeMaker>
 			<graphicData>
 				<graphicClass>Graphic_Single</graphicClass>
@@ -113,7 +113,7 @@
 				<EquipDelay>5</EquipDelay>
 			</statBases>
 			<thingCategories>
-				<li>EOTF_Armor</li>
+				<li>TMG_Armor</li>
 			</thingCategories>
 			<costList>
 				<Steel>60</Steel>
@@ -137,7 +137,7 @@
 					<li>Middle</li>					
 				</layers>
 				<tags>
-					<li>EOTF_EVA</li>
+					<li>TMG_Armor</li>
 				</tags>
 				<defaultOutfitTags>
 					<li>Spacefarer</li>

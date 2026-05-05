@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceArmor</defName>
-    <label>Heavy Carapace Armor</label>
-    <description>A reinforced carapace armor set with additional plating over the standard configuration. Heavier and slower than carapace armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.</description>
+    <defName>TMG_HeavyMarauderArmor</defName>
+    <label>Heavy Marauder Armor</label>
+    <description>A reinforced Marauder armor set with additional plating over the standard configuration. Heavier and slower than Marauder armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
@@ -18,13 +18,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -65,8 +65,8 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy</li>
-        <li>EOTF_Armor_Heavy_Shocktrooper</li>
+        <li>TMG_Armor</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -107,18 +107,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceArmor_Medic</defName>
-    <label>Heavy Carapace Armor (Medic)</label>
-    <description>A reinforced carapace armor set with additional plating over the standard configuration. Heavier and slower than carapace armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.\n\n This variant is marked for usage by Medical staff.</description>
+    <defName>TMG_HeavyMarauderArmor_Medic</defName>
+    <label>Heavy Marauder Armor (Medic)</label>
+    <description>A reinforced Marauder armor set with additional plating over the standard configuration. Heavier and slower than Marauder armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.
+
+This variant is marked for usage by Medical staff.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
@@ -133,13 +135,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -180,7 +182,7 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy_Medic</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -221,18 +223,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceArmor_Engineer</defName>
-    <label>Heavy Carapace Armor (Engineer)</label>
-    <description>A reinforced carapace armor set with additional plating over the standard configuration. Heavier and slower than carapace armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.\n\nThis variant is marked for usage by Engineers.</description>
+    <defName>TMG_HeavyMarauderArmor_Engineer</defName>
+    <label>Heavy Marauder Armor (Engineer)</label>
+    <description>A reinforced Marauder armor set with additional plating over the standard configuration. Heavier and slower than Marauder armor, but substantially more resistant to incoming fire. Used by assault troops expected to absorb significant punishment.
+
+This variant is marked for usage by Engineers.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
@@ -247,13 +251,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -294,7 +298,7 @@
       <soundRemove>Remove_PowerArmor</soundRemove>
       <useDeflectMetalEffect>true</useDeflectMetalEffect>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy_Engineer</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -335,18 +339,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet</defName>
-    <label>Heavy Carapace Helmet</label>
-    <description>A reinforced carapace helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.</description>
+    <defName>TMG_HeavyMarauderHelmet</defName>
+    <label>Heavy Marauder Helmet</label>
+    <description>A reinforced Marauder helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmet/HeavyHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -361,13 +365,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -400,8 +404,8 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>EOTF_Armor_Heavy</li>
-        <li>EOTF_Armor_Heavy_Shocktrooper</li>
+        <li>TMG_Armor</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -432,18 +436,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet_Medic</defName>
-    <label>Heavy Carapace Helmet (Medic)</label>
-    <description>A reinforced carapace helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.\n\nThis variant is marked for usage by Medical staff.</description>
+    <defName>TMG_HeavyMarauderHelmet_Medic</defName>
+    <label>Heavy Marauder Helmet (Medic)</label>
+    <description>A reinforced Marauder helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.
+
+This variant is marked for usage by Medical staff.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmet/HeavyHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -458,13 +464,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -497,7 +503,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy_Medic</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -528,18 +534,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet_Engineer</defName>
-    <label>Heavy Carapace Helmet (Engineer)</label>
-    <description>A reinforced carapace helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.\n\nThis variant is marked for usage by Engineers.</description>
+    <defName>TMG_HeavyMarauderHelmet_Engineer</defName>
+    <label>Heavy Marauder Helmet (Engineer)</label>
+    <description>A reinforced Marauder helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.
+
+This variant is marked for usage by Engineers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmet/HeavyHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -554,13 +562,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -593,7 +601,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy_Engineer</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -624,18 +632,20 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet_Officer</defName>
-    <label>Heavy Carapace Helmet (Officer)</label>
-    <description>A reinforced carapace helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.\n\nThis variant is marked for usage by Officers.</description>
+    <defName>TMG_HeavyMarauderHelmet_Officer</defName>
+    <label>Heavy Marauder Helmet (Officer)</label>
+    <description>A reinforced Marauder helmet with additional plating across the crown and rear. Substantially more protective than the standard configuration. Used by assault personnel expecting sustained fire.
+
+This variant is marked for usage by Officers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmet/HeavyHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -650,13 +660,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_OfficerCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_OfficerMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -689,7 +699,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy_Officer</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -720,19 +730,19 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
     <uiIconScale>1.4</uiIconScale>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet_Thermal</defName>
-    <label>Heavy Carapace Helmet (Thermal)</label>
-    <description>A heavy carapace helmet with thermal lining for extreme temperature operations. Provides the same protection as the standard heavy configuration in conditions that would otherwise impair the wearer.</description>
+    <defName>TMG_HeavyMarauderHelmet_Insulated</defName>
+    <label>Heavy Marauder Helmet (Insulated)</label>
+    <description>A heavy Marauder helmet with thermal lining for extreme temperature operations. Provides the same protection as the standard heavy configuration in conditions that would otherwise impair the wearer.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmetThermal/HeavyHelmetThermal</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -747,13 +757,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -786,7 +796,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -817,18 +827,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet_Shield</defName>
-    <label>Heavy Carapace Helmet (Faceshield)</label>
-    <description>A heavy carapace helmet with extra armor bonded across the faceplate and brow. The most protective variant of the carapace helmet series.</description>
+    <defName>TMG_HeavyMarauderHelmet_Shielded</defName>
+    <label>Heavy Marauder Helmet (Reinforced)</label>
+    <description>A heavy Marauder helmet with extra armor bonded across the faceplate and brow. The most protective variant of the Marauder helmet series.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmetMasked/HeavyHelmetMasked</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -843,13 +853,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>7</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -887,7 +897,7 @@
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy_Shocktrooper</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -918,18 +928,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>EOTF_HeavyCarapaceHelmet_Gasmask</defName>
-    <label>Heavy Carapace Helmet (Gasmask)</label>
-    <description>A heavy carapace helmet with a full-face filtration system integrated into the shell. Seals completely against airborne threats while retaining the ballistic protection of the heavy platform.</description>
+    <defName>TMG_HeavyMarauderHelmet_Gasmask</defName>
+    <label>Heavy Marauder Helmet (Gasmask)</label>
+    <description>A heavy Marauder helmet with a full-face filtration system integrated into the shell. Seals completely against airborne threats while retaining the ballistic protection of the heavy platform.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/HeavyHelmetGasmask/HeavyHelmetGasmask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -944,13 +954,13 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>EOTF_HeavyCarapaceArmor</researchPrerequisite>
+      <researchPrerequisite>TMG_HeavyMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>EOTF_DominionFabricator</li>
+        <li>TMG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -988,7 +998,7 @@
       <useWornGraphicMask>True</useWornGraphicMask>
       <immuneToToxGasExposure>true</immuneToToxGasExposure>
       <tags Inherit="False">
-        <li>EOTF_Armor_Heavy</li>
+        <li>TMG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -1019,11 +1029,11 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>EOTF_Helmets</li>
+      <li>TMG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>EOTF_Armor</li>
+      <li>TMG_Armor</li>
     </tradeTags>
   </ThingDef>
 </Defs>

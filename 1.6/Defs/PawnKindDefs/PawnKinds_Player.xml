@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<PawnKindDef ParentName="BasePlayerPawnKind">
-		<defName>EOTF_Player</defName>
-		<label>Ringer</label>
+		<defName>TMG_Player</defName>
+		<label>Ringer settlers</label>
 		<race>Human</race>
-		<defaultFactionType>EOTF_Player</defaultFactionType>
-		<nameMaker>EOTF_Ringer_NamerMale</nameMaker>
-		<nameMakerFemale>EOTF_Ringer_NamerFemale</nameMakerFemale>
+		<defaultFactionType>TMG_Player</defaultFactionType>
+		<nameMaker>TMG_Ringer_NamerMale</nameMaker>
+		<nameMakerFemale>TMG_Ringer_NamerFemale</nameMakerFemale>
 		<backstoryFiltersOverride>
 			<li>
 				<categories>
@@ -16,7 +16,7 @@
 			</li>
 		</backstoryFiltersOverride>
 		<apparelTags>
-			<li>EOTF_Uniform</li>
+			<li>TMG_MeridiaUniform</li>
 		</apparelTags>
 		<apparelAllowHeadgearChance>0</apparelAllowHeadgearChance>
 		<gearHealthRange>

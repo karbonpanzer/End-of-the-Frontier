@@ -2,7 +2,7 @@
 <Defs>
 
   <TraderKindDef>
-    <defName>Caravan_Dominion_BulkGoods</defName>
+    <defName>Caravan_Ringer_BulkGoods</defName>
     <label>bulk goods trader</label>
     <stockGenerators>
 
@@ -170,7 +170,7 @@
   <!--======================================================================================-->
 
   <TraderKindDef>
-    <defName>Caravan_Dominion_ArmsDealer</defName>
+    <defName>Caravan_Ringer_ArmsDealer</defName>
     <label>arms dealer</label>
     <stockGenerators>
 
@@ -284,7 +284,7 @@
 
   <!--======================================================================================-->
   <TraderKindDef>
-    <defName>Caravan_Dominion_Exotic</defName>
+    <defName>Caravan_Ringer_Exotic</defName>
     <label>black market trader</label>
     <stockGenerators>
 
@@ -314,7 +314,7 @@
         <countRange>2~8</countRange>
       </li>
       <li Class="StockGenerator_SingleDef">
-        <thingDef>EOTF_Decompiler_Codes</thingDef>
+        <thingDef>TMG_Codex</thingDef>
         <countRange>1~1</countRange>
       </li>
 

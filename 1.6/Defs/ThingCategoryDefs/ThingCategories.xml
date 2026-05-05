@@ -1,42 +1,42 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 	<ThingCategoryDef>
-		<defName>EOTF_Uniforms</defName>
-		<label>Frontier Apparel</label>
+		<defName>TMG_Uniforms</defName>
+		<label>Ringer Apparel</label>
 		<parent>Apparel</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>EOTF_Headgear</defName>
-		<label>Frontier Headgear</label>
-		<parent>EOTF_Uniforms</parent>
+		<defName>TMG_Headgear</defName>
+		<label>Ringer Headgear</label>
+		<parent>TMG_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<ThingCategoryDef>
-		<defName>EOTF_Accessories</defName>
-		<label>Frontier Accessories</label>
-		<parent>EOTF_Uniforms</parent>
+		<defName>TMG_Accessories</defName>
+		<label>Ringer Accessories</label>
+		<parent>TMG_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Directory-->
 	<ThingCategoryDef>
-		<defName>EOTF_Armor</defName>
-		<label>Frontier Armor</label>
-		<parent>EOTF_Uniforms</parent>
+		<defName>TMG_Armor</defName>
+		<label>Ringer Armor</label>
+		<parent>TMG_Uniforms</parent>
 	</ThingCategoryDef>
 
 	<!-- Helmet Subdirectory-->
 	<ThingCategoryDef>
-		<defName>EOTF_Helmets</defName>
+		<defName>TMG_Helmets</defName>
 		<label>Helmets</label>
-		<parent>EOTF_Armor</parent>
+		<parent>TMG_Armor</parent>
 	</ThingCategoryDef>
 
 	<!-- Armor Accessories-->
 	<ThingCategoryDef>
-		<defName>EOTF_ArmorAccessories</defName>
+		<defName>TMG_ArmorAccessories</defName>
 		<label>Armor Accessories</label>
-		<parent>EOTF_Armor</parent>
+		<parent>TMG_Armor</parent>
 	</ThingCategoryDef>
 
 </Defs>

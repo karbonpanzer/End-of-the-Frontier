@@ -1,9 +1,8 @@
 ﻿<Defs>
   <ThingDef ParentName="BuildingBase">
-    <defName>EOTF_Dominion_Decompiler</defName>
-    <label>Dominion Decompiler</label>
-    <description>A high-tech decoding station and system for decompling and codifying technology.
-      Destruction of the decomplier does not return the codex.</description>
+    <defName>TMG_Decoder</defName>
+    <label>Ringer Decoder</label>
+    <description>A high-tech decoding system for decompiling Ringer schematics. Requires a functioning Ringer Codex for construction. Destruction of the decoder does not return the codex.</description>
     <thingClass>Building</thingClass>
     <graphicData>
       <texPath>Things/Building/Misc/Decompiler/DominionDecompiler</texPath>
@@ -21,7 +20,7 @@
     </statBases>
     <costList>
       <Steel>100</Steel>
-      <EOTF_Decompiler_Codes>1</EOTF_Decompiler_Codes>
+      <TMG_Codex>1</TMG_Codex>
       <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <comps>

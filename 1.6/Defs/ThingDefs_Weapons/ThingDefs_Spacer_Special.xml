@@ -4,7 +4,7 @@
 	<!-- ==================== GAUSS RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>EOTF_Round_GaussRifle</defName>
+		<defName>TMG_Round_GaussRifle</defName>
 		<label>gauss rifle ferrous slug</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -14,16 +14,16 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>40</damageAmountBase>
-			<armorPenetrationBase>0.76</armorPenetrationBase>
+			<damageAmountBase>45</damageAmountBase>
+			<armorPenetrationBase>0.82</armorPenetrationBase>
 			<speed>115</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>EOTF_GaussRifle</defName>
+		<defName>TMG_GaussRifle</defName>
 		<label>Gauss Rifle</label>
-		<description>A rifle converted into a gauss rifle using a modified foregrip. Rather than full adopt a new weapon, using a series of magnetic coils it turns a simple firearm into a powerful rifle cheaply.</description>
+		<description>A rifle converted into a gauss rifle using a modified foregrip. A series of magnetic coils turns a simple firearm into a powerful long-range rifle cheaply.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/chemrailrifle</texPath>
@@ -32,12 +32,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>EOTF_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -49,12 +49,12 @@
 		<statBases>
 			<WorkToMake>56000</WorkToMake>
 			<Mass>7.5</Mass>
-			<MarketValue>4600</MarketValue>
-			<AccuracyTouch>0.35</AccuracyTouch>
-			<AccuracyShort>0.55</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
-			<AccuracyLong>0.90</AccuracyLong>
-			<RangedWeapon_Cooldown>3.0</RangedWeapon_Cooldown>
+			<MarketValue>3800</MarketValue>
+			<AccuracyTouch>0.33</AccuracyTouch>
+			<AccuracyShort>0.50</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.88</AccuracyLong>
+			<RangedWeapon_Cooldown>3.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.20</MoveSpeed>
@@ -63,10 +63,10 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>EOTF_Round_GaussRifle</defaultProjectile>
-				<warmupTime>2.8</warmupTime>
-				<burstShotCount>2</burstShotCount>
-				<range>45.0</range>
+				<defaultProjectile>TMG_Round_GaussRifle</defaultProjectile>
+				<warmupTime>3.0</warmupTime>
+				<burstShotCount>1</burstShotCount>
+				<range>48.0</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>10</muzzleFlashScale>
@@ -109,7 +109,7 @@
 	<!-- ==================== SALVO GRENADE LAUNCHER ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>EOTF_Grenade_SalvoLauncher</defName>
+		<defName>TMG_Grenade_SalvoLauncher</defName>
 		<label>salvo launcher grenade</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -128,9 +128,9 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>EOTF_SalvoGrenadeLauncher</defName>
+		<defName>TMG_SalvoGrenadeLauncher</defName>
 		<label>Salvo Grenade Launcher</label>
-		<description>A rotary grenade launcher, favored by Dominion security forces. Designed for accuracy, it can fire a variety of grenades accurately in both lethal and nonlethal scenarios.</description>
+		<description>A rotary grenade launcher, favored by mercenaries. Designed for accuracy, it can fire a variety of grenades accurately in both lethal and nonlethal scenarios.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/m799</texPath>
@@ -139,12 +139,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>EOTF_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -157,10 +157,10 @@
 			<WorkToMake>48000</WorkToMake>
 			<Mass>7.0</Mass>
 			<MarketValue>3800</MarketValue>
-			<AccuracyTouch>0.40</AccuracyTouch>
-			<AccuracyShort>0.65</AccuracyShort>
-			<AccuracyMedium>0.65</AccuracyMedium>
-			<AccuracyLong>0.50</AccuracyLong>
+			<AccuracyTouch>0.35</AccuracyTouch>
+			<AccuracyShort>0.62</AccuracyShort>
+			<AccuracyMedium>0.66</AccuracyMedium>
+			<AccuracyLong>0.48</AccuracyLong>
 			<RangedWeapon_Cooldown>2.2</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
@@ -170,7 +170,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>EOTF_Grenade_SalvoLauncher</defaultProjectile>
+				<defaultProjectile>TMG_Grenade_SalvoLauncher</defaultProjectile>
 				<warmupTime>2.0</warmupTime>
 				<range>32.0</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -214,7 +214,7 @@
 	<!-- ==================== LIGHT AUTOLOADER CANNON ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>EOTF_Shell_AutoloaderCannon</defName>
+		<defName>TMG_Shell_AutoloaderCannon</defName>
 		<label>autoloader cannon shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -224,17 +224,17 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>60</damageAmountBase>
-			<armorPenetrationBase>0.98</armorPenetrationBase>
+			<damageAmountBase>65</damageAmountBase>
+			<armorPenetrationBase>0.99</armorPenetrationBase>
 			<stoppingPower>4</stoppingPower>
 			<speed>100</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>EOTF_AutoloaderCannon</defName>
+		<defName>TMG_AutoloaderCannon</defName>
 		<label>Light Autoloader Cannon</label>
-		<description>A scaled down anti-tank cannon made for infantry use. Heavy, cumbersome, and slow, the only saving graace it has is the ability to destroy armor effectively over great distances.</description>
+		<description>A scaled down anti-tank cannon made for infantry use. Heavy, cumbersome, and slow, but capable of destroying armor effectively over great distances.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/autoloaderrifle_alt</texPath>
@@ -243,12 +243,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>EOTF_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -259,13 +259,13 @@
 		</costList>
 		<statBases>
 			<WorkToMake>82000</WorkToMake>
-			<Mass>15.0</Mass>
-			<MarketValue>9800</MarketValue>
-			<AccuracyTouch>0.20</AccuracyTouch>
-			<AccuracyShort>0.40</AccuracyShort>
-			<AccuracyMedium>0.68</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
-			<RangedWeapon_Cooldown>5.0</RangedWeapon_Cooldown>
+			<Mass>16.0</Mass>
+			<MarketValue>8500</MarketValue>
+			<AccuracyTouch>0.15</AccuracyTouch>
+			<AccuracyShort>0.35</AccuracyShort>
+			<AccuracyMedium>0.70</AccuracyMedium>
+			<AccuracyLong>0.90</AccuracyLong>
+			<RangedWeapon_Cooldown>5.5</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.45</MoveSpeed>
@@ -274,9 +274,9 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>EOTF_Shell_AutoloaderCannon</defaultProjectile>
-				<warmupTime>4.5</warmupTime>
-				<range>55.0</range>
+				<defaultProjectile>TMG_Shell_AutoloaderCannon</defaultProjectile>
+				<warmupTime>5.0</warmupTime>
+				<range>58.0</range>
 				<soundCast>ChargeLance_Fire</soundCast>
 				<soundCastTail>GunTail_Heavy</soundCastTail>
 				<muzzleFlashScale>14</muzzleFlashScale>
@@ -319,7 +319,7 @@
 	<!-- ==================== HYDRA ANTI-MATERIAL RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>EOTF_Bullet_HydraAMR</defName>
+		<defName>TMG_Bullet_HydraAMR</defName>
 		<label>hydra anti-material round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -329,16 +329,16 @@
 		<projectile>
 			<flyOverhead>false</flyOverhead>
 			<damageDef>Bullet</damageDef>
-			<damageAmountBase>26</damageAmountBase>
-			<armorPenetrationBase>0.72</armorPenetrationBase>
+			<damageAmountBase>30</damageAmountBase>
+			<armorPenetrationBase>0.74</armorPenetrationBase>
 			<speed>120</speed>
 		</projectile>
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>EOTF_HydraAntiMaterialRifle</defName>
+		<defName>TMG_HydraRifle</defName>
 		<label>Hydra Rifle</label>
-		<description>A experimental three barreled anti-material rifle changed in high-powered armor piercing shells. Heavy and cumbersome, it is perfect for fighting  both armored and unarmored targets.</description>
+		<description>An experimental hyper-burst anti-material rifle chambered in high-powered armor piercing shells. Heavy and cumbersome, effective against both armored and unarmored targets.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponRanged/twinlancerrifle</texPath>
@@ -347,12 +347,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>EOTF_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -363,13 +363,13 @@
 		</costList>
 		<statBases>
 			<WorkToMake>76000</WorkToMake>
-			<Mass>11.0</Mass>
-			<MarketValue>9200</MarketValue>
-			<AccuracyTouch>0.45</AccuracyTouch>
-			<AccuracyShort>0.62</AccuracyShort>
-			<AccuracyMedium>0.80</AccuracyMedium>
-			<AccuracyLong>0.88</AccuracyLong>
-			<RangedWeapon_Cooldown>3.5</RangedWeapon_Cooldown>
+			<Mass>11.5</Mass>
+			<MarketValue>8200</MarketValue>
+			<AccuracyTouch>0.40</AccuracyTouch>
+			<AccuracyShort>0.58</AccuracyShort>
+			<AccuracyMedium>0.78</AccuracyMedium>
+			<AccuracyLong>0.82</AccuracyLong>
+			<RangedWeapon_Cooldown>3.8</RangedWeapon_Cooldown>
 		</statBases>
 		<equippedStatOffsets>
 			<MoveSpeed>-0.30</MoveSpeed>
@@ -378,9 +378,9 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>EOTF_Bullet_HydraAMR</defaultProjectile>
-				<warmupTime>3.2</warmupTime>
-				<range>55.0</range>
+				<defaultProjectile>TMG_Bullet_HydraAMR</defaultProjectile>
+				<warmupTime>3.4</warmupTime>
+				<range>52.0</range>
 				<burstShotCount>3</burstShotCount>
 				<ticksBetweenBurstShots>2</ticksBetweenBurstShots>
 				<soundCast>Shot_SniperRifle</soundCast>

@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>EOTF_Prospectors</defName>
-		<label>Dominion Prospectors</label>
-		<description>After years in cryptosleep, you have arrived to the Rimworld. You spend a pretty penny for a role in a prospecting mission. You are out of the company cities and are now free to make your own opportunities, at a quarter of a share of course.</description>
+		<defName>TMG_Prospectors</defName>
+		<label>Ringer Settlers</label>
+		<description>After years in cryptosleep, you have arrived at the rimworld. You spent a pretty penny for a role in a settler mission out of Meridia. You are free from the ring city and its politics, out here to make your own opportunities.</description>
 
 		<scenario>
 			<summary>A group of prospectors, sent to survey for a larger empire.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>EOTF_Player</factionDef>
+				<factionDef>TMG_Player</factionDef>
 			</playerFaction>
 
 			<parts>
@@ -43,19 +43,19 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>EOTF_DominionShotgun</thingDef>
+					<thingDef>TMG_LawbringerShotgun</thingDef>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>EOTF_SecurityPistol</thingDef>
+					<thingDef>TMG_ServicePistol</thingDef>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>EOTF_Vibroblade</thingDef>
+					<thingDef>TMG_Vibroblade</thingDef>
 					<count>1</count>
 					<stuff>Steel</stuff>
 					<quality>Normal</quality>
@@ -63,14 +63,14 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>EOTF_CarapaceArmor</thingDef>
+					<thingDef>TMG_MarauderArmor</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>EOTF_CarapaceHelmet</thingDef>
+					<thingDef>TMG_MarauderHelmet</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
@@ -114,13 +114,13 @@
 				<!-- Needed for Scenario Start to get Early Research-->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>EOTF_Decompiler_Codes</thingDef>
+					<thingDef>TMG_Codex</thingDef>
 					<count>1</count>
 				</li>
 
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>EOTF_FrontierUniforms</project>
+					<project>TMG_RingerUniforms</project>
 				</li>
 
 				 <!-- Scatter some things near player start -->

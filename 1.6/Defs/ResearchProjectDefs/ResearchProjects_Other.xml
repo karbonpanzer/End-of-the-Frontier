@@ -2,31 +2,31 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>EOTF_Decoder</defName>
-		<label>Dominion Decoder</label>
-		<description>Build a decompilier to learn secrets from the Dominion.</description>
+		<defName>TMG_Decoder</defName>
+		<label>Ringer Decoder</label>
+		<description>Build a decoder to unlock Ringer technology.</description>
 		<baseCost>1000</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
 			<li>Fabrication</li>
 		</prerequisites>
 		<requiredAnalyzed>
-			<li>EOTF_Decompiler_Codes</li>
+			<li>TMG_Codex</li>
 		</requiredAnalyzed>
 		<researchViewX>0</researchViewX>
 		<researchViewY>2.1</researchViewY>
 	</ResearchProjectDef>
 
 	<ResearchProjectDef>
-		<defName>EOTF_DominionFabricator</defName>
-		<label>Dominion Fabricator</label>
-		<description>Build a decompilier to learn secrets from the Dominion.</description>
+		<defName>TMG_FabricationBench</defName>
+		<label>Ringer Fabricator</label>
+		<description>Build the Ringer Fabricator workbench needed to produce Ringer equipment.</description>
 		<baseCost>1000</baseCost>
-		<tab>EOTF_ResearchTab</tab>
+		<tab>TMG_ResearchTab</tab>
 		<techLevel>Spacer</techLevel>
 		<prerequisites>
-			<li>EOTF_Decoder</li>
+			<li>TMG_Decoder</li>
 		</prerequisites>
 		<researchViewX>1</researchViewX>
 		<researchViewY>2.1</researchViewY>

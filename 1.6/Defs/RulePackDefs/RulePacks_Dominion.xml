@@ -13,7 +13,7 @@
          - Commonwealth of Ironhold
        ========================================================== -->
   <RulePackDef>
-    <defName>EOTF_Faction_Civil</defName>
+    <defName>TMG_Faction_Civil</defName>
     <include>
       <li>OutlanderPlaceNameUtility</li>
     </include>
@@ -74,7 +74,7 @@
        The only difference: concept_positive file is shared (vanilla).
        ========================================================== -->
   <RulePackDef>
-    <defName>EOTF_Settlement_Civil</defName>
+    <defName>TMG_Settlement_Civil</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name(p=12)->[townname_wordgen]</li>
@@ -156,7 +156,7 @@
          - The Wolves of Varstead
        ========================================================== -->
   <RulePackDef>
-    <defName>EOTF_Faction_Rough</defName>
+    <defName>TMG_Faction_Rough</defName>
     <include>
       <li>OutlanderPlaceNameUtility</li>
     </include>
@@ -201,7 +201,7 @@
          - Vextor (wordgen with townendevil)
        ========================================================== -->
   <RulePackDef>
-    <defName>EOTF_Settlement_Rough</defName>
+    <defName>TMG_Settlement_Rough</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name(p=4)->[townname_combo]</li>

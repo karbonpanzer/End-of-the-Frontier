@@ -2,41 +2,41 @@
 <Defs>
 
   <RulePackDef>
-    <defName>EOTF_PawnNamerRinger</defName>
+    <defName>TMG_PawnNamerRinger</defName>
     <rulePack>
       <rulesFiles>
-        <li>EOTF_Ringer_Male->Names/EOTF_Ringer_Male</li>
-        <li>EOTF_Ringer_Female->Names/EOTF_Ringer_Female</li>
-        <li>EOTF_Ringer_Surname->Names/EOTF_Ringer_Surname</li>
+        <li>TMG_Ringer_Male->Names/TMG_Ringer_Male</li>
+        <li>TMG_Ringer_Female->Names/TMG_Ringer_Female</li>
+        <li>TMG_Ringer_Surname->Names/TMG_Ringer_Surname</li>
       </rulesFiles>
       <rulesStrings>
-        <li>EOTF_Ringer_Male->[EOTF_Ringer_Male]</li>
-        <li>EOTF_Ringer_Female->[EOTF_Ringer_Female]</li>
-        <li>EOTF_Ringer_Surname->[EOTF_Ringer_Surname]</li>
+        <li>TMG_Ringer_Male->[TMG_Ringer_Male]</li>
+        <li>TMG_Ringer_Female->[TMG_Ringer_Female]</li>
+        <li>TMG_Ringer_Surname->[TMG_Ringer_Surname]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
 
   <RulePackDef>
-    <defName>EOTF_Ringer_NamerMale</defName>
+    <defName>TMG_Ringer_NamerMale</defName>
     <include>
-      <li>EOTF_PawnNamerRinger</li>
+      <li>TMG_PawnNamerRinger</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=2)->[EOTF_Ringer_Male] [EOTF_Ringer_Surname]</li>
+        <li>r_name(p=2)->[TMG_Ringer_Male] [TMG_Ringer_Surname]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>
 
   <RulePackDef>
-    <defName>EOTF_Ringer_NamerFemale</defName>
+    <defName>TMG_Ringer_NamerFemale</defName>
     <include>
-      <li>EOTF_PawnNamerRinger</li>
+      <li>TMG_PawnNamerRinger</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <li>r_name(p=2)->[EOTF_Ringer_Female] [EOTF_Ringer_Surname]</li>
+        <li>r_name(p=2)->[TMG_Ringer_Female] [TMG_Ringer_Surname]</li>
       </rulesStrings>
     </rulePack>
   </RulePackDef>

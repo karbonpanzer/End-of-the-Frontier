@@ -4,7 +4,7 @@
 	<!-- ==================== VIBROSWORD ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>EOTF_Vibrosword</defName>
+		<defName>TMG_Vibrosword</defName>
 		<label>Vibrosword</label>
 		<description>A composite sword powered by a small micro-motor which vibrates the blade. Easily able to carve through armor and flesh, the production of it is a closely guarded secret in the Dominion.</description>
 		<graphicData>
@@ -20,12 +20,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>EOTF_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>TMG_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
@@ -87,9 +87,9 @@
 	<!-- ==================== VIBROBLADE ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>EOTF_Vibroblade</defName>
+		<defName>TMG_Vibroblade</defName>
 		<label>Vibroblade</label>
-		<description>A composite dagger power by a small micro-motor. Though lacking in the range of a sword, it provides benefits in close quarters, favored as a back-up for Corporate Security.</description>
+		<description>A composite dagger powered by a small micro-motor. Though lacking in the range of a sword, it provides benefits in close quarters, favored as a back-up weapon.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
 			<texPath>Things/Item/Equipment/WeaponMelee/bayonet</texPath>
@@ -103,12 +103,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>EOTF_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>TMG_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costStuffCount>25</costStuffCount>
@@ -168,91 +168,73 @@
 		</tradeTags>
 	</ThingDef>
 
-	<!-- ==================== FREELANCER KNIFE ==================== -->
+	<!-- ==================== VIBROMAUL ==================== -->
 
-	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>EOTF_FreelancerKnife</defName>
-		<label>Freelancer Knife</label>
-		<description>An ancient design for a combat knife for favored by mercenaries. A double sided blade, knuckle duster, and a skull crusher, allow this knife to be effective in all close quarter fighting.</description>
+	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
+		<defName>TMG_Vibromaul</defName>
+		<label>Vibromaul</label>
+		<description>A composite hammer powered by a powerful micro-motor which vibrates the head. Though heavy it provides enormous force on impact, making it effective against both armored and unarmored targets.</description>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
-			<texPath>Things/Item/Equipment/WeaponMelee/trenchspike</texPath>
+			<texPath>Things/Item/Equipment/WeaponMelee/trenchmace</texPath>
 			<shaderType>CutoutComplex</shaderType>
-			<drawSize>1.25</drawSize>
+			<drawSize>1.4</drawSize>
 		</graphicData>
 		<techLevel>Spacer</techLevel>
-		<equippedAngleOffset>-65</equippedAngleOffset>
+		<uiIconScale>0.9</uiIconScale>
+		<equippedAngleOffset>-45</equippedAngleOffset>
 		<recipeMaker>
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>EOTF_FrontierWeaponry</researchPrerequisite>
+			<researchPrerequisite>TMG_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
-				<Crafting>7</Crafting>
+				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>EOTF_DominionFabricator</li>
+				<li>TMG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
-		<costStuffCount>30</costStuffCount>
+		<costStuffCount>50</costStuffCount>
 		<costList>
-			<ComponentIndustrial>2</ComponentIndustrial>
-			<ComponentSpacer>1</ComponentSpacer>
-			<Plasteel>12</Plasteel>
+			<ComponentIndustrial>4</ComponentIndustrial>
+			<ComponentSpacer>3</ComponentSpacer>
+			<Plasteel>35</Plasteel>
 		</costList>
 		<statBases>
-			<WorkToMake>16000</WorkToMake>
-			<Mass>0.8</Mass>
-			<MarketValue>1100</MarketValue>
+			<WorkToMake>42000</WorkToMake>
+			<Mass>4.2</Mass>
+			<MarketValue>3400</MarketValue>
 		</statBases>
 		<stuffCategories>
 			<li>Metallic</li>
 		</stuffCategories>
 		<tools>
 			<li>
-				<label>knuckle duster</label>
-				<capacities>
-					<li>Blunt</li>
-				</capacities>
-				<power>12</power>
-				<cooldownTime>1.4</cooldownTime>
-			</li>
-			<li>
-				<label>blade</label>
-				<capacities>
-					<li>Cut</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.14</armorPenetration>
-			</li>
-			<li>
-				<label>point</label>
-				<capacities>
-					<li>Stab</li>
-				</capacities>
-				<power>16</power>
-				<cooldownTime>1.5</cooldownTime>
-				<armorPenetration>0.16</armorPenetration>
-			</li>
-			<li>
-				<label>pommel</label>
+				<label>handle</label>
 				<capacities>
 					<li>Blunt</li>
 				</capacities>
 				<power>10</power>
-				<cooldownTime>1.4</cooldownTime>
+				<cooldownTime>2.4</cooldownTime>
+			</li>
+			<li>
+				<label>head</label>
+				<capacities>
+					<li>Blunt</li>
+				</capacities>
+				<power>34</power>
+				<cooldownTime>2.7</cooldownTime>
+				<armorPenetration>0.48</armorPenetration>
 			</li>
 		</tools>
 		<weaponTags>
 			<li>IndustrialMeleeAdvanced</li>
-			<li>BNF_Infantry</li>
-			<li>BNF_Ranger</li>
-			<li>BNF_Raider</li>
-			<li>BNF_Civilian</li>
+			<li>BNF_HInfantry</li>
+			<li>BNF_HRaider</li>
 		</weaponTags>
 		<thingSetMakerTags>
-			<li>RewardStandardMidTech</li>
+			<li>RewardHighTech</li>
 		</thingSetMakerTags>
 		<tradeTags>
 			<li>WeaponMelee</li>

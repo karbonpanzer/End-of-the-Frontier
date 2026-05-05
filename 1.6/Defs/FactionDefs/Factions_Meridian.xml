@@ -4,26 +4,25 @@
 	<!-- Refugees - Player Faction-->
 
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>EOTF_Player</defName>
-		<label>Dominion prospectors</label>
-		<description>A sponsored group of Dominion prospectors, looking to find business interests on the world for a share of the profit.</description>
+		<defName>TMG_Player</defName>
+		<label>Ringer settlers</label>
+		<description>A group of Ringer settlers from Meridia, seeking to build a new life on the rimworld. Carrying the culture and technology of their ring city home, they bring with them the skills that kept Meridia alive.</description>
 		<colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>EOTF_Player</basicMemberKind>
-		<pawnSingular>offworlder</pawnSingular>
-		<pawnsPlural>offworlders</pawnsPlural>
+		<basicMemberKind>TMG_Player</basicMemberKind>
+		<pawnSingular>ringer</pawnSingular>
+		<pawnsPlural>ringers</pawnsPlural>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>
 			<li>Astropolitan</li>
 		</allowedCultures>
-		<factionNameMaker>EOTF_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>EOTF_Settlement_Civil</settlementNameMaker>
+		<factionNameMaker>TMG_Faction_Civil</factionNameMaker>
+		<settlementNameMaker>TMG_Settlement_Civil</settlementNameMaker>
 		<backstoryFilters>
 		  <li>
 			<categories>
-				<li>Ringer</li>
 				<li>Outlander</li>
 			</categories>
 		  </li>
@@ -46,11 +45,13 @@
 	<!-- Colonists - Civil Faction-->
 
 	<FactionDef ParentName="FactionBase">
-		<defName>EOTF_Civil</defName>
-		<label>dominion colony</label>
-		<description>New arrivals to this world from the Dominion, bringing their technology from their empire. They use spacer-level technology and advanced armor and weapons in their pursuit of profit. Their sole concern seems to be finding new avenues of profit on this world.\n\nThey are concerned with their bottom line and maintaining of order. Though happy to trade, they view you as their next business venture.</description>
-		<pawnSingular>citizen</pawnSingular>
-		<pawnsPlural>citizens</pawnsPlural>
+		<defName>TMG_Civil</defName>
+		<label>Ringer settlers</label>
+		<description>Settlers from Meridia who have established themselves on this world. They carry the culture and technology of their ring city home -- spacer-level equipment, organized military structure, and the practical skills of people who grew up maintaining a sealed habitat.
+
+They are willing to trade and cautiously open to outside contact, though they keep a watchful eye on their security.</description>
+		<pawnSingular>ringer</pawnSingular>
+		<pawnsPlural>ringers</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -60,8 +61,8 @@
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>governor</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Dominion</factionIconPath>
-		<factionNameMaker>EOTF_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>EOTF_Settlement_Civil</settlementNameMaker>
+		<factionNameMaker>TMG_Faction_Civil</factionNameMaker>
+		<settlementNameMaker>TMG_Settlement_Civil</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.80, 0.80, 0.95)</li>
 		</colorSpectrum>
@@ -85,7 +86,6 @@
 				<categories>
 					<li>Outlander</li>
 					<li>Pirate</li>
-					<li>Ringer</li>
 				</categories>
 			</li>
 		</backstoryFilters>
@@ -101,15 +101,15 @@
 		<allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
 		<caravanTraderKinds>
-			<li>Caravan_Dominion_BulkGoods</li>
-			<li>Caravan_Dominion_ArmsDealer</li>
-			<li>Caravan_Dominion_Exotic</li>
+			<li>Caravan_Ringer_BulkGoods</li>
+			<li>Caravan_Ringer_ArmsDealer</li>
+			<li>Caravan_Ringer_Exotic</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-			<li>Visitor_Dominion_Standard</li>
+			<li>Visitor_Ringer_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_Dominion_Standard</li>
+			<li>Base_Ringer_Standard</li>
 		</baseTraderKinds>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
@@ -126,23 +126,23 @@
 				<kindDef>Combat</kindDef>
 				<commonality>45</commonality>
 				<options>
-					<EOTF_Civil_Recruit_Ranged>5</EOTF_Civil_Recruit_Ranged>
-					<EOTF_Civil_Recruit_Melee>3</EOTF_Civil_Recruit_Melee>
-					<EOTF_Civil_Infantry_Ranged>12</EOTF_Civil_Infantry_Ranged>
-					<EOTF_Civil_Infantry_Melee>6</EOTF_Civil_Infantry_Melee>
-					<EOTF_Civil_Veteran_Ranged>8</EOTF_Civil_Veteran_Ranged>
-					<EOTF_Civil_Veteran_Melee>5</EOTF_Civil_Veteran_Melee>
-					<EOTF_Civil_Sergeant>4</EOTF_Civil_Sergeant>
-					<EOTF_Civil_Ranger>7</EOTF_Civil_Ranger>
-					<EOTF_Civil_GrenadierFrag>3</EOTF_Civil_GrenadierFrag>
-					<EOTF_Civil_GrenadierEMP>3</EOTF_Civil_GrenadierEMP>
-					<EOTF_Civil_GrenadierFire>3</EOTF_Civil_GrenadierFire>
-					<EOTF_Civil_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</EOTF_Civil_GrenadierFire>
-					<EOTF_Civil_Shocktrooper>2</EOTF_Civil_Shocktrooper>
-					<EOTF_Civil_Medic>3</EOTF_Civil_Medic>
-					<EOTF_Civil_Engineer>3</EOTF_Civil_Engineer>
-					<EOTF_Civil_Warden>2</EOTF_Civil_Warden>
-					<EOTF_Civil_Officer>3</EOTF_Civil_Officer>
+					<TMG_Civil_Recruit_Ranged>5</TMG_Civil_Recruit_Ranged>
+					<TMG_Civil_Recruit_Melee>3</TMG_Civil_Recruit_Melee>
+					<TMG_Civil_Infantry_Ranged>12</TMG_Civil_Infantry_Ranged>
+					<TMG_Civil_Infantry_Melee>6</TMG_Civil_Infantry_Melee>
+					<TMG_Civil_Veteran_Ranged>8</TMG_Civil_Veteran_Ranged>
+					<TMG_Civil_Veteran_Melee>5</TMG_Civil_Veteran_Melee>
+					<TMG_Civil_Sergeant>4</TMG_Civil_Sergeant>
+					<TMG_Civil_Ranger>7</TMG_Civil_Ranger>
+					<TMG_Civil_GrenadierFrag>3</TMG_Civil_GrenadierFrag>
+					<TMG_Civil_GrenadierEMP>3</TMG_Civil_GrenadierEMP>
+					<TMG_Civil_GrenadierFire>3</TMG_Civil_GrenadierFire>
+					<TMG_Civil_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</TMG_Civil_GrenadierFire>
+					<TMG_Civil_Shocktrooper>2</TMG_Civil_Shocktrooper>
+					<TMG_Civil_Medic>3</TMG_Civil_Medic>
+					<TMG_Civil_Engineer>3</TMG_Civil_Engineer>
+					<TMG_Civil_Warden>2</TMG_Civil_Warden>
+					<TMG_Civil_Officer>3</TMG_Civil_Officer>
 				</options>
 			</li>
 
@@ -151,14 +151,14 @@
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
 				<options>
-					<EOTF_Civil_Recruit_Ranged>8</EOTF_Civil_Recruit_Ranged>
-					<EOTF_Civil_Recruit_Melee>5</EOTF_Civil_Recruit_Melee>
-					<EOTF_Civil_Infantry_Ranged>20</EOTF_Civil_Infantry_Ranged>
-					<EOTF_Civil_Infantry_Melee>10</EOTF_Civil_Infantry_Melee>
-					<EOTF_Civil_Sergeant>5</EOTF_Civil_Sergeant>
-					<EOTF_Civil_Medic>8</EOTF_Civil_Medic>
-					<EOTF_Civil_Engineer>8</EOTF_Civil_Engineer>
-					<EOTF_Civil_Officer>3</EOTF_Civil_Officer>
+					<TMG_Civil_Recruit_Ranged>8</TMG_Civil_Recruit_Ranged>
+					<TMG_Civil_Recruit_Melee>5</TMG_Civil_Recruit_Melee>
+					<TMG_Civil_Infantry_Ranged>20</TMG_Civil_Infantry_Ranged>
+					<TMG_Civil_Infantry_Melee>10</TMG_Civil_Infantry_Melee>
+					<TMG_Civil_Sergeant>5</TMG_Civil_Sergeant>
+					<TMG_Civil_Medic>8</TMG_Civil_Medic>
+					<TMG_Civil_Engineer>8</TMG_Civil_Engineer>
+					<TMG_Civil_Officer>3</TMG_Civil_Officer>
 				</options>
 			</li>
 
@@ -167,16 +167,16 @@
 				<kindDef>Peaceful</kindDef>
 				<commonality>20</commonality>
 				<options>
-					<EOTF_Civil_Settler>12</EOTF_Civil_Settler>
-					<EOTF_Civil_Laborer>8</EOTF_Civil_Laborer>
-					<EOTF_Civil_Trader>8</EOTF_Civil_Trader>
-					<EOTF_Civil_Representative>2</EOTF_Civil_Representative>
-					<EOTF_Civil_Ranger>4</EOTF_Civil_Ranger>
-					<EOTF_Civil_Infantry_Ranged>4</EOTF_Civil_Infantry_Ranged>
-					<EOTF_Civil_Infantry_Melee>2</EOTF_Civil_Infantry_Melee>
-					<EOTF_Civil_Medic>2</EOTF_Civil_Medic>
-					<EOTF_Civil_Engineer>2</EOTF_Civil_Engineer>
-					<EOTF_Civil_Officer>1</EOTF_Civil_Officer>
+					<TMG_Civil_Settler>12</TMG_Civil_Settler>
+					<TMG_Civil_Laborer>8</TMG_Civil_Laborer>
+					<TMG_Civil_Trader>8</TMG_Civil_Trader>
+					<TMG_Civil_Representative>2</TMG_Civil_Representative>
+					<TMG_Civil_Ranger>4</TMG_Civil_Ranger>
+					<TMG_Civil_Infantry_Ranged>4</TMG_Civil_Infantry_Ranged>
+					<TMG_Civil_Infantry_Melee>2</TMG_Civil_Infantry_Melee>
+					<TMG_Civil_Medic>2</TMG_Civil_Medic>
+					<TMG_Civil_Engineer>2</TMG_Civil_Engineer>
+					<TMG_Civil_Officer>1</TMG_Civil_Officer>
 				</options>
 			</li>
 
@@ -184,7 +184,7 @@
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<EOTF_Civil_Trader>1</EOTF_Civil_Trader>
+					<TMG_Civil_Trader>1</TMG_Civil_Trader>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -193,11 +193,11 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<EOTF_Civil_Infantry_Ranged>4</EOTF_Civil_Infantry_Ranged>
-					<EOTF_Civil_Infantry_Melee>2</EOTF_Civil_Infantry_Melee>
-					<EOTF_Civil_Ranger>4</EOTF_Civil_Ranger>
-					<EOTF_Civil_Sergeant>2</EOTF_Civil_Sergeant>
-					<EOTF_Civil_Officer>1</EOTF_Civil_Officer>
+					<TMG_Civil_Infantry_Ranged>4</TMG_Civil_Infantry_Ranged>
+					<TMG_Civil_Infantry_Melee>2</TMG_Civil_Infantry_Melee>
+					<TMG_Civil_Ranger>4</TMG_Civil_Ranger>
+					<TMG_Civil_Sergeant>2</TMG_Civil_Sergeant>
+					<TMG_Civil_Officer>1</TMG_Civil_Officer>
 				</guards>
 			</li>
 
@@ -205,15 +205,15 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<EOTF_Civil_Settler>20</EOTF_Civil_Settler>
-					<EOTF_Civil_Laborer>12</EOTF_Civil_Laborer>
-					<EOTF_Civil_Engineer>4</EOTF_Civil_Engineer>
-					<EOTF_Civil_Medic>4</EOTF_Civil_Medic>
-					<EOTF_Civil_Infantry_Ranged>6</EOTF_Civil_Infantry_Ranged>
-					<EOTF_Civil_Infantry_Melee>2</EOTF_Civil_Infantry_Melee>
-					<EOTF_Civil_Ranger>6</EOTF_Civil_Ranger>
-					<EOTF_Civil_Representative>1</EOTF_Civil_Representative>
-					<EOTF_Civil_Officer>3</EOTF_Civil_Officer>
+					<TMG_Civil_Settler>20</TMG_Civil_Settler>
+					<TMG_Civil_Laborer>12</TMG_Civil_Laborer>
+					<TMG_Civil_Engineer>4</TMG_Civil_Engineer>
+					<TMG_Civil_Medic>4</TMG_Civil_Medic>
+					<TMG_Civil_Infantry_Ranged>6</TMG_Civil_Infantry_Ranged>
+					<TMG_Civil_Infantry_Melee>2</TMG_Civil_Infantry_Melee>
+					<TMG_Civil_Ranger>6</TMG_Civil_Ranger>
+					<TMG_Civil_Representative>1</TMG_Civil_Representative>
+					<TMG_Civil_Officer>3</TMG_Civil_Officer>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -253,11 +253,13 @@
 	<!-- Freelancers - Hostile Faction-->
 
 	<FactionDef ParentName="FactionBase">
-		<defName>EOTF_Rough</defName>
-		<label>dominion freelancers</label>
-		<description>New arrivals to this world from the Dominion, bringing their technology from their empire. They use spacer-level technology and advanced armor and weapons in their pursuit of profit. Their sole concern seems to be finding new avenues of profit on this world.\n\nThey are concerned with their bottom line and maintaining of order. Though happy to trade, they view you as their next business venture.</description>
-		<pawnSingular>citizen</pawnSingular>
-		<pawnsPlural>citizens</pawnsPlural>
+		<defName>TMG_Rough</defName>
+		<label>Ringer outcasts</label>
+		<description>Exiles, deserters, and criminals from Meridia who have turned to raiding and mercenary work. They still carry Ringer equipment and training, making them dangerous opponents despite their lack of formal structure.
+
+They have no interest in cooperation. They want what you have.</description>
+		<pawnSingular>outcast</pawnSingular>
+		<pawnsPlural>outcasts</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
 		<settlementGenerationWeight>1</settlementGenerationWeight>
 		<requiredCountAtGameStart>1</requiredCountAtGameStart>
@@ -265,7 +267,7 @@
 		<canMakeRandomly>true</canMakeRandomly>
 		<canSiege>true</canSiege>
 		<canStageAttacks>true</canStageAttacks>
-		<leaderTitle>commander</leaderTitle>
+		<leaderTitle>boss</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Freelancers</factionIconPath>
 		<factionNameMaker>NamerFactionPirate</factionNameMaker>
 		<settlementNameMaker>NamerSettlementPirate</settlementNameMaker>
@@ -307,15 +309,15 @@
 		<allowedArrivalTemperatureRange>-40~50</allowedArrivalTemperatureRange>
 		<raidLootMaker>OutlanderRaidLootMaker</raidLootMaker>
 		<caravanTraderKinds>
-			<li>Caravan_Dominion_BulkGoods</li>
-			<li>Caravan_Dominion_ArmsDealer</li>
-			<li>Caravan_Dominion_Exotic</li>
+			<li>Caravan_Ringer_BulkGoods</li>
+			<li>Caravan_Ringer_ArmsDealer</li>
+			<li>Caravan_Ringer_Exotic</li>
 		</caravanTraderKinds>
 		<visitorTraderKinds>
-			<li>Visitor_Dominion_Standard</li>
+			<li>Visitor_Ringer_Standard</li>
 		</visitorTraderKinds>
 		<baseTraderKinds>
-			<li>Base_Dominion_Standard</li>
+			<li>Base_Ringer_Standard</li>
 		</baseTraderKinds>
 		<maxPawnCostPerTotalPointsCurve>
 			<points>
@@ -332,23 +334,23 @@
 				<kindDef>Combat</kindDef>
 				<commonality>45</commonality>
 				<options>
-					<EOTF_Rough_Recruit_Ranged>5</EOTF_Rough_Recruit_Ranged>
-					<EOTF_Rough_Recruit_Melee>3</EOTF_Rough_Recruit_Melee>
-					<EOTF_Rough_Infantry_Ranged>12</EOTF_Rough_Infantry_Ranged>
-					<EOTF_Rough_Infantry_Melee>6</EOTF_Rough_Infantry_Melee>
-					<EOTF_Rough_Veteran_Ranged>8</EOTF_Rough_Veteran_Ranged>
-					<EOTF_Rough_Veteran_Melee>5</EOTF_Rough_Veteran_Melee>
-					<EOTF_Rough_Sergeant>4</EOTF_Rough_Sergeant>
-					<EOTF_Rough_Ranger>7</EOTF_Rough_Ranger>
-					<EOTF_Rough_GrenadierFrag>3</EOTF_Rough_GrenadierFrag>
-					<EOTF_Rough_GrenadierEMP>3</EOTF_Rough_GrenadierEMP>
-					<EOTF_Rough_GrenadierFire>3</EOTF_Rough_GrenadierFire>
-					<EOTF_Rough_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</EOTF_Rough_GrenadierFire>
-					<EOTF_Rough_Shocktrooper>2</EOTF_Rough_Shocktrooper>
-					<EOTF_Rough_Medic>3</EOTF_Rough_Medic>
-					<EOTF_Rough_Engineer>3</EOTF_Rough_Engineer>
-					<EOTF_Rough_Warden>2</EOTF_Rough_Warden>
-					<EOTF_Rough_Officer>3</EOTF_Rough_Officer>
+					<TMG_Rough_Recruit_Ranged>5</TMG_Rough_Recruit_Ranged>
+					<TMG_Rough_Recruit_Melee>3</TMG_Rough_Recruit_Melee>
+					<TMG_Rough_Infantry_Ranged>12</TMG_Rough_Infantry_Ranged>
+					<TMG_Rough_Infantry_Melee>6</TMG_Rough_Infantry_Melee>
+					<TMG_Rough_Veteran_Ranged>8</TMG_Rough_Veteran_Ranged>
+					<TMG_Rough_Veteran_Melee>5</TMG_Rough_Veteran_Melee>
+					<TMG_Rough_Sergeant>4</TMG_Rough_Sergeant>
+					<TMG_Rough_Ranger>7</TMG_Rough_Ranger>
+					<TMG_Rough_GrenadierFrag>3</TMG_Rough_GrenadierFrag>
+					<TMG_Rough_GrenadierEMP>3</TMG_Rough_GrenadierEMP>
+					<TMG_Rough_GrenadierFire>3</TMG_Rough_GrenadierFire>
+					<TMG_Rough_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</TMG_Rough_GrenadierFire>
+					<TMG_Rough_Shocktrooper>2</TMG_Rough_Shocktrooper>
+					<TMG_Rough_Medic>3</TMG_Rough_Medic>
+					<TMG_Rough_Engineer>3</TMG_Rough_Engineer>
+					<TMG_Rough_Warden>2</TMG_Rough_Warden>
+					<TMG_Rough_Officer>3</TMG_Rough_Officer>
 				</options>
 			</li>
 
@@ -357,14 +359,14 @@
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
 				<options>
-					<EOTF_Rough_Recruit_Ranged>8</EOTF_Rough_Recruit_Ranged>
-					<EOTF_Rough_Recruit_Melee>5</EOTF_Rough_Recruit_Melee>
-					<EOTF_Rough_Infantry_Ranged>20</EOTF_Rough_Infantry_Ranged>
-					<EOTF_Rough_Infantry_Melee>10</EOTF_Rough_Infantry_Melee>
-					<EOTF_Rough_Sergeant>5</EOTF_Rough_Sergeant>
-					<EOTF_Rough_Medic>8</EOTF_Rough_Medic>
-					<EOTF_Rough_Engineer>8</EOTF_Rough_Engineer>
-					<EOTF_Rough_Officer>3</EOTF_Rough_Officer>
+					<TMG_Rough_Recruit_Ranged>8</TMG_Rough_Recruit_Ranged>
+					<TMG_Rough_Recruit_Melee>5</TMG_Rough_Recruit_Melee>
+					<TMG_Rough_Infantry_Ranged>20</TMG_Rough_Infantry_Ranged>
+					<TMG_Rough_Infantry_Melee>10</TMG_Rough_Infantry_Melee>
+					<TMG_Rough_Sergeant>5</TMG_Rough_Sergeant>
+					<TMG_Rough_Medic>8</TMG_Rough_Medic>
+					<TMG_Rough_Engineer>8</TMG_Rough_Engineer>
+					<TMG_Rough_Officer>3</TMG_Rough_Officer>
 				</options>
 			</li>
 
@@ -373,16 +375,16 @@
 				<kindDef>Peaceful</kindDef>
 				<commonality>20</commonality>
 				<options>
-					<EOTF_Rough_Settler>12</EOTF_Rough_Settler>
-					<EOTF_Rough_Laborer>8</EOTF_Rough_Laborer>
-					<EOTF_Rough_Trader>8</EOTF_Rough_Trader>
-					<EOTF_Rough_Representative>2</EOTF_Rough_Representative>
-					<EOTF_Rough_Ranger>4</EOTF_Rough_Ranger>
-					<EOTF_Rough_Infantry_Ranged>4</EOTF_Rough_Infantry_Ranged>
-					<EOTF_Rough_Infantry_Melee>2</EOTF_Rough_Infantry_Melee>
-					<EOTF_Rough_Medic>2</EOTF_Rough_Medic>
-					<EOTF_Rough_Engineer>2</EOTF_Rough_Engineer>
-					<EOTF_Rough_Officer>1</EOTF_Rough_Officer>
+					<TMG_Rough_Settler>12</TMG_Rough_Settler>
+					<TMG_Rough_Laborer>8</TMG_Rough_Laborer>
+					<TMG_Rough_Trader>8</TMG_Rough_Trader>
+					<TMG_Rough_Representative>2</TMG_Rough_Representative>
+					<TMG_Rough_Ranger>4</TMG_Rough_Ranger>
+					<TMG_Rough_Infantry_Ranged>4</TMG_Rough_Infantry_Ranged>
+					<TMG_Rough_Infantry_Melee>2</TMG_Rough_Infantry_Melee>
+					<TMG_Rough_Medic>2</TMG_Rough_Medic>
+					<TMG_Rough_Engineer>2</TMG_Rough_Engineer>
+					<TMG_Rough_Officer>1</TMG_Rough_Officer>
 				</options>
 			</li>
 
@@ -390,7 +392,7 @@
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<EOTF_Rough_Trader>1</EOTF_Rough_Trader>
+					<TMG_Rough_Trader>1</TMG_Rough_Trader>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -399,11 +401,11 @@
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<EOTF_Rough_Infantry_Ranged>4</EOTF_Rough_Infantry_Ranged>
-					<EOTF_Rough_Infantry_Melee>2</EOTF_Rough_Infantry_Melee>
-					<EOTF_Rough_Ranger>4</EOTF_Rough_Ranger>
-					<EOTF_Rough_Sergeant>2</EOTF_Rough_Sergeant>
-					<EOTF_Rough_Officer>1</EOTF_Rough_Officer>
+					<TMG_Rough_Infantry_Ranged>4</TMG_Rough_Infantry_Ranged>
+					<TMG_Rough_Infantry_Melee>2</TMG_Rough_Infantry_Melee>
+					<TMG_Rough_Ranger>4</TMG_Rough_Ranger>
+					<TMG_Rough_Sergeant>2</TMG_Rough_Sergeant>
+					<TMG_Rough_Officer>1</TMG_Rough_Officer>
 				</guards>
 			</li>
 
@@ -411,15 +413,15 @@
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<EOTF_Rough_Settler>20</EOTF_Rough_Settler>
-					<EOTF_Rough_Laborer>12</EOTF_Rough_Laborer>
-					<EOTF_Rough_Engineer>4</EOTF_Rough_Engineer>
-					<EOTF_Rough_Medic>4</EOTF_Rough_Medic>
-					<EOTF_Rough_Infantry_Ranged>6</EOTF_Rough_Infantry_Ranged>
-					<EOTF_Rough_Infantry_Melee>2</EOTF_Rough_Infantry_Melee>
-					<EOTF_Rough_Ranger>6</EOTF_Rough_Ranger>
-					<EOTF_Rough_Representative>1</EOTF_Rough_Representative>
-					<EOTF_Rough_Officer>3</EOTF_Rough_Officer>
+					<TMG_Rough_Settler>20</TMG_Rough_Settler>
+					<TMG_Rough_Laborer>12</TMG_Rough_Laborer>
+					<TMG_Rough_Engineer>4</TMG_Rough_Engineer>
+					<TMG_Rough_Medic>4</TMG_Rough_Medic>
+					<TMG_Rough_Infantry_Ranged>6</TMG_Rough_Infantry_Ranged>
+					<TMG_Rough_Infantry_Melee>2</TMG_Rough_Infantry_Melee>
+					<TMG_Rough_Ranger>6</TMG_Rough_Ranger>
+					<TMG_Rough_Representative>1</TMG_Rough_Representative>
+					<TMG_Rough_Officer>3</TMG_Rough_Officer>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
