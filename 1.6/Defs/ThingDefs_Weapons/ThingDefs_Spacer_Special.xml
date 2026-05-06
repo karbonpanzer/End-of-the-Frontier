@@ -4,7 +4,7 @@
 	<!-- ==================== GAUSS RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Round_GaussRifle</defName>
+		<defName>TRG_Round_GaussRifle</defName>
 		<label>gauss rifle ferrous slug</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -21,7 +21,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_GaussRifle</defName>
+		<defName>TRG_GaussRifle</defName>
 		<label>Gauss Rifle</label>
 		<description>A rifle converted into a gauss rifle using a modified foregrip. A series of magnetic coils turns a simple firearm into a powerful long-range rifle cheaply.</description>
 		<graphicData>
@@ -32,12 +32,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -63,7 +63,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Round_GaussRifle</defaultProjectile>
+				<defaultProjectile>TRG_Round_GaussRifle</defaultProjectile>
 				<warmupTime>3.0</warmupTime>
 				<burstShotCount>1</burstShotCount>
 				<range>48.0</range>
@@ -109,7 +109,7 @@
 	<!-- ==================== SALVO GRENADE LAUNCHER ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Grenade_SalvoLauncher</defName>
+		<defName>TRG_Grenade_SalvoLauncher</defName>
 		<label>salvo launcher grenade</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -128,7 +128,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_SalvoGrenadeLauncher</defName>
+		<defName>TRG_SalvoGrenadeLauncher</defName>
 		<label>Salvo Grenade Launcher</label>
 		<description>A rotary grenade launcher, favored by mercenaries. Designed for accuracy, it can fire a variety of grenades accurately in both lethal and nonlethal scenarios.</description>
 		<graphicData>
@@ -139,12 +139,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -170,7 +170,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Grenade_SalvoLauncher</defaultProjectile>
+				<defaultProjectile>TRG_Grenade_SalvoLauncher</defaultProjectile>
 				<warmupTime>2.0</warmupTime>
 				<range>32.0</range>
 				<ticksBetweenBurstShots>20</ticksBetweenBurstShots>
@@ -214,7 +214,7 @@
 	<!-- ==================== LIGHT AUTOLOADER CANNON ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Shell_AutoloaderCannon</defName>
+		<defName>TRG_Shell_AutoloaderCannon</defName>
 		<label>autoloader cannon shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -232,7 +232,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_AutoloaderCannon</defName>
+		<defName>TRG_AutoloaderCannon</defName>
 		<label>Light Autoloader Cannon</label>
 		<description>A scaled down anti-tank cannon made for infantry use. Heavy, cumbersome, and slow, but capable of destroying armor effectively over great distances.</description>
 		<graphicData>
@@ -243,12 +243,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>11</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -274,7 +274,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Shell_AutoloaderCannon</defaultProjectile>
+				<defaultProjectile>TRG_Shell_AutoloaderCannon</defaultProjectile>
 				<warmupTime>5.0</warmupTime>
 				<range>58.0</range>
 				<soundCast>ChargeLance_Fire</soundCast>
@@ -319,7 +319,7 @@
 	<!-- ==================== HYDRA ANTI-MATERIAL RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_HydraAMR</defName>
+		<defName>TRG_Bullet_HydraAMR</defName>
 		<label>hydra anti-material round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -336,7 +336,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_HydraRifle</defName>
+		<defName>TRG_HydraRifle</defName>
 		<label>Hydra Rifle</label>
 		<description>An experimental hyper-burst anti-material rifle chambered in high-powered armor piercing shells. Heavy and cumbersome, effective against both armored and unarmored targets.</description>
 		<graphicData>
@@ -347,12 +347,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>12</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -378,7 +378,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_HydraAMR</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_HydraAMR</defaultProjectile>
 				<warmupTime>3.4</warmupTime>
 				<range>52.0</range>
 				<burstShotCount>3</burstShotCount>

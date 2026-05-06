@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_MeridiaUniform_SuperHot</defName>
-    <label>Meridia Guard Uniform (Desert)</label>
-    <description>A standard Meridian duty uniform adapted for extreme heat. Stripped to the minimum needed for function, with a light weave that resists heat buildup.</description>
+    <defName>TRG_RingerUniform_SuperHot</defName>
+    <label>Ringer Uniform (Desert)</label>
+    <description>A standard Ringer duty uniform adapted for extreme heat. Stripped to the minimum needed for function, with a light weave that resists heat buildup.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformHell/FieldUniformHell</texPath>
@@ -31,7 +31,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -65,7 +65,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -73,18 +73,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_MeridiaHat_Hot</defName>
-    <label>Meridia Guard Uniform Headwear (Steppe)</label>
-    <description>A wide-brimmed field cap worn by Meridia personnel in desert postings. Shades the face and neck from direct sun.</description>
+    <defName>TRG_RingerHat_Hot</defName>
+    <label>Ringer Uniform Headwear (Steppe)</label>
+    <description>A wide-brimmed field cap worn by Ringer personnel in desert postings. Shades the face and neck from direct sun.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatHell/FieldHatHell</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -112,7 +112,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -138,7 +138,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -150,18 +150,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_MeridiaUniform_Hot</defName>
-    <label>Meridia Guard Uniform (Steppe)</label>
-    <description>A standard Meridian duty uniform adapted for Steppe and desert postings. Loose-weave fabric reduces heat absorption and allows some airflow.</description>
+    <defName>TRG_RingerUniform_Hot</defName>
+    <label>Ringer Uniform (Steppe)</label>
+    <description>A standard Ringer duty uniform adapted for Steppe and desert postings. Loose-weave fabric reduces heat absorption and allows some airflow.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformDesert/FieldUniformDesert</texPath>
@@ -185,7 +185,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -219,7 +219,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -227,16 +227,16 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_MeridiaHat_SuperHot</defName>
+    <defName>TRG_RingerHat_SuperHot</defName>
     <label>Field Hat (Arid)</label>
     <description>Based on an Old Earth design from the 3rd Era of Imperialism. This headgear is designed to protect the wearer from the worst heat they can find in the Rim. Providing not only cool headwear but also protecting the wearer from the worst that the sun can provide. Originally designed for usage on Spiceworld Regiments, it is now found in more worlds than the uniform that it came from.</description>
     <graphicData>
@@ -266,7 +266,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -292,7 +292,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -304,18 +304,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_MeridiaUniform</defName>
-    <label>Meridia Guard Uniform (Temperate)</label>
-    <description>The standard Meridian duty uniform, balanced for moderate climates. Worn by most deployed Meridia personnel across a wide range of postings.</description>
+    <defName>TRG_RingerUniform_Temperate</defName>
+    <label>Ringer Uniform (Temperate)</label>
+    <description>The standard Ringer duty uniform, balanced for moderate climates. Worn by most deployed Ringer personnel across a wide range of postings.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformTemperate/FieldUniformTemperate</texPath>
@@ -343,7 +343,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -377,7 +377,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -385,18 +385,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_MeridiaHat</defName>
-    <label>Meridia Guard Uniform Headwear (Temperate)</label>
-    <description>A standard Meridia field cap, worn across most postings. Provides modest weather protection and carries unit markings.</description>
+    <defName>TRG_RingerHat_Temperate</defName>
+    <label>Ringer Uniform Headwear (Temperate)</label>
+    <description>A standard Ringer field cap, worn across most postings. Provides modest weather protection and carries unit markings.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatTemperate/FieldHatTemperate</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -424,7 +424,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -450,7 +450,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -462,18 +462,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories>
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_MeridiaUniform_Cold</defName>
-    <label>Meridia Guard Uniform (Boreal)</label>
-    <description>A standard Meridian duty uniform layered for cold forest climates. Thick enough to retain warmth, flexible enough for movement through difficult terrain.</description>
+    <defName>TRG_RingerUniform_Cold</defName>
+    <label>Ringer Uniform (Boreal)</label>
+    <description>A standard Ringer duty uniform layered for cold forest climates. Thick enough to retain warmth, flexible enough for movement through difficult terrain.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformWinter/FieldUniformWinter</texPath>
@@ -501,7 +501,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -535,7 +535,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -543,18 +543,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_MeridiaHat_Cold</defName>
-    <label>Meridia Guard Uniform Headwear (Boreal)</label>
-    <description>A mid-weight field cap with insulated lining, worn by Meridia personnel in cold forest postings. Covers the ears without significantly restricting peripheral vision.</description>
+    <defName>TRG_RingerHat_Cold</defName>
+    <label>Ringer Uniform Headwear (Boreal)</label>
+    <description>A mid-weight field cap with insulated lining, worn by Ringer personnel in cold forest postings. Covers the ears without significantly restricting peripheral vision.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatWinter/FieldHatWinter</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -582,7 +582,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_RingerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_RingerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -608,7 +608,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -620,18 +620,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_MeridiaUniform_SuperCold</defName>
-    <label>Meridia Guard Uniform (Tundra)</label>
-    <description>A standard Meridian duty uniform insulated for extreme cold. Reinforced seams and sealed cuffs keep heat in when outside temperatures become dangerous.</description>
+    <defName>TRG_RingerUniform_SuperCold</defName>
+    <label>Ringer Uniform (Tundra)</label>
+    <description>A standard Ringer duty uniform insulated for extreme cold. Reinforced seams and sealed cuffs keep heat in when outside temperatures become dangerous.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/FieldUniformArctic/FieldUniformArctic</texPath>
@@ -659,7 +659,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -693,7 +693,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -701,18 +701,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_MeridiaHat_SuperCold</defName>
-    <label>Meridia Guard Uniform Headwear (Tundra)</label>
-    <description>A fully insulated field cap worn by Meridia personnel in extreme cold. Covers the ears, brow, and most of the face to prevent frostbite in subzero conditions.</description>
+    <defName>TRG_RingerHat_SuperCold</defName>
+    <label>Ringer Uniform Headwear (Tundra)</label>
+    <description>A fully insulated field cap worn by Ringer personnel in extreme cold. Covers the ears, brow, and most of the face to prevent frostbite in subzero conditions.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/FieldHatArctic/FieldHatArctic</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -740,7 +740,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -766,7 +766,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -778,12 +778,11 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 </Defs>
-

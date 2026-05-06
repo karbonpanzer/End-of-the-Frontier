@@ -1,6 +1,6 @@
 ﻿<Defs>
   <ThingDef ParentName="BuildingBase">
-    <defName>TMG_Decoder</defName>
+    <defName>TRG_Decoder</defName>
     <label>Ringer Decoder</label>
     <description>A high-tech decoding system for decompiling Ringer schematics. Requires a functioning Ringer Codex for construction. Destruction of the decoder does not return the codex.</description>
     <thingClass>Building</thingClass>
@@ -20,7 +20,7 @@
     </statBases>
     <costList>
       <Steel>100</Steel>
-      <TMG_Codex>1</TMG_Codex>
+      <TRG_Codex>1</TRG_Codex>
       <ComponentSpacer>4</ComponentSpacer>
     </costList>
     <comps>

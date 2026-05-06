@@ -2,8 +2,10 @@
 <ModMetaData>
   <packageId>KP.Vesperia</packageId>
   <author>karbonpanzer</author>
-  <name>Vesperia - The Meridian Guard</name>
-  <description>End of the Frontier, adds a new faction, scenario, and items.\n\nThe Frontier Era is ending, civilization and industrialization is heading for the Rimworlds. The head of this endeavour is a faction called the Dominion, a plutocratic empire who are now seeking to increase their profits on the back of your world. Do you collaborate or do you resist!?</description>
+  <name>Vesperia - The Ringer Faction</name>
+  <description>Adds the Ringers, settlers and outcasts from a ring city on a distant world.
+
+Includes new weapons, armor, a research tree, traders, and a starting scenario. Spacer-tech outlanders built for enclosed environments who brought everything they needed with them.</description>
   <supportedVersions>
 	  <li>1.6</li>	  
   </supportedVersions>

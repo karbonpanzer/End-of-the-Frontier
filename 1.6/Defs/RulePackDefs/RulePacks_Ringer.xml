@@ -1,52 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 
-  <!-- ==========================================================
-       CIVIL FACTION (Dominion government / Player faction)
-       Modeled on vanilla NamerFactionOutlander with a provisional
-       adjective injected. Vanilla has 5 top-level rules; we keep 6.
-       E.g.:
-         - Varstead
-         - Provisional Republic of Ferrun
-         - Ferrun Commonwealth
-         - Transitional Authority of Hollowvale
-         - Commonwealth of Ironhold
-       ========================================================== -->
   <RulePackDef>
-    <defName>TMG_Faction_Civil</defName>
+    <defName>TRG_Faction_Civil</defName>
     <include>
       <li>OutlanderPlaceNameUtility</li>
     </include>
     <rulePack>
       <rulesStrings>
-        <!-- PRIMARY PATTERN: [adjective] [union] of [place]
-             This produces the signature Dominion naming convention:
-             - Unified Republic of Ferrun
-             - United Commonwealth of Ironhold
-             - Reformed Federation of Varstead
-             - Sovereign Directorate of Kalaris
-             Weighted heavily to dominate output. -->
         <li>r_name(p=6)->[political_adjective_expedition] [political_union_cap] of [nearnameinitial]</li>
         <li>r_name(p=4)->[political_adjective] [political_union_cap] of [nearnameinitial]</li>
 
-        <!-- Secondary: place-first variants
-             - Ferrun Republic
-             - Blackridge Directorate -->
         <li>r_name(p=2)->[nearnameinitial] [political_union_cap]</li>
 
-        <!-- Standalone "The" forms (no placename)
-             - The United Republic
-             - The Territorial Compact
-             - The Sovereign Commonwealth
-             - The Reformed Accord
-             Uses an expanded noun set that includes agreement-words
-             (Compact, Concord, Accord, Charter) which read well
-             without a placename. -->
         <li>r_name(p=3)->The [political_adjective_expedition] [political_union_standalone]</li>
         <li>r_name(p=2)->The [political_adjective] [political_union_standalone]</li>
 
-        <!-- Standalone union nouns: all the state nouns PLUS agreement-words
-             that only work in this standalone context -->
         <li>political_union_standalone->[political_union_cap]</li>
         <li>political_union_standalone->Compact</li>
         <li>political_union_standalone->Concord</li>
@@ -54,8 +23,6 @@
         <li>political_union_standalone->Charter</li>
         <li>political_union_standalone->Covenant</li>
         <li>political_union_standalone->Pact</li>
-
-        <!-- Placename sources (vanilla pattern) -->
         <li>nearnameinitial(p=3)->[PlaceOutlander]</li>
         <li>nearnameinitial->[Direction] [PlaceOutlander]</li>
       </rulesStrings>
@@ -67,14 +34,8 @@
     </rulePack>
   </RulePackDef>
 
-  <!-- ==========================================================
-       CIVIL SETTLEMENT (Dominion government / Player settlements)
-       Near-direct copy of vanilla NamerSettlementOutlander.
-       Same 4 top-level rules, same weights, same combo patterns.
-       The only difference: concept_positive file is shared (vanilla).
-       ========================================================== -->
   <RulePackDef>
-    <defName>TMG_Settlement_Civil</defName>
+    <defName>TRG_Settlement_Civil</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name(p=12)->[townname_wordgen]</li>
@@ -143,20 +104,8 @@
     </rulePack>
   </RulePackDef>
 
-  <!-- ==========================================================
-       ROUGH FACTION (Freelancer pirates / mercenary bands)
-       Modeled on vanilla NamerFactionPirate patterns, trimmed to
-       the name+band aesthetic. Vanilla has 27 rules; we keep 9.
-       Uses pirate_leader for NamePerson-equivalent role.
-       E.g.:
-         - The Marauders
-         - The Red Corsairs
-         - Maddox's Raiders
-         - The Iron Brigade
-         - The Wolves of Varstead
-       ========================================================== -->
   <RulePackDef>
-    <defName>TMG_Faction_Rough</defName>
+    <defName>TRG_Faction_Rough</defName>
     <include>
       <li>OutlanderPlaceNameUtility</li>
     </include>
@@ -189,19 +138,8 @@
     </rulePack>
   </RulePackDef>
 
-  <!-- ==========================================================
-       ROUGH SETTLEMENT (Freelancer hideouts / pirate camps)
-       Modeled on vanilla NamerSettlementPirate. Vanilla has 2
-       top-level rules (combo + wordgen); we match that exactly.
-       Uses vanilla's geography pattern and townendevil mechanic.
-       E.g.:
-         - Bloodcove (wordgen)
-         - Wolf's Hollow (combo)
-         - Crimson Creek (combo)
-         - Vextor (wordgen with townendevil)
-       ========================================================== -->
   <RulePackDef>
-    <defName>TMG_Settlement_Rough</defName>
+    <defName>TRG_Settlement_Rough</defName>
     <rulePack>
       <rulesStrings>
         <li>r_name(p=4)->[townname_combo]</li>

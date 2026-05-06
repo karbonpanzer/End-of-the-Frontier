@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ResourceBase">
-    <defName>TMG_Codex</defName>
+    <defName>TRG_Codex</defName>
     <label>Ringer Codex</label>
     <description>A digital codex which provides a means to decode Ringer schematics. Available only via trade or scenario start, it must be analyzed to unlock the Ringer research tree.</description>
     <graphicData>

@@ -3,12 +3,12 @@
 <Defs> 				
 			
 		<ThingDef ParentName="ArmorHelmetMakeableBase">
-			<defName>TMG_OrbitalMarauderHelmet</defName>
+			<defName>TRG_OrbitalMarauderHelmet</defName>
 			<label>Orbital Marauder Helmet</label>
 			<description>A fully sealed Marauder helmet rated for low-pressure environments. Integrated visor and pressure-lock collar allow short-duration operations in vacuum or near-vacuum conditions.</description>
 			<techLevel>Spacer</techLevel>
 		   <recipeMaker>
-			  <researchPrerequisite>TMG_OrbitalMarauderArmor</researchPrerequisite>
+			  <researchPrerequisite>TRG_OrbitalMarauderArmor</researchPrerequisite>
 			  <recipeUsers>
 				<li>TableMachining</li>
 			  </recipeUsers>
@@ -31,7 +31,7 @@
 				<EquipDelay>2</EquipDelay>
 			</statBases>
 			<thingCategories>
-				<li>TMG_Helmets</li>
+				<li>TRG_Helmets</li>
 			</thingCategories>
 			<costList>
 				<Cloth>10</Cloth>
@@ -59,7 +59,7 @@
 				<li>Overhead</li>
 			  </layers>
 			  <tags>
-				<li>TMG_Armor</li>
+				<li>TRG_Armor</li>
 				<li>Vacsuit</li>
 			  </tags>
 			<forceEyesVisibleForRotations>
@@ -86,12 +86,12 @@
 		</ThingDef>	
 
 		<ThingDef ParentName="ApparelMakeableBase">
-			<defName>TMG_OrbitalMarauderArmor</defName>
+			<defName>TRG_OrbitalMarauderArmor</defName>
 			<label>Orbital Marauder Armor</label>
 			<techLevel>Spacer</techLevel>
 			<description>A vacuum-rated variant of standard Marauder armor, with sealed joints and passive pressure retention. Used by personnel conducting boarding actions or operations in low-pressure environments.</description>			
 			<recipeMaker>
-				<researchPrerequisite>TMG_OrbitalMarauderArmor</researchPrerequisite>
+				<researchPrerequisite>TRG_OrbitalMarauderArmor</researchPrerequisite>
 			</recipeMaker>
 			<graphicData>
 				<graphicClass>Graphic_Single</graphicClass>
@@ -113,7 +113,7 @@
 				<EquipDelay>5</EquipDelay>
 			</statBases>
 			<thingCategories>
-				<li>TMG_Armor</li>
+				<li>TRG_Armor</li>
 			</thingCategories>
 			<costList>
 				<Steel>60</Steel>
@@ -137,7 +137,7 @@
 					<li>Middle</li>					
 				</layers>
 				<tags>
-					<li>TMG_Armor</li>
+					<li>TRG_Armor</li>
 				</tags>
 				<defaultOutfitTags>
 					<li>Spacefarer</li>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_OfficerUniform</defName>
-    <label>Meridia Officer Uniform</label>
-    <description>A tailored duty uniform worn by commissioned Meridian officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
+    <defName>TRG_OfficerUniform</defName>
+    <label>Ringer Officer Uniform</label>
+    <description>A tailored duty uniform worn by commissioned Ringer officers. Cut to be presentable in formal settings while remaining durable enough for field use.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
       <texPath>Things/Pawn/Humanlike/Clothes/OfficerUniform/OfficerUniform</texPath>
@@ -32,7 +32,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -65,7 +65,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_OfficerUniform</li>
+        <li>TRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -73,18 +73,18 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_OfficerHat</defName>
-    <label>Meridia Officer Headwear</label>
-    <description>A structured cap worn by Meridia officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
+    <defName>TRG_OfficerHat</defName>
+    <label>Ringer Officer Headwear</label>
+    <description>A structured cap worn by Ringer Officers. Bears rank and unit markings, allowing the wearer to be identified quickly as command personnel during engagements.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/OfficerCap/OfficerCap</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -113,7 +113,7 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -138,7 +138,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_OfficerUniform</li>
+        <li>TRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -150,17 +150,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-    <defName>TMG_OfficerUniform_SuperCold</defName>
-    <label>Meridia Officer Uniform (Tundra)</label>
+    <defName>TRG_OfficerUniform_SuperCold</defName>
+    <label>Ringer Officer Uniform (Tundra)</label>
     <description>An officer's duty uniform insulated for extreme cold. Thermal lining and sealed cuffs allow command personnel to function in conditions that would otherwise be debilitating.</description>
     <graphicData>
       <graphicClass>Graphic_Single</graphicClass>
@@ -190,8 +190,8 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
-      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -224,7 +224,7 @@
         <li>OnSkin</li>
       </layers>
       <tags>
-        <li>TMG_OfficerUniform</li>
+        <li>TRG_OfficerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -232,17 +232,17 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="HatMakeableBase">
-    <defName>TMG_OfficerHat_SuperCold</defName>
-    <label>Meridia Officer Headwear (Tundra)</label>
+    <defName>TRG_OfficerHat_SuperCold</defName>
+    <label>Ringer Officer Headwear (Tundra)</label>
     <description>An officer's cap insulated for extreme cold. Full brow and ear coverage protects against frostbite without obscuring the rank markings that identify command personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Headgear/OfficerCapArctic/OfficerCapArctic</texPath>
@@ -271,8 +271,8 @@
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_OfficerUniforms</researchPrerequisite>
-      <researchPrerequisite>TMG_ExtremeWeatherUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_OfficerUniforms</researchPrerequisite>
+      <researchPrerequisite>TRG_ExtremeWeatherUniforms</researchPrerequisite>
     </recipeMaker>
     <stuffCategories>
       <li>Fabric</li>
@@ -297,7 +297,7 @@
         <li>Overhead</li>
       </layers>
       <tags>
-        <li>TMG_MeridiaUniform</li>
+        <li>TRG_RingerUniform</li>
       </tags>
       <defaultOutfitTags>
         <li>Soldier</li>
@@ -309,12 +309,11 @@
     </apparel>
     <techLevel>Industrial</techLevel>
     <thingCategories Inherit="False">
-      <li>TMG_Headgear</li>
+      <li>TRG_Headgear</li>
     </thingCategories>
     <tradeTags>
       <li>Clothing</li>
-      <li>TMG_Uniforms</li>
+      <li>TRG_Uniforms</li>
     </tradeTags>
   </ThingDef>
 </Defs>
-

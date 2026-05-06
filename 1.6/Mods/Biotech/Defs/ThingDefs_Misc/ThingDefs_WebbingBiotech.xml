@@ -1,10 +1,10 @@
 <Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>TMG_Webbing_GrenadierTox</defName>
+		<defName>TRG_Webbing_GrenadierTox</defName>
 		<description>A load-bearing chest harness built to carry toxin grenades. Chemically resistant inner lining and sealed canister clips prevent accidental exposure to the lethal chemical agents during movement.</description>
 		<label>Grenadier Webbing (Tox)</label>
 		<recipeMaker>
-		  <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -61,7 +61,7 @@
 		  </li>
 		</verbs>
 	    <thingCategories>
-		  <li>TMG_Accessories</li>
+		  <li>TRG_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.20</PainShockThreshold>	  
@@ -77,7 +77,7 @@
 			<li>Shell</li>
 		  </layers>
 		  <tags>
-			<li>TMG_Accessories_Grenadier</li>
+			<li>TRG_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>

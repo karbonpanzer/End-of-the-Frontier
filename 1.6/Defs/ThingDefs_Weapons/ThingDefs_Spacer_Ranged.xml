@@ -10,7 +10,7 @@
 	<!-- ==================== ASSAULT PISTOL ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_AssaultPistol</defName>
+		<defName>TRG_Bullet_AssaultPistol</defName>
 		<label>assault pistol round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -27,7 +27,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_AssaultPistol</defName>
+		<defName>TRG_AssaultPistol</defName>
 		<label>Assault Pistol</label>
 		<description>A heavy caliber pistol favored by pirates and mercenaries. Powerful and weighty, it can easily pierce armor at close range. Though it lacks in the ability to hit at a distance.</description>
 		<graphicData>
@@ -38,12 +38,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -66,7 +66,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_AssaultPistol</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_AssaultPistol</defaultProjectile>
 				<warmupTime>0.7</warmupTime>
 				<range>20.0</range>
 				<soundCast>Shot_Revolver</soundCast>
@@ -111,7 +111,7 @@
 	<!-- ==================== SERVICE PISTOL ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_ServicePistol</defName>
+		<defName>TRG_Bullet_ServicePistol</defName>
 		<label>service pistol round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -127,7 +127,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_ServicePistol</defName>
+		<defName>TRG_ServicePistol</defName>
 		<label>Service Pistol</label>
 		<description>A semi-automatic pistol chambered in a large caliber. Its heavy weight makes it cumbersome, but the weight provides easier handling and control, allowing more accurate shots to be made.</description>
 		<graphicData>
@@ -138,12 +138,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Autopistol</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_RingerWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_RingerWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>7</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -166,7 +166,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_ServicePistol</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_ServicePistol</defaultProjectile>
 				<warmupTime>0.55</warmupTime>
 				<range>22.0</range>
 				<soundCast>Shot_Autopistol</soundCast>
@@ -212,7 +212,7 @@
 	<!-- ==================== ADVANCED SMG ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_AdvancedSMG</defName>
+		<defName>TRG_Bullet_AdvancedSMG</defName>
 		<label>advanced SMG round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -229,7 +229,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_AdvancedSMG</defName>
+		<defName>TRG_AdvancedSMG</defName>
 		<label>Advanced SMG</label>
 		<description>A state of the art sub-machinegun built with lightweight polymers and advanced alloys. Light, accurate, and easy to use, it has found usage in hundreds of colonies now for security.</description>
 		<graphicData>
@@ -240,12 +240,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_SMG</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>9</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -268,7 +268,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_AdvancedSMG</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_AdvancedSMG</defaultProjectile>
 				<warmupTime>0.25</warmupTime>
 				<range>28.0</range>
 				<burstShotCount>4</burstShotCount>
@@ -315,7 +315,7 @@
 	<!-- ==================== Stampede Revolver ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_StampedeRevolver</defName>
+		<defName>TRG_Bullet_StampedeRevolver</defName>
 		<label>stampede revolver round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -332,7 +332,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_StampedeRevolver</defName>
+		<defName>TRG_StampedeRevolver</defName>
 		<label>Stampede Revolver</label>
 		<description>A large frame revolver often seen with mercenaries. Despite its size, it is light and powerful, thanks to its advanced manufacturing and specialized high power ammunition.</description>
 		<graphicData>
@@ -343,12 +343,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Revolver</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -371,7 +371,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_StampedeRevolver</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_StampedeRevolver</defaultProjectile>
 				<warmupTime>0.6</warmupTime>
 				<range>24.0</range>
 				<soundCast>Shot_Revolver</soundCast>
@@ -420,7 +420,7 @@
 
 	<!-- Duplex ammo: two AP rounds per cartridge, simulated as a rapid burst of 2 -->
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_ServiceRifle</defName>
+		<defName>TRG_Bullet_ServiceRifle</defName>
 		<label>service rifle duplex round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -437,7 +437,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_ServiceRifle</defName>
+		<defName>TRG_ServiceRifle</defName>
 		<label>Service Rifle</label>
 		<description>An advanced rifle design used by ringer veterans and mercenaries. Built with state-of-the-art polymers and alloys, it fires armor-piercing duplex ammunition.</description>
 		<graphicData>
@@ -448,12 +448,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -476,7 +476,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_ServiceRifle</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_ServiceRifle</defaultProjectile>
 				<warmupTime>1.0</warmupTime>
 				<range>38.0</range>
 				<burstShotCount>2</burstShotCount>
@@ -523,7 +523,7 @@
 	<!-- ==================== PROSPECTOR RIFLE ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Bullet_ServiceCarbine</defName>
+		<defName>TRG_Bullet_ServiceCarbine</defName>
 		<label>service carbine round</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -539,7 +539,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_ServiceCarbine</defName>
+		<defName>TRG_ServiceCarbine</defName>
 		<label>Service Carbine</label>
 		<description>An older design rifle using less complex methods, earning it favor with prospectors. Built with stamped materials, making it cheaper to produce but less accurate at range.</description>
 		<graphicData>
@@ -550,12 +550,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Rifle</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_RingerWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_RingerWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>6</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -578,7 +578,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Bullet_ServiceCarbine</defaultProjectile>
+				<defaultProjectile>TRG_Bullet_ServiceCarbine</defaultProjectile>
 				<warmupTime>0.9</warmupTime>
 				<range>30.0</range>
 				<soundCast>Shot_AssaultRifle</soundCast>
@@ -625,7 +625,7 @@
 	<!-- ==================== JACKHAMMER SHOTGUN ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Shell_JackhammerShotgun</defName>
+		<defName>TRG_Shell_JackhammerShotgun</defName>
 		<label>jackhammer shotgun shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -642,7 +642,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_JackhammerShotgun</defName>
+		<defName>TRG_JackhammerShotgun</defName>
 		<label>Jackhammer Shotgun</label>
 		<description>An ancient design for a multi-purpose automatic shotgun favored by mercenaries. Firing high-power shells via a drum magazine, it easily shreds flesh and can even damage armor.</description>
 		<graphicData>
@@ -653,12 +653,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_MercenaryWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_MercenaryWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -681,7 +681,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Shell_JackhammerShotgun</defaultProjectile>
+				<defaultProjectile>TRG_Shell_JackhammerShotgun</defaultProjectile>
 				<warmupTime>0.4</warmupTime>
 				<range>16.0</range>
 				<burstShotCount>4</burstShotCount>
@@ -728,7 +728,7 @@
 	<!-- ==================== DOMINION SHOTGUN ==================== -->
 
 	<ThingDef ParentName="BaseBullet">
-		<defName>TMG_Shell_LawbringerShotgun</defName>
+		<defName>TRG_Shell_LawbringerShotgun</defName>
 		<label>8 gauge shotgun shell</label>
 		<graphicData>
 			<graphicClass>Graphic_Single</graphicClass>
@@ -745,7 +745,7 @@
 	</ThingDef>
 
 	<ThingDef ParentName="BaseHumanMakeableGun">
-		<defName>TMG_LawbringerShotgun</defName>
+		<defName>TRG_LawbringerShotgun</defName>
 		<label>Lawbringer Shotgun</label>
 		<description>A large gauge shotgun favored by colonists for its ruggedness and stopping power. Slow to cycle but devastating at close to medium range with its uncommon 8 gauge shell.</description>
 		<graphicData>
@@ -756,12 +756,12 @@
 		<techLevel>Spacer</techLevel>
 		<soundInteract>Interact_Shotgun</soundInteract>
 		<recipeMaker>
-			<researchPrerequisite>TMG_AdvancedWeaponry</researchPrerequisite>
+			<researchPrerequisite>TRG_AdvancedWeaponry</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costList>
@@ -784,7 +784,7 @@
 			<li>
 				<verbClass>Verb_Shoot</verbClass>
 				<hasStandardCommand>true</hasStandardCommand>
-				<defaultProjectile>TMG_Shell_LawbringerShotgun</defaultProjectile>
+				<defaultProjectile>TRG_Shell_LawbringerShotgun</defaultProjectile>
 				<warmupTime>0.8</warmupTime>
 				<burstShotCount>2</burstShotCount>
 				<range>22.0</range>

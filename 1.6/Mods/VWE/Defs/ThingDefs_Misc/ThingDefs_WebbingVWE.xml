@@ -1,10 +1,10 @@
 <Defs>
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>TMG_Webbing_GrenadierSmoke</defName>
+		<defName>TRG_Webbing_GrenadierSmoke</defName>
 		<description>A load-bearing chest harness designed to carry smoke grenades. Vented pouch design allows pressure equalization and prevents moisture buildup that could compromise the pyrotechnic compounds within the old-school condensed smoke canisters.</description>
 		<label>Grenadier Webbing (Smoke)</label>
 		<recipeMaker>
-		  <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -61,7 +61,7 @@
 		  </li>
 		</verbs>
 	    <thingCategories>
-		  <li>TMG_Accessories</li>
+		  <li>TRG_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.20</PainShockThreshold>	  
@@ -77,7 +77,7 @@
 			<li>Shell</li>
 		  </layers>
 		  <tags>
-			<li>TMG_Accessories_Grenadier</li>
+			<li>TRG_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>
@@ -111,11 +111,11 @@
 	</ThingDef>
 
 	<ThingDef ParentName="ApparelMakeableBase">
-		<defName>TMG_Webbing_GrenadierFlash</defName>
+		<defName>TRG_Webbing_GrenadierFlash</defName>
 		<description>A load-bearing chest harness configured for flash grenades. Padded retention loops cushion the canisters against impact while keeping them accessible for rapid deployment to temporarily stun organic targets.</description>
 		<label>Grenadier Webbing (Flash)</label>
 		<recipeMaker>
-		  <researchPrerequisite>TMG_SpecialistAccessories</researchPrerequisite>
+		  <researchPrerequisite>TRG_SpecialistAccessories</researchPrerequisite>
 		</recipeMaker>
 		<graphicData>
 		  <texPath>Things/Pawn/Humanlike/Accessories/GrenadierWebbing/GrenadierWebbing</texPath>
@@ -172,7 +172,7 @@
 		  </li>
 		</verbs>
 	    <thingCategories>
-		  <li>TMG_Accessories</li>
+		  <li>TRG_Accessories</li>
 		</thingCategories>
 		<equippedStatOffsets>
 		  <PainShockThreshold>0.20</PainShockThreshold>	  
@@ -188,7 +188,7 @@
 			<li>Shell</li>
 		  </layers>
 		  <tags>
-			<li>TMG_Accessories_Grenadier</li>
+			<li>TRG_Accessories_Grenadier</li>
 		  </tags>
 		  <defaultOutfitTags>
 			<li>Soldier</li>

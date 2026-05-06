@@ -4,22 +4,22 @@
 	<!-- Refugees - Player Faction-->
 
 	<FactionDef ParentName="PlayerFactionBase">
-		<defName>TMG_Player</defName>
+		<defName>TRG_Player</defName>
 		<label>Ringer settlers</label>
-		<description>A group of Ringer settlers from Meridia, seeking to build a new life on the rimworld. Carrying the culture and technology of their ring city home, they bring with them the skills that kept Meridia alive.</description>
+		<description>A group of Ringers who left their ring city for the rimworld. They came prepared.</description>
 		<colorSpectrum>
             <li>(0, 0.737, 0.847)</li>
 		</colorSpectrum>
 		<isPlayer>true</isPlayer>
-		<basicMemberKind>TMG_Player</basicMemberKind>
+		<basicMemberKind>TRG_Player</basicMemberKind>
 		<pawnSingular>ringer</pawnSingular>
 		<pawnsPlural>ringers</pawnsPlural>
 		<techLevel>Spacer</techLevel>
 		<allowedCultures>
 			<li>Astropolitan</li>
 		</allowedCultures>
-		<factionNameMaker>TMG_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>TMG_Settlement_Civil</settlementNameMaker>
+		<factionNameMaker>TRG_Faction_Civil</factionNameMaker>
+		<settlementNameMaker>TRG_Settlement_Civil</settlementNameMaker>
 		<backstoryFilters>
 		  <li>
 			<categories>
@@ -45,11 +45,9 @@
 	<!-- Colonists - Civil Faction-->
 
 	<FactionDef ParentName="FactionBase">
-		<defName>TMG_Civil</defName>
+		<defName>TRG_Civil</defName>
 		<label>Ringer settlers</label>
-		<description>Settlers from Meridia who have established themselves on this world. They carry the culture and technology of their ring city home -- spacer-level equipment, organized military structure, and the practical skills of people who grew up maintaining a sealed habitat.
-
-They are willing to trade and cautiously open to outside contact, though they keep a watchful eye on their security.</description>
+		<description>Settlers from a ring city who have established themselves on this world. They carry spacer-level equipment and the habits of people raised in an enclosed habitat. They trade, patrol their borders, and defend their settlements without hesitation.</description>
 		<pawnSingular>ringer</pawnSingular>
 		<pawnsPlural>ringers</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
@@ -61,8 +59,8 @@ They are willing to trade and cautiously open to outside contact, though they ke
 		<canStageAttacks>true</canStageAttacks>
 		<leaderTitle>governor</leaderTitle>
 		<factionIconPath>UI/FactionIcons/Dominion</factionIconPath>
-		<factionNameMaker>TMG_Faction_Civil</factionNameMaker>
-		<settlementNameMaker>TMG_Settlement_Civil</settlementNameMaker>
+		<factionNameMaker>TRG_Faction_Civil</factionNameMaker>
+		<settlementNameMaker>TRG_Settlement_Civil</settlementNameMaker>
 		<colorSpectrum>
 			<li>(0.80, 0.80, 0.95)</li>
 		</colorSpectrum>
@@ -126,23 +124,23 @@ They are willing to trade and cautiously open to outside contact, though they ke
 				<kindDef>Combat</kindDef>
 				<commonality>45</commonality>
 				<options>
-					<TMG_Civil_Recruit_Ranged>5</TMG_Civil_Recruit_Ranged>
-					<TMG_Civil_Recruit_Melee>3</TMG_Civil_Recruit_Melee>
-					<TMG_Civil_Infantry_Ranged>12</TMG_Civil_Infantry_Ranged>
-					<TMG_Civil_Infantry_Melee>6</TMG_Civil_Infantry_Melee>
-					<TMG_Civil_Veteran_Ranged>8</TMG_Civil_Veteran_Ranged>
-					<TMG_Civil_Veteran_Melee>5</TMG_Civil_Veteran_Melee>
-					<TMG_Civil_Sergeant>4</TMG_Civil_Sergeant>
-					<TMG_Civil_Ranger>7</TMG_Civil_Ranger>
-					<TMG_Civil_GrenadierFrag>3</TMG_Civil_GrenadierFrag>
-					<TMG_Civil_GrenadierEMP>3</TMG_Civil_GrenadierEMP>
-					<TMG_Civil_GrenadierFire>3</TMG_Civil_GrenadierFire>
-					<TMG_Civil_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</TMG_Civil_GrenadierFire>
-					<TMG_Civil_Shocktrooper>2</TMG_Civil_Shocktrooper>
-					<TMG_Civil_Medic>3</TMG_Civil_Medic>
-					<TMG_Civil_Engineer>3</TMG_Civil_Engineer>
-					<TMG_Civil_Warden>2</TMG_Civil_Warden>
-					<TMG_Civil_Officer>3</TMG_Civil_Officer>
+					<TRG_Civil_Recruit_Ranged>5</TRG_Civil_Recruit_Ranged>
+					<TRG_Civil_Recruit_Melee>3</TRG_Civil_Recruit_Melee>
+					<TRG_Civil_Infantry_Ranged>12</TRG_Civil_Infantry_Ranged>
+					<TRG_Civil_Infantry_Melee>6</TRG_Civil_Infantry_Melee>
+					<TRG_Civil_Veteran_Ranged>8</TRG_Civil_Veteran_Ranged>
+					<TRG_Civil_Veteran_Melee>5</TRG_Civil_Veteran_Melee>
+					<TRG_Civil_Sergeant>4</TRG_Civil_Sergeant>
+					<TRG_Civil_Ranger>7</TRG_Civil_Ranger>
+					<TRG_Civil_GrenadierFrag>3</TRG_Civil_GrenadierFrag>
+					<TRG_Civil_GrenadierEMP>3</TRG_Civil_GrenadierEMP>
+					<TRG_Civil_GrenadierFire>3</TRG_Civil_GrenadierFire>
+					<TRG_Civil_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</TRG_Civil_GrenadierFire>
+					<TRG_Civil_Shocktrooper>2</TRG_Civil_Shocktrooper>
+					<TRG_Civil_Medic>3</TRG_Civil_Medic>
+					<TRG_Civil_Engineer>3</TRG_Civil_Engineer>
+					<TRG_Civil_Warden>2</TRG_Civil_Warden>
+					<TRG_Civil_Officer>3</TRG_Civil_Officer>
 				</options>
 			</li>
 
@@ -151,14 +149,14 @@ They are willing to trade and cautiously open to outside contact, though they ke
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
 				<options>
-					<TMG_Civil_Recruit_Ranged>8</TMG_Civil_Recruit_Ranged>
-					<TMG_Civil_Recruit_Melee>5</TMG_Civil_Recruit_Melee>
-					<TMG_Civil_Infantry_Ranged>20</TMG_Civil_Infantry_Ranged>
-					<TMG_Civil_Infantry_Melee>10</TMG_Civil_Infantry_Melee>
-					<TMG_Civil_Sergeant>5</TMG_Civil_Sergeant>
-					<TMG_Civil_Medic>8</TMG_Civil_Medic>
-					<TMG_Civil_Engineer>8</TMG_Civil_Engineer>
-					<TMG_Civil_Officer>3</TMG_Civil_Officer>
+					<TRG_Civil_Recruit_Ranged>8</TRG_Civil_Recruit_Ranged>
+					<TRG_Civil_Recruit_Melee>5</TRG_Civil_Recruit_Melee>
+					<TRG_Civil_Infantry_Ranged>20</TRG_Civil_Infantry_Ranged>
+					<TRG_Civil_Infantry_Melee>10</TRG_Civil_Infantry_Melee>
+					<TRG_Civil_Sergeant>5</TRG_Civil_Sergeant>
+					<TRG_Civil_Medic>8</TRG_Civil_Medic>
+					<TRG_Civil_Engineer>8</TRG_Civil_Engineer>
+					<TRG_Civil_Officer>3</TRG_Civil_Officer>
 				</options>
 			</li>
 
@@ -167,16 +165,16 @@ They are willing to trade and cautiously open to outside contact, though they ke
 				<kindDef>Peaceful</kindDef>
 				<commonality>20</commonality>
 				<options>
-					<TMG_Civil_Settler>12</TMG_Civil_Settler>
-					<TMG_Civil_Laborer>8</TMG_Civil_Laborer>
-					<TMG_Civil_Trader>8</TMG_Civil_Trader>
-					<TMG_Civil_Representative>2</TMG_Civil_Representative>
-					<TMG_Civil_Ranger>4</TMG_Civil_Ranger>
-					<TMG_Civil_Infantry_Ranged>4</TMG_Civil_Infantry_Ranged>
-					<TMG_Civil_Infantry_Melee>2</TMG_Civil_Infantry_Melee>
-					<TMG_Civil_Medic>2</TMG_Civil_Medic>
-					<TMG_Civil_Engineer>2</TMG_Civil_Engineer>
-					<TMG_Civil_Officer>1</TMG_Civil_Officer>
+					<TRG_Civil_Settler>12</TRG_Civil_Settler>
+					<TRG_Civil_Laborer>8</TRG_Civil_Laborer>
+					<TRG_Civil_Trader>8</TRG_Civil_Trader>
+					<TRG_Civil_Representative>2</TRG_Civil_Representative>
+					<TRG_Civil_Ranger>4</TRG_Civil_Ranger>
+					<TRG_Civil_Infantry_Ranged>4</TRG_Civil_Infantry_Ranged>
+					<TRG_Civil_Infantry_Melee>2</TRG_Civil_Infantry_Melee>
+					<TRG_Civil_Medic>2</TRG_Civil_Medic>
+					<TRG_Civil_Engineer>2</TRG_Civil_Engineer>
+					<TRG_Civil_Officer>1</TRG_Civil_Officer>
 				</options>
 			</li>
 
@@ -184,7 +182,7 @@ They are willing to trade and cautiously open to outside contact, though they ke
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<TMG_Civil_Trader>1</TMG_Civil_Trader>
+					<TRG_Civil_Trader>1</TRG_Civil_Trader>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -193,11 +191,11 @@ They are willing to trade and cautiously open to outside contact, though they ke
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<TMG_Civil_Infantry_Ranged>4</TMG_Civil_Infantry_Ranged>
-					<TMG_Civil_Infantry_Melee>2</TMG_Civil_Infantry_Melee>
-					<TMG_Civil_Ranger>4</TMG_Civil_Ranger>
-					<TMG_Civil_Sergeant>2</TMG_Civil_Sergeant>
-					<TMG_Civil_Officer>1</TMG_Civil_Officer>
+					<TRG_Civil_Infantry_Ranged>4</TRG_Civil_Infantry_Ranged>
+					<TRG_Civil_Infantry_Melee>2</TRG_Civil_Infantry_Melee>
+					<TRG_Civil_Ranger>4</TRG_Civil_Ranger>
+					<TRG_Civil_Sergeant>2</TRG_Civil_Sergeant>
+					<TRG_Civil_Officer>1</TRG_Civil_Officer>
 				</guards>
 			</li>
 
@@ -205,15 +203,15 @@ They are willing to trade and cautiously open to outside contact, though they ke
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<TMG_Civil_Settler>20</TMG_Civil_Settler>
-					<TMG_Civil_Laborer>12</TMG_Civil_Laborer>
-					<TMG_Civil_Engineer>4</TMG_Civil_Engineer>
-					<TMG_Civil_Medic>4</TMG_Civil_Medic>
-					<TMG_Civil_Infantry_Ranged>6</TMG_Civil_Infantry_Ranged>
-					<TMG_Civil_Infantry_Melee>2</TMG_Civil_Infantry_Melee>
-					<TMG_Civil_Ranger>6</TMG_Civil_Ranger>
-					<TMG_Civil_Representative>1</TMG_Civil_Representative>
-					<TMG_Civil_Officer>3</TMG_Civil_Officer>
+					<TRG_Civil_Settler>20</TRG_Civil_Settler>
+					<TRG_Civil_Laborer>12</TRG_Civil_Laborer>
+					<TRG_Civil_Engineer>4</TRG_Civil_Engineer>
+					<TRG_Civil_Medic>4</TRG_Civil_Medic>
+					<TRG_Civil_Infantry_Ranged>6</TRG_Civil_Infantry_Ranged>
+					<TRG_Civil_Infantry_Melee>2</TRG_Civil_Infantry_Melee>
+					<TRG_Civil_Ranger>6</TRG_Civil_Ranger>
+					<TRG_Civil_Representative>1</TRG_Civil_Representative>
+					<TRG_Civil_Officer>3</TRG_Civil_Officer>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">
@@ -253,11 +251,9 @@ They are willing to trade and cautiously open to outside contact, though they ke
 	<!-- Freelancers - Hostile Faction-->
 
 	<FactionDef ParentName="FactionBase">
-		<defName>TMG_Rough</defName>
+		<defName>TRG_Rough</defName>
 		<label>Ringer outcasts</label>
-		<description>Exiles, deserters, and criminals from Meridia who have turned to raiding and mercenary work. They still carry Ringer equipment and training, making them dangerous opponents despite their lack of formal structure.
-
-They have no interest in cooperation. They want what you have.</description>
+		<description>Exiles and deserters from a ring city who found the rim more agreeable than what they left behind. They kept their training and their weapons. Everything else was negotiable.</description>
 		<pawnSingular>outcast</pawnSingular>
 		<pawnsPlural>outcasts</pawnsPlural>
 		<listOrderPriority>13</listOrderPriority>
@@ -334,23 +330,23 @@ They have no interest in cooperation. They want what you have.</description>
 				<kindDef>Combat</kindDef>
 				<commonality>45</commonality>
 				<options>
-					<TMG_Rough_Recruit_Ranged>5</TMG_Rough_Recruit_Ranged>
-					<TMG_Rough_Recruit_Melee>3</TMG_Rough_Recruit_Melee>
-					<TMG_Rough_Infantry_Ranged>12</TMG_Rough_Infantry_Ranged>
-					<TMG_Rough_Infantry_Melee>6</TMG_Rough_Infantry_Melee>
-					<TMG_Rough_Veteran_Ranged>8</TMG_Rough_Veteran_Ranged>
-					<TMG_Rough_Veteran_Melee>5</TMG_Rough_Veteran_Melee>
-					<TMG_Rough_Sergeant>4</TMG_Rough_Sergeant>
-					<TMG_Rough_Ranger>7</TMG_Rough_Ranger>
-					<TMG_Rough_GrenadierFrag>3</TMG_Rough_GrenadierFrag>
-					<TMG_Rough_GrenadierEMP>3</TMG_Rough_GrenadierEMP>
-					<TMG_Rough_GrenadierFire>3</TMG_Rough_GrenadierFire>
-					<TMG_Rough_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</TMG_Rough_GrenadierFire>
-					<TMG_Rough_Shocktrooper>2</TMG_Rough_Shocktrooper>
-					<TMG_Rough_Medic>3</TMG_Rough_Medic>
-					<TMG_Rough_Engineer>3</TMG_Rough_Engineer>
-					<TMG_Rough_Warden>2</TMG_Rough_Warden>
-					<TMG_Rough_Officer>3</TMG_Rough_Officer>
+					<TRG_Rough_Recruit_Ranged>5</TRG_Rough_Recruit_Ranged>
+					<TRG_Rough_Recruit_Melee>3</TRG_Rough_Recruit_Melee>
+					<TRG_Rough_Infantry_Ranged>12</TRG_Rough_Infantry_Ranged>
+					<TRG_Rough_Infantry_Melee>6</TRG_Rough_Infantry_Melee>
+					<TRG_Rough_Veteran_Ranged>8</TRG_Rough_Veteran_Ranged>
+					<TRG_Rough_Veteran_Melee>5</TRG_Rough_Veteran_Melee>
+					<TRG_Rough_Sergeant>4</TRG_Rough_Sergeant>
+					<TRG_Rough_Ranger>7</TRG_Rough_Ranger>
+					<TRG_Rough_GrenadierFrag>3</TRG_Rough_GrenadierFrag>
+					<TRG_Rough_GrenadierEMP>3</TRG_Rough_GrenadierEMP>
+					<TRG_Rough_GrenadierFire>3</TRG_Rough_GrenadierFire>
+					<TRG_Rough_GrenadierFire MayRequire="Ludeon.RimWorld.Biotech">3</TRG_Rough_GrenadierFire>
+					<TRG_Rough_Shocktrooper>2</TRG_Rough_Shocktrooper>
+					<TRG_Rough_Medic>3</TRG_Rough_Medic>
+					<TRG_Rough_Engineer>3</TRG_Rough_Engineer>
+					<TRG_Rough_Warden>2</TRG_Rough_Warden>
+					<TRG_Rough_Officer>3</TRG_Rough_Officer>
 				</options>
 			</li>
 
@@ -359,14 +355,14 @@ They have no interest in cooperation. They want what you have.</description>
 				<kindDef>Combat</kindDef>
 				<commonality>35</commonality>
 				<options>
-					<TMG_Rough_Recruit_Ranged>8</TMG_Rough_Recruit_Ranged>
-					<TMG_Rough_Recruit_Melee>5</TMG_Rough_Recruit_Melee>
-					<TMG_Rough_Infantry_Ranged>20</TMG_Rough_Infantry_Ranged>
-					<TMG_Rough_Infantry_Melee>10</TMG_Rough_Infantry_Melee>
-					<TMG_Rough_Sergeant>5</TMG_Rough_Sergeant>
-					<TMG_Rough_Medic>8</TMG_Rough_Medic>
-					<TMG_Rough_Engineer>8</TMG_Rough_Engineer>
-					<TMG_Rough_Officer>3</TMG_Rough_Officer>
+					<TRG_Rough_Recruit_Ranged>8</TRG_Rough_Recruit_Ranged>
+					<TRG_Rough_Recruit_Melee>5</TRG_Rough_Recruit_Melee>
+					<TRG_Rough_Infantry_Ranged>20</TRG_Rough_Infantry_Ranged>
+					<TRG_Rough_Infantry_Melee>10</TRG_Rough_Infantry_Melee>
+					<TRG_Rough_Sergeant>5</TRG_Rough_Sergeant>
+					<TRG_Rough_Medic>8</TRG_Rough_Medic>
+					<TRG_Rough_Engineer>8</TRG_Rough_Engineer>
+					<TRG_Rough_Officer>3</TRG_Rough_Officer>
 				</options>
 			</li>
 
@@ -375,16 +371,16 @@ They have no interest in cooperation. They want what you have.</description>
 				<kindDef>Peaceful</kindDef>
 				<commonality>20</commonality>
 				<options>
-					<TMG_Rough_Settler>12</TMG_Rough_Settler>
-					<TMG_Rough_Laborer>8</TMG_Rough_Laborer>
-					<TMG_Rough_Trader>8</TMG_Rough_Trader>
-					<TMG_Rough_Representative>2</TMG_Rough_Representative>
-					<TMG_Rough_Ranger>4</TMG_Rough_Ranger>
-					<TMG_Rough_Infantry_Ranged>4</TMG_Rough_Infantry_Ranged>
-					<TMG_Rough_Infantry_Melee>2</TMG_Rough_Infantry_Melee>
-					<TMG_Rough_Medic>2</TMG_Rough_Medic>
-					<TMG_Rough_Engineer>2</TMG_Rough_Engineer>
-					<TMG_Rough_Officer>1</TMG_Rough_Officer>
+					<TRG_Rough_Settler>12</TRG_Rough_Settler>
+					<TRG_Rough_Laborer>8</TRG_Rough_Laborer>
+					<TRG_Rough_Trader>8</TRG_Rough_Trader>
+					<TRG_Rough_Representative>2</TRG_Rough_Representative>
+					<TRG_Rough_Ranger>4</TRG_Rough_Ranger>
+					<TRG_Rough_Infantry_Ranged>4</TRG_Rough_Infantry_Ranged>
+					<TRG_Rough_Infantry_Melee>2</TRG_Rough_Infantry_Melee>
+					<TRG_Rough_Medic>2</TRG_Rough_Medic>
+					<TRG_Rough_Engineer>2</TRG_Rough_Engineer>
+					<TRG_Rough_Officer>1</TRG_Rough_Officer>
 				</options>
 			</li>
 
@@ -392,7 +388,7 @@ They have no interest in cooperation. They want what you have.</description>
 			<li>
 				<kindDef>Trader</kindDef>
 				<traders>
-					<TMG_Rough_Trader>1</TMG_Rough_Trader>
+					<TRG_Rough_Trader>1</TRG_Rough_Trader>
 				</traders>
 				<carriers>
 					<Muffalo>6</Muffalo>
@@ -401,11 +397,11 @@ They have no interest in cooperation. They want what you have.</description>
 					<Elephant>1</Elephant>
 				</carriers>
 				<guards>
-					<TMG_Rough_Infantry_Ranged>4</TMG_Rough_Infantry_Ranged>
-					<TMG_Rough_Infantry_Melee>2</TMG_Rough_Infantry_Melee>
-					<TMG_Rough_Ranger>4</TMG_Rough_Ranger>
-					<TMG_Rough_Sergeant>2</TMG_Rough_Sergeant>
-					<TMG_Rough_Officer>1</TMG_Rough_Officer>
+					<TRG_Rough_Infantry_Ranged>4</TRG_Rough_Infantry_Ranged>
+					<TRG_Rough_Infantry_Melee>2</TRG_Rough_Infantry_Melee>
+					<TRG_Rough_Ranger>4</TRG_Rough_Ranger>
+					<TRG_Rough_Sergeant>2</TRG_Rough_Sergeant>
+					<TRG_Rough_Officer>1</TRG_Rough_Officer>
 				</guards>
 			</li>
 
@@ -413,15 +409,15 @@ They have no interest in cooperation. They want what you have.</description>
 			<li>
 				<kindDef>Settlement</kindDef>
 				<options>
-					<TMG_Rough_Settler>20</TMG_Rough_Settler>
-					<TMG_Rough_Laborer>12</TMG_Rough_Laborer>
-					<TMG_Rough_Engineer>4</TMG_Rough_Engineer>
-					<TMG_Rough_Medic>4</TMG_Rough_Medic>
-					<TMG_Rough_Infantry_Ranged>6</TMG_Rough_Infantry_Ranged>
-					<TMG_Rough_Infantry_Melee>2</TMG_Rough_Infantry_Melee>
-					<TMG_Rough_Ranger>6</TMG_Rough_Ranger>
-					<TMG_Rough_Representative>1</TMG_Rough_Representative>
-					<TMG_Rough_Officer>3</TMG_Rough_Officer>
+					<TRG_Rough_Settler>20</TRG_Rough_Settler>
+					<TRG_Rough_Laborer>12</TRG_Rough_Laborer>
+					<TRG_Rough_Engineer>4</TRG_Rough_Engineer>
+					<TRG_Rough_Medic>4</TRG_Rough_Medic>
+					<TRG_Rough_Infantry_Ranged>6</TRG_Rough_Infantry_Ranged>
+					<TRG_Rough_Infantry_Melee>2</TRG_Rough_Infantry_Melee>
+					<TRG_Rough_Ranger>6</TRG_Rough_Ranger>
+					<TRG_Rough_Representative>1</TRG_Rough_Representative>
+					<TRG_Rough_Officer>3</TRG_Rough_Officer>
 				</options>
 			</li>
 			<li MayRequire="Ludeon.RimWorld.Ideology">

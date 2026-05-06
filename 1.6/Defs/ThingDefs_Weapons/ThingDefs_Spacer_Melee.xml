@@ -4,7 +4,7 @@
 	<!-- ==================== VIBROSWORD ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TMG_Vibrosword</defName>
+		<defName>TRG_Vibrosword</defName>
 		<label>Vibrosword</label>
 		<description>A composite sword powered by a small micro-motor which vibrates the blade. Easily able to carve through armor and flesh, the production of it is a closely guarded secret in the Dominion.</description>
 		<graphicData>
@@ -20,12 +20,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>TMG_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>TRG_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costStuffCount>40</costStuffCount>
@@ -87,7 +87,7 @@
 	<!-- ==================== VIBROBLADE ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Sharp_Quality">
-		<defName>TMG_Vibroblade</defName>
+		<defName>TRG_Vibroblade</defName>
 		<label>Vibroblade</label>
 		<description>A composite dagger powered by a small micro-motor. Though lacking in the range of a sword, it provides benefits in close quarters, favored as a back-up weapon.</description>
 		<graphicData>
@@ -103,12 +103,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>TMG_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>TRG_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>8</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costStuffCount>25</costStuffCount>
@@ -171,7 +171,7 @@
 	<!-- ==================== VIBROMAUL ==================== -->
 
 	<ThingDef ParentName="BaseMeleeWeapon_Blunt_Quality">
-		<defName>TMG_Vibromaul</defName>
+		<defName>TRG_Vibromaul</defName>
 		<label>Vibromaul</label>
 		<description>A composite hammer powered by a powerful micro-motor which vibrates the head. Though heavy it provides enormous force on impact, making it effective against both armored and unarmored targets.</description>
 		<graphicData>
@@ -187,12 +187,12 @@
 			<workSkill>Crafting</workSkill>
 			<effectWorking>Smith</effectWorking>
 			<soundWorking>Recipe_Smith</soundWorking>
-			<researchPrerequisite>TMG_VibroWeapons</researchPrerequisite>
+			<researchPrerequisite>TRG_VibroWeapons</researchPrerequisite>
 			<skillRequirements>
 				<Crafting>10</Crafting>
 			</skillRequirements>
 			<recipeUsers>
-				<li>TMG_FabricationBench</li>
+				<li>TRG_FabricationBench</li>
 			</recipeUsers>
 		</recipeMaker>
 		<costStuffCount>50</costStuffCount>

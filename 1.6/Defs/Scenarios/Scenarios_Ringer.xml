@@ -1,27 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
 	<ScenarioDef ParentName="ScenarioBase">
-		<defName>TMG_Prospectors</defName>
+		<defName>TRG_Prospectors</defName>
 		<label>Ringer Settlers</label>
-		<description>After years in cryptosleep, you have arrived at the rimworld. You spent a pretty penny for a role in a settler mission out of Meridia. You are free from the ring city and its politics, out here to make your own opportunities.</description>
+		<description>A settler mission from a ring city, dropped on the rimworld with basic equipment and a mandate nobody intends to enforce. Make of it what you can.</description>
 
 		<scenario>
 			<summary>A group of prospectors, sent to survey for a larger empire.</summary>
 			<playerFaction>
 				<def>PlayerFaction</def>
-				<factionDef>TMG_Player</factionDef>
+				<factionDef>TRG_Player</factionDef>
 			</playerFaction>
 
 			<parts>
 				<li Class="ScenPart_GameStartDialog">
 					<def>GameStartDialog</def>
-					<text>"You emerged from your pod and examined your surroundings. A new world lies before you where opportunity is at every corner.\n\nFree from the oversight patrols and the synergy compliance squads. You now have the means to make a fortune eventually. It is unlikely for the mission sponsor to come and collect your gains, so live to the fullest.\n\nThey did cheap out on the materials so it might be hard to get the profits rolling in."</text>
+					<text>"The pod opened. New air, new ground, no oversight.
+
+The mission sponsor is a long way away and the contract was always vague about what comes back. Whatever you build here is yours."</text>
 					<closeSound>GameStartSting</closeSound>
 				</li>
 
 				<li Class="ScenPart_ConfigPage_ConfigureStartingPawns">
 					<def>ConfigPage_ConfigureStartingPawns</def>
-					<pawnCount>5</pawnCount>
+					<pawnCount>4</pawnCount>
 					<pawnChoiceCount>8</pawnChoiceCount>
 				</li>
 
@@ -43,19 +45,19 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TMG_LawbringerShotgun</thingDef>
+					<thingDef>TRG_LawbringerShotgun</thingDef>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TMG_ServicePistol</thingDef>
+					<thingDef>TRG_ServicePistol</thingDef>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TMG_Vibroblade</thingDef>
+					<thingDef>TRG_Vibroblade</thingDef>
 					<count>1</count>
 					<stuff>Steel</stuff>
 					<quality>Normal</quality>
@@ -63,14 +65,14 @@
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TMG_MarauderArmor</thingDef>
+					<thingDef>TRG_MarauderArmor</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
 
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TMG_MarauderHelmet</thingDef>
+					<thingDef>TRG_MarauderHelmet</thingDef>
 					<count>1</count>
 					<quality>Normal</quality>
 				</li>
@@ -114,13 +116,13 @@
 				<!-- Needed for Scenario Start to get Early Research-->
 				<li Class="ScenPart_StartingThing_Defined">
 					<def>StartingThing_Defined</def>
-					<thingDef>TMG_Codex</thingDef>
+					<thingDef>TRG_Codex</thingDef>
 					<count>1</count>
 				</li>
 
 				<li Class="ScenPart_StartingResearch">
 					<def>StartingResearch</def>
-					<project>TMG_RingerUniforms</project>
+					<project>TRG_RingerUniforms</project>
 				</li>
 
 				 <!-- Scatter some things near player start -->

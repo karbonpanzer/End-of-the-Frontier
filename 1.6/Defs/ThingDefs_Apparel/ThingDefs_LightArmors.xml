@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Defs>
   <ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderArmor</defName>
+    <defName>TRG_MarauderArmor</defName>
     <label>Marauder Armor</label>
-    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Meridia infantry who expect direct fire contact.</description>
+    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Ringer infantry who expect direct fire contact.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Armor/LightArmor/LightArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -13,13 +13,13 @@
       <color>(0.47, 0.47, 0.47)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -60,8 +60,8 @@
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -102,18 +102,18 @@
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderArmor_Medic</defName>
+    <defName>TRG_MarauderArmor_Medic</defName>
     <label>Marauder Armor (Medic)</label>
-    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Meridia infantry who expect direct fire contact.
+    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Ringer infantry who expect direct fire contact.
 
 This variant is marked for usage by Medical staff.</description>
     <graphicData>
@@ -125,13 +125,13 @@ This variant is marked for usage by Medical staff.</description>
       <color>(0.95, 0.95, 0.95)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -172,7 +172,7 @@ This variant is marked for usage by Medical staff.</description>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -213,18 +213,18 @@ This variant is marked for usage by Medical staff.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderArmor_Engineer</defName>
+    <defName>TRG_MarauderArmor_Engineer</defName>
     <label>Marauder Armor (Engineer)</label>
-    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Meridia infantry who expect direct fire contact.
+    <description>A hardened armor set with segmented Marauder plates bonded over a ballistic underlayer. Covers the torso and upper arms. Used by Ringer infantry who expect direct fire contact.
 
 This variant is marked for usage by Engineers.</description>
     <graphicData>
@@ -236,13 +236,13 @@ This variant is marked for usage by Engineers.</description>
       <color>(0.87, 0.60, 0.21)</color>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -283,7 +283,7 @@ This variant is marked for usage by Engineers.</description>
       <soundWear>Wear_PowerArmor</soundWear>
       <soundRemove>Remove_PowerArmor</soundRemove>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -324,20 +324,18 @@ This variant is marked for usage by Engineers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet_Officer</defName>
-    <label>Marauder Helmet (Officer)</label>
-    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.
-
-This variant is marked for usage by officers.</description>
+    <defName>TRG_MarauderHelmet</defName>
+    <label>Marauder Helmet</label>
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -352,13 +350,13 @@ This variant is marked for usage by officers.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -391,8 +389,8 @@ This variant is marked for usage by officers.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags>
-        <li>TMG_Armor</li>
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -423,18 +421,18 @@ This variant is marked for usage by officers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet_Medic</defName>
+    <defName>TRG_MarauderHelmet_Medic</defName>
     <label>Marauder Helmet (Medic)</label>
-    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.
 
 This variant is marked for usage by Medical staff.</description>
     <graphicData>
@@ -451,13 +449,13 @@ This variant is marked for usage by Medical staff.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -490,7 +488,7 @@ This variant is marked for usage by Medical staff.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -521,18 +519,18 @@ This variant is marked for usage by Medical staff.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet_Engineer</defName>
+    <defName>TRG_MarauderHelmet_Engineer</defName>
     <label>Marauder Helmet (Engineer)</label>
-    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.
 
 This variant is marked for usage by Engineers.</description>
     <graphicData>
@@ -549,13 +547,13 @@ This variant is marked for usage by Engineers.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -588,7 +586,7 @@ This variant is marked for usage by Engineers.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -619,18 +617,18 @@ This variant is marked for usage by Engineers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet</defName>
+    <defName>TRG_MarauderHelmet_Officer</defName>
     <label>Marauder Helmet (Officer)</label>
-    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Meridia combat personnel.\n\nThis variant is marked for usage by officers.</description>
+    <description>A hard-shell combat helmet with a Marauder outer layer and ballistic liner. Covers the skull and upper face. Standard head protection for Ringer combat personnel.\n\nThis variant is marked for usage by officers.</description>
     <graphicData>
       <texPath>Things/Pawn/Humanlike/Helmets/LightHelmet/LightHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
@@ -645,13 +643,13 @@ This variant is marked for usage by Engineers.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_OfficerMarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_OfficerMarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -684,7 +682,7 @@ This variant is marked for usage by Engineers.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -715,16 +713,16 @@ This variant is marked for usage by Engineers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet_Insulated</defName>
+    <defName>TRG_MarauderHelmet_Insulated</defName>
     <label>Marauder Helmet (Insulated)</label>
     <description>A Marauder helmet with thermal lining added to the interior. Provides the same ballistic protection as the standard configuration in climates that would otherwise affect the wearer's effectiveness.</description>
     <graphicData>
@@ -741,13 +739,13 @@ This variant is marked for usage by Engineers.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -780,7 +778,7 @@ This variant is marked for usage by Engineers.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -811,16 +809,16 @@ This variant is marked for usage by Engineers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet_Shield</defName>
+    <defName>TRG_MarauderHelmet_Shield</defName>
     <label>Marauder Helmet (Reinforced)</label>
     <description>A Marauder helmet with an additional ballistic plate bonded to the front. Heavier than the standard configuration, but more resistant to direct frontal impacts.</description>
     <graphicData>
@@ -837,13 +835,13 @@ This variant is marked for usage by Engineers.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -881,7 +879,7 @@ This variant is marked for usage by Engineers.</description>
       </defaultOutfitTags>
       <useWornGraphicMask>True</useWornGraphicMask>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -912,16 +910,16 @@ This variant is marked for usage by Engineers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 
 	<ThingDef ParentName="ArmorMachineableBase">
-    <defName>TMG_MarauderHelmet_Gasmask</defName>
+    <defName>TRG_MarauderHelmet_Gasmask</defName>
     <label>Marauder Helmet (Gasmask)</label>
     <description>A Marauder helmet fitted with an integrated filtration mask. Protects the skull and seals the airway against chemical agents and toxic particulates.</description>
     <graphicData>
@@ -938,13 +936,13 @@ This variant is marked for usage by Engineers.</description>
       </options>
     </colorGenerator>
     <recipeMaker>
-      <researchPrerequisite>TMG_MarauderArmor</researchPrerequisite>
+      <researchPrerequisite>TRG_MarauderArmor</researchPrerequisite>
       <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
       <skillRequirements>
         <Crafting>5</Crafting>
       </skillRequirements>
       <recipeUsers Inherit="False">
-        <li>TMG_FabricationBench</li>
+        <li>TRG_FabricationBench</li>
       </recipeUsers>
     </recipeMaker>
     <costList>
@@ -979,8 +977,8 @@ This variant is marked for usage by Engineers.</description>
       <useWornGraphicMask>True</useWornGraphicMask>
       <immuneToToxGasExposure>true</immuneToToxGasExposure>
       <tags Inherit="False">
-        <li>TMG_Armor</li>
-        <li>TMG_Armor</li>
+        <li>TRG_Armor</li>
+        <li>TRG_Armor</li>
       </tags>
       <renderNodeProperties>
         <li Class="EOTF.Core.DecalSystem.PawnRenderNodePropertiesOmni">
@@ -1011,11 +1009,11 @@ This variant is marked for usage by Engineers.</description>
     </comps>
     <techLevel>Spacer</techLevel>
     <thingCategories>
-      <li>TMG_Helmets</li>
+      <li>TRG_Helmets</li>
     </thingCategories>
     <tradeTags>
       <li>Armor</li>
-      <li>TMG_Armor</li>
+      <li>TRG_Armor</li>
     </tradeTags>
   </ThingDef>
 </Defs>
