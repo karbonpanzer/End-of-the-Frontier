@@ -2021,7 +2021,7 @@
     <label>veteran Carapace Armor</label>
     <description>A suit of armor, made up of a lightweight plasteel-weave plates which provide moderate protection, additional plating added in the field and with an integrated webbing system modified by veterans in the field. Created as a cheaper alternative to power armor during conflicts. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
     <graphicData>
-      <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</texPath>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceArmor</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2075,7 +2075,7 @@
       <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
-      <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</wornGraphicPath>
+      <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceArmor</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <bodyPartGroups>
         <li>Torso</li>
@@ -2124,7 +2124,7 @@
     <label>veteran Carapace Helmet</label>
     <description>A armored helmet with built in communication system, improvised cheek guards and a protective plasteel-weave plate. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
     <graphicData>
-      <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmet</texPath>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceHelmet</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2176,7 +2176,7 @@
       <bodyPartGroups>
         <li>UpperHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmet</wornGraphicPath>
+      <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceHelmet</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
         <li>Overhead</li>
@@ -2187,7 +2187,7 @@
       <tags>
         <li>UFR_Armor</li>
         <li>UFR_VeteranCarapaceArmor</li>        
-        <li>UFR_VeteranLightCarapaceHelmet</li>
+        <li>UFR_VeteranCarapaceHelmet</li>
       </tags>
     </apparel>
     <techLevel>Spacer</techLevel>
@@ -2211,7 +2211,7 @@
     <label>veteran Carapace helmet (Mask)</label>
     <description>A armored helmet with built in communication system, protective plasteel-weave plate, improvised cheekguards and a oxygen recycler for hazardous environments. Armor like this is often used by imperial army veterans and urbworld mercenaries.</description>
     <graphicData>
-      <texPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmetMask</texPath>
+      <texPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceHelmetMask</texPath>
       <graphicClass>Graphic_Single</graphicClass>
       <shaderType>CutoutComplex</shaderType>
     </graphicData>
@@ -2267,7 +2267,7 @@
       <bodyPartGroups>
         <li>FullHead</li>
       </bodyPartGroups>
-      <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceHelmetMask</wornGraphicPath>
+      <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceHelmetMask</wornGraphicPath>
       <useWornGraphicMask>true</useWornGraphicMask>
       <layers>
         <li>Overhead</li>

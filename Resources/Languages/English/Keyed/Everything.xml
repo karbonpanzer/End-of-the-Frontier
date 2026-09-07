@@ -12,6 +12,8 @@
   <UFR_ColorPrimary>Primary color</UFR_ColorPrimary>
   <UFR_ColorSecondary>Secondary color</UFR_ColorSecondary>
   <UFR_ColorRandom>Random</UFR_ColorRandom>
+  <UFR_ColorFavorite>Set to favorite</UFR_ColorFavorite>
+  <UFR_ColorIdeoligion>Set to ideoligion</UFR_ColorIdeoligion>
   <UFR_Cancel>Cancel</UFR_Cancel>
   <UFR_Reset>Reset</UFR_Reset>
   <UFR_Accept>Accept</UFR_Accept>

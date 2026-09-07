@@ -166,7 +166,8 @@ namespace UnitedFront.UI
             Color c = p.Working[index];
             Color original = c;
 
-            DrawColorGrid(palette, AllColors(), ref c);
+            float paletteHeight;
+            Widgets.ColorSelector(palette, ref c, AllColors(), out paletteHeight, null, 22, 2);
 
             if (Widgets.ButtonText(new Rect(btnRow.x, btnRow.y, 140f, btnH), "UFR_ColorRandom".Translate()))
             {
@@ -175,50 +176,32 @@ namespace UnitedFront.UI
                 SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
+            float bx = btnRow.x + 148f;
+
+            if (TryGetFavoriteColor(_pawn, out Color favColor))
+            {
+                if (Widgets.ButtonText(new Rect(bx, btnRow.y, 160f, btnH), "UFR_ColorFavorite".Translate()))
+                {
+                    c = favColor;
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+                bx += 168f;
+            }
+
+            if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode)
+            {
+                if (Widgets.ButtonText(new Rect(bx, btnRow.y, 160f, btnH), "UFR_ColorIdeoligion".Translate()))
+                {
+                    c = _pawn.Ideo.ApparelColor;
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+            }
+
             if (!original.IndistinguishableFrom(c))
             {
                 p.Working[index] = c;
                 p.Comp.PreviewZones(p.Working);
                 PortraitsCache.SetDirty(_pawn);
-            }
-        }
-
-        private static void DrawColorGrid(Rect rect, List<Color> colors, ref Color selected)
-        {
-            if (colors.Count == 0) return;
-
-            const float pad = 1f;
-            const float minCell = 8f;
-            const float maxCell = 24f;
-
-            float cell = minCell;
-            int cols = Mathf.Max(1, Mathf.FloorToInt(rect.width / (minCell + pad)));
-            for (float s = maxCell; s >= minCell; s -= 1f)
-            {
-                int cc = Mathf.Max(1, Mathf.FloorToInt(rect.width / (s + pad)));
-                int rr = Mathf.CeilToInt((float)colors.Count / cc);
-                if (rr * (s + pad) <= rect.height)
-                {
-                    cell = s;
-                    cols = cc;
-                    break;
-                }
-            }
-
-            float gridW = cols * (cell + pad) - pad;
-            float x0 = rect.x + Mathf.Max(0f, (rect.width - gridW) / 2f);
-
-            for (int i = 0; i < colors.Count; i++)
-            {
-                int col = i % cols;
-                int rowIndex = i / cols;
-                Rect box = new Rect(x0 + col * (cell + pad), rect.y + rowIndex * (cell + pad), cell, cell);
-                if (box.yMax > rect.yMax + 0.5f) break;
-
-                Widgets.DrawBoxSolid(box, colors[i]);
-                if (Mouse.IsOver(box)) Widgets.DrawHighlight(box);
-                if (colors[i].IndistinguishableFrom(selected)) Widgets.DrawBox(box, 2);
-                if (Widgets.ButtonInvisible(box)) selected = colors[i];
             }
         }
 

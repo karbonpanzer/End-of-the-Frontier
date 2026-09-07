@@ -94,9 +94,8 @@ namespace UnitedFront.Comps
         public override void Notify_Equipped(Pawn pawn)
         {
             base.Notify_Equipped(pawn);
-            KindColorExtension ext = pawn.kindDef?.GetModExtension<KindColorExtension>();
-            ApplyKindDefaults(ext);
-            if (!zonesCustomized && (ext == null || ext.zoneColors.NullOrEmpty()) && Props.defaultZoneColors.NullOrEmpty() && parent is Apparel ap)
+
+            if (!zonesCustomized && Props.defaultZoneColors.NullOrEmpty() && parent is Apparel ap)
             {
                 EnsureZoneDefaults();
                 ArmorColorExtension armorExt = parent.def.GetModExtension<ArmorColorExtension>();
@@ -112,16 +111,6 @@ namespace UnitedFront.Comps
                 }
                 SetDirty();
             }
-        }
-
-        private void ApplyKindDefaults(KindColorExtension ext)
-        {
-            if (ext == null || ext.zoneColors.NullOrEmpty()) return;
-            if (!ext.overrideSaved && zonesCustomized) return;
-
-            EnsureZoneDefaults();
-            for (int i = 0; i < ZoneColors.Count && i < ext.zoneColors.Count; i++)
-                ZoneColors[i] = ext.zoneColors[i];
         }
     }
 }
