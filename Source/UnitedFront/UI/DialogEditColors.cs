@@ -1,6 +1,7 @@
 using System.Collections.Generic;
 using RimWorld;
 using UnitedFront.Comps;
+using UnitedFront.Defs;
 using UnityEngine;
 using Verse;
 using Verse.Sound;
@@ -154,47 +155,79 @@ namespace UnitedFront.UI
         private void DrawColorRow(Rect row, Piece p, int index)
         {
             float labelH = 26f;
+            float defaultH = 26f;
             float btnH = 24f;
             float gap = 8f;
 
             Widgets.Label(new Rect(row.x, row.y, row.width, labelH),
                 index == 0 ? "UFR_ColorPrimary".Translate() : "UFR_ColorSecondary".Translate());
 
-            Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
-            Rect palette = new Rect(row.x, row.y + labelH, row.width, row.height - labelH - btnH - gap);
-
             Color c = p.Working[index];
             Color original = c;
+
+            bool hasDefault = TryGetDefaultColor(p, index, out Color defColor);
+            float defaultBlockH = hasDefault ? defaultH + 4f : 0f;
+
+            Rect btnRow = new Rect(row.x, row.yMax - btnH, row.width, btnH);
+            Rect palette = new Rect(row.x, row.y + labelH + defaultBlockH, row.width,
+                                    row.height - labelH - defaultBlockH - btnH - gap);
+
+            // Default swatch + button, sitting directly above the palette.
+            if (hasDefault)
+            {
+                Rect defRow = new Rect(row.x, row.y + labelH, row.width, defaultH);
+
+                Rect swatch = new Rect(defRow.x, defRow.y + 2f, defaultH - 4f, defaultH - 4f);
+                Widgets.DrawBoxSolid(swatch, defColor);
+                Widgets.DrawBox(swatch);
+                if (defColor.IndistinguishableFrom(c)) Widgets.DrawBox(swatch.ExpandedBy(1f), 2);
+
+                Rect defBtn = new Rect(swatch.xMax + 6f, defRow.y, 170f, defaultH);
+                if (Widgets.ButtonText(defBtn, "UFR_ColorDefault".Translate()))
+                {
+                    c = defColor;
+                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                }
+            }
 
             float paletteHeight;
             Widgets.ColorSelector(palette, ref c, AllColors(), out paletteHeight, null, 22, 2);
 
-            if (Widgets.ButtonText(new Rect(btnRow.x, btnRow.y, 140f, btnH), "UFR_ColorRandom".Translate()))
-            {
-                var colors = AllColors();
-                if (colors.Count > 0) c = colors[Rand.Range(0, colors.Count)];
-                SoundDefOf.Tick_Low.PlayOneShotOnCamera();
-            }
+            // Remaining quick-pick buttons, laid out evenly along the bottom row.
+            List<string> labels = new List<string>();
+            List<Color> picks = new List<Color>();
 
-            float bx = btnRow.x + 148f;
+            labels.Add("UFR_ColorRandom".Translate());
+            picks.Add(Color.clear);                 // index 0 is handled as random
 
             if (TryGetFavoriteColor(_pawn, out Color favColor))
             {
-                if (Widgets.ButtonText(new Rect(bx, btnRow.y, 160f, btnH), "UFR_ColorFavorite".Translate()))
-                {
-                    c = favColor;
-                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
-                }
-                bx += 168f;
+                labels.Add("UFR_ColorFavorite".Translate());
+                picks.Add(favColor);
             }
-
             if (ModsConfig.IdeologyActive && _pawn.Ideo != null && !Find.IdeoManager.classicMode)
             {
-                if (Widgets.ButtonText(new Rect(bx, btnRow.y, 160f, btnH), "UFR_ColorIdeoligion".Translate()))
+                labels.Add("UFR_ColorIdeoligion".Translate());
+                picks.Add(_pawn.Ideo.ApparelColor);
+            }
+
+            float btnGap = 6f;
+            float btnW = (btnRow.width - btnGap * (labels.Count - 1)) / labels.Count;
+            for (int i = 0; i < labels.Count; i++)
+            {
+                Rect r = new Rect(btnRow.x + i * (btnW + btnGap), btnRow.y, btnW, btnH);
+                if (!Widgets.ButtonText(r, labels[i])) continue;
+
+                if (i == 0)
                 {
-                    c = _pawn.Ideo.ApparelColor;
-                    SoundDefOf.Tick_Low.PlayOneShotOnCamera();
+                    List<Color> colors = AllColors();
+                    if (colors.Count > 0) c = colors[Rand.Range(0, colors.Count)];
                 }
+                else
+                {
+                    c = picks[i];
+                }
+                SoundDefOf.Tick_Low.PlayOneShotOnCamera();
             }
 
             if (!original.IndistinguishableFrom(c))
@@ -203,6 +236,25 @@ namespace UnitedFront.UI
                 p.Comp.PreviewZones(p.Working);
                 PortraitsCache.SetDirty(_pawn);
             }
+        }
+
+        private static bool TryGetDefaultColor(Piece p, int index, out Color c)
+        {
+            c = Color.white;
+            Color drawColor = p.Apparel.DrawColor;
+            ArmorColorExtension ext = p.Apparel.def.GetModExtension<ArmorColorExtension>();
+
+            if (ext == null)
+            {
+                c = drawColor;
+                return true;
+            }
+
+            if (index == 0) c = ext.setColorOne ? ext.colorOne : drawColor;
+            else if (index == 1) c = ext.setColorTwo ? ext.colorTwo : drawColor;
+            else return false;
+
+            return true;
         }
 
         private void DrawBottomButtons(Rect inRect)

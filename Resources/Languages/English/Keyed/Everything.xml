@@ -9,6 +9,7 @@
   <UFR_EditColorsTitle>Edit armor colors - {0}</UFR_EditColorsTitle>
   <UFR_ColorTab_Armor>Armor</UFR_ColorTab_Armor>
   <UFR_ColorTab_Helmet>Helmet</UFR_ColorTab_Helmet>
+  <UFR_ColorDefault>Reset to default</UFR_ColorDefault>  
   <UFR_ColorPrimary>Primary color</UFR_ColorPrimary>
   <UFR_ColorSecondary>Secondary color</UFR_ColorSecondary>
   <UFR_ColorRandom>Random</UFR_ColorRandom>

@@ -284,11 +284,11 @@
     </weaponTags>
     <apparelRequired>
       <li>UFR_CommanderCarapaceArmor</li>
+      <li>UFR_CommanderCarapaceHelmet</li>      
       <li>UFR_InfantryUniform</li>
     </apparelRequired>
     <apparelTags Inherit="False">
       <li>UFR_OfficerHeadwear</li>
-      <li>UFR_CommanderCarapaceHelmet</li>
       <li>UFR_CommanderAccessories</li>
     </apparelTags>
     <factionLeader>true</factionLeader>

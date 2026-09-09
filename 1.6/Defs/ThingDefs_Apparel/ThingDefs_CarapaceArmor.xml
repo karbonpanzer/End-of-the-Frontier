@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <Defs>
 
-  <!-- Light Armor -->
+  <!-- Stock Carapace Armor -->
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>UFR_CarapaceArmor</defName>
     <label>Carapace Armor</label>
@@ -42,9 +42,8 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <RangedCooldownFactor>-0.10</RangedCooldownFactor>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CarapaceArmor/CarapaceArmor</wornGraphicPath>
@@ -84,9 +83,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Slate Blue -->
+      <!-- white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.30, 0.38, 0.45)</colorTwo>
+        <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -132,8 +131,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>      
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -165,9 +164,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Slate Blue -->
+      <!-- white -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.30, 0.38, 0.45)</colorTwo>
+        <colorTwo>(0.95, 0.95, 0.95)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -213,9 +212,9 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MedicalTendSpeed>0.1</MedicalTendSpeed>
-      <MedicalTendQuality>0.15</MedicalTendQuality>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <MedicalTendQuality>0.10</MedicalTendQuality>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/MedicCarapaceArmor/MedicCarapaceArmor</wornGraphicPath>
@@ -255,9 +254,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Darkish Red -->
+      <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.65, 0.13, 0.13)</colorTwo>
+        <colorTwo>(0.12, 0.56, 0.84)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -303,8 +302,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>  
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -336,9 +335,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Darkish Red -->
+      <!-- bright azure -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.65, 0.13, 0.13)</colorTwo>
+        <colorTwo>(0.12, 0.56, 0.84)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -384,9 +383,9 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <FixBrokenDownBuildingSuccessChance>0.1</FixBrokenDownBuildingSuccessChance>
-      <ConstructionSpeed>0.15</ConstructionSpeed>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <ConstructionSpeed>0.10</ConstructionSpeed>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/EngineerCarapaceArmor/EngineerCarapaceArmor</wornGraphicPath>
@@ -426,9 +425,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Dark Orange/Yellowish -->
+      <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.80, 0.55, 0.10)</colorTwo>
+        <colorTwo>(0.85, 0.45, 0.08)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -474,8 +473,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>  
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -507,9 +506,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Dark Orange/Yellowish -->
+      <!-- burnt orange -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.80, 0.55, 0.10)</colorTwo>
+        <colorTwo>(0.85, 0.45, 0.08)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -555,10 +554,9 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MeleeHitChance>0.10</MeleeHitChance>
-      <SocialImpact>-0.10</SocialImpact>
-      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">-0.05</SlaveSuppressionOffset>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <SlaveSuppressionOffset MayRequire="Ludeon.RimWorld.Ideology">0.10</SlaveSuppressionOffset>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/MPCarapaceArmor/MPCarapaceArmor</wornGraphicPath>
@@ -598,9 +596,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Blue -->
+      <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.15, 0.30, 0.60)</colorTwo>
+        <colorTwo>(0.09, 0.16, 0.34)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -646,8 +644,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>  
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -679,9 +677,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Blue -->
+      <!-- dark navy -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.15, 0.30, 0.60)</colorTwo>
+        <colorTwo>(0.09, 0.16, 0.34)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -713,6 +711,7 @@
       <Steel>15</Steel>
       <Plasteel>40</Plasteel>
       <ComponentIndustrial>4</ComponentIndustrial>
+      <Gold>8</Gold>
     </costList>
     <statBases>
       <WorkToMake>48000</WorkToMake>
@@ -727,9 +726,11 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <SocialImpact>0.25</SocialImpact>
-      <AimingDelayFactor>-0.10</AimingDelayFactor>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <SocialImpact>0.15</SocialImpact>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/CommanderCarapaceArmor/CommanderCarapaceArmor</wornGraphicPath>
@@ -755,6 +756,7 @@
       <tags>
         <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
+        <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
     <techLevel>Spacer</techLevel>
@@ -769,9 +771,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Gold/Brass -->
+      <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.72, 0.60, 0.20)</colorTwo>
+        <colorTwo>(0.80, 0.65, 0.18)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -802,6 +804,7 @@
       <Steel>6</Steel>
       <Plasteel>10</Plasteel>
       <ComponentIndustrial>2</ComponentIndustrial>
+      <Gold>4</Gold>
     </costList>
     <statBases>
       <WorkToMake>12000</WorkToMake>
@@ -817,8 +820,10 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>      
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+      <PsychicSensitivity>0.05</PsychicSensitivity>
+      <PsychicEntropyRecoveryRate MayRequire="Ludeon.RimWorld.Royalty">0.033</PsychicEntropyRecoveryRate>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -839,6 +844,7 @@
         <li>UFR_Armor</li>
         <li>UFR_CommanderCarapaceArmor</li>        
         <li>UFR_CommanderCarapaceHelmet</li>
+        <li MayRequire="Ludeon.RimWorld.Royalty">PrestigeCombatGear</li>
       </tags>
     </apparel>
     <techLevel>Spacer</techLevel>
@@ -850,9 +856,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Gold/Brass -->
+      <!-- gold -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.72, 0.60, 0.20)</colorTwo>
+        <colorTwo>(0.80, 0.65, 0.18)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -899,11 +905,9 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <MoveSpeed>-0.20</MoveSpeed>
+      <MoveSpeed>-0.14</MoveSpeed>
       <MeleeDamageFactor>0.10</MeleeDamageFactor>
-      <MeleeCooldownFactor>-0.05</MeleeCooldownFactor>
-      <PainShockThreshold>0.10</PainShockThreshold>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <verbs>
       <li>
@@ -975,9 +979,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Field Green -->
+      <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.267, 0.298, 0.220)</colorTwo>
+        <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1024,8 +1028,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>      
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -1057,9 +1061,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Field Green -->
+      <!-- crimson -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.267, 0.298, 0.220)</colorTwo>
+        <colorTwo>(0.70, 0.12, 0.15)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1106,9 +1110,9 @@
       <EquipDelay>8</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <ShootingAccuracyPawn>1.5</ShootingAccuracyPawn>
-      <ForagedNutritionPerDay>0.4</ForagedNutritionPerDay>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <MoveSpeed>-0.08</MoveSpeed>
+      <ShootingAccuracyPawn>0.5</ShootingAccuracyPawn>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>    
       <bodyPartGroups>
@@ -1157,9 +1161,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Silver -->
+      <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.51,0.71,1.00)</colorTwo>
+        <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef> 
@@ -1206,8 +1210,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>      
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -1239,9 +1243,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Silver -->
+      <!-- olive -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.51,0.71,1.00)</colorTwo>
+        <colorTwo>(0.35, 0.42, 0.20)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1288,9 +1292,9 @@
       <EquipDelay>6</EquipDelay>
     </statBases>
     <equippedStatOffsets>
-      <RangedCooldownFactor>-0.10</RangedCooldownFactor>
+      <MoveSpeed>-0.08</MoveSpeed>
       <PainShockThreshold>0.10</PainShockThreshold>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.32</VacuumResistance>
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.32</VacuumResistance>
     </equippedStatOffsets>
     <apparel>
       <wornGraphicPath>UFR/Things/Pawn/Humanlike/Armor/VeteranCarapaceArmor/VeteranCarapaceArmor</wornGraphicPath>
@@ -1330,9 +1334,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Slate Blue -->
+      <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.30, 0.38, 0.45)</colorTwo>
+        <colorTwo>(0.16, 0.16, 0.17)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
@@ -1379,8 +1383,8 @@
     </statBases>
     <equippedStatOffsets>
       <ToxicEnvironmentResistance MayRequire="Ludeon.RimWorld.Biotech">0.8</ToxicEnvironmentResistance>
-      <VacuumResistance MayRequire="Ludeon.Rimworld.Odyssey">0.69</VacuumResistance>
-    </equippedStatOffsets>      
+      <VacuumResistance MayRequire="Ludeon.RimWorld.Odyssey">0.69</VacuumResistance>
+    </equippedStatOffsets>
     <apparel>
       <renderSkipFlags>
         <li>Hair</li>
@@ -1412,9 +1416,9 @@
       <li>UFR_Armor</li>
     </tradeTags>
     <modExtensions>
-      <!-- Slate Blue -->
+      <!-- very dark grey -->
       <li Class="UnitedFront.Defs.ArmorColorExtension">
-        <colorTwo>(0.30, 0.38, 0.45)</colorTwo>
+        <colorTwo>(0.16, 0.16, 0.17)</colorTwo>
       </li>
     </modExtensions>
   </ThingDef>
